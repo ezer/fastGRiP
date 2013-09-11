@@ -1,1 +1,1 @@
-web: lein run -m edu.cam.fgrip.core $PORT
+web: java $JVM_OPTS -cp target/fastGrip.jar clojure.main -m edu.cam.fgrip.core $PORT
