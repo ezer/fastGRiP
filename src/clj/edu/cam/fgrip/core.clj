@@ -486,5 +486,5 @@
     ; set filename to filename
    ))
 
-(defn -main [& m]
-  (server/start 8080))
+(defn -main [port]
+  (server/start port))
