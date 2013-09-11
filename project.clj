@@ -1,7 +1,6 @@
 (defproject fgrip "1.0.0"
   :description "fgrip models facilitated diffusion in promoters."
   :main edu.cam.fgrip.core
-  :uberjar-name "fastGrip.jar"
   :source-path "src/clj"
   :java-source-path "src"
   :javac-fork "true"
