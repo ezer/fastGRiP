@@ -5,9 +5,6 @@
     SwitchSlideModel Parameters State MarkovResult))
   (use noir.core hiccup.core hiccup.page))
 
-(defn -main [port]
-  (jetty/run-jetty app {:port (Integer. port) :join? false}))
-
 (defpage "/" []
   (html
     (html5
