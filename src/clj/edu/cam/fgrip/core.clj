@@ -487,4 +487,4 @@
    ))
 
 (defn -main [port]
-  (server/start (Integer. port)))
+  (server/start port))
