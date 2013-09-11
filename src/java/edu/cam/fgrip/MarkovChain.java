@@ -17,7 +17,7 @@ public class MarkovChain {
 	public void addState(State state){
 		stateList.add(state);
 	}
-	
+
 	public int[][] runTimeCourse(double time, double delta, String fileName){
 		List<State> sink=runSimulationUntil(time, fileName);
 		return State.getTimeCourse(time, delta, sink.get(0));
@@ -55,19 +55,54 @@ public class MarkovChain {
 	
 	}
 	
+	public MarkovResult getResults(int time, int lapse, String filename){
+		System.out.println(this);
+		List<State> sink=runSimulationUntil(time, filename);
+		int[][][] test2=getTimeCourseTransitions(time, lapse*2, filename, sink);
+		JSONgenerator json=new JSONgenerator();
+		ArrayList<String> jsons= json.generateGraphJSON(test2, tfs);
+		//ArrayList<String> json2=json.generateMiniNet(test2, 10);
+		//jsons.addAll(json2);
+		jsons.add("0");
+		jsons.add("1");
+		test2=null;
+		int[][] test1=runTimeCourse(time, lapse, filename, sink);
+		jsons.add(json.generateAreaJSON(test1, lapse));
+		
+		System.out.println(jsons.get(0));
+		
+		//String out=State.getFirstOccupancyString(sink);
+		//System.out.println(out.substring(2, 100));
+		//jsons.add(out);
+		//jsons.add(tablizeTimeCourse(test1));
+		return new MarkovResult(sink, jsons, test1);
+	}
 	
 	public ArrayList<String> getJSONs(int time, int lapse, String filename){
+		System.out.println(this);
 		List<State> sink=runSimulationUntil(time, filename);
 		int[][][] test2=getTimeCourseTransitions(time, lapse, filename, sink);
-		JSONtest json=new JSONtest();
+		JSONgenerator json=new JSONgenerator();
 		ArrayList<String> jsons= json.generateGraphJSON(test2, tfs);
 		test2=null;
 		int[][] test1=runTimeCourse(time, lapse, filename, sink);
 		jsons.add(json.generateAreaJSON(test1, lapse));
-		String out=State.getFirstOccupancyString(sink);
-		System.out.println(out.substring(2, 100));
-		jsons.add(out);
+		//String out=State.getFirstOccupancyString(sink);
+		//System.out.println(out.substring(2, 100));
+		//jsons.add(out);
+		//jsons.add(tablizeTimeCourse(test1));
 		return jsons;
+	}
+	
+	public String tablizeTimeCourse(int[][] timecourse){
+		String out="";
+		for(int[] is: timecourse){
+			for(int i: is){
+				out=out+i+" ";
+			}
+			out=out+"<br>";
+		}
+		return out;
 	}
 	
 	public List<State> runSimulationUntilStateConfigReached(String stateLogic, String filebasename){
@@ -143,6 +178,13 @@ public class MarkovChain {
 		
 		
 	}
-		
+	
+	public String toString(){
+		String str="";
+		for(State s: stateList){
+			str=str+s.toString()+"\n";
+		}
+		return str;
+	}
 	
 }

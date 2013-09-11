@@ -1,3 +1,7 @@
+/target
+/pom.xml
+/.lein-*
+/.env
 .DS_Store
 *ccurance
 *ccupancy
@@ -6,7 +10,6 @@
 *_cn_*
 *mimickingGRiP*
 hdeAB*
-*params*
 Barrier
 Cluster
 FarAway

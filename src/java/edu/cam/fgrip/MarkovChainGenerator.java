@@ -18,9 +18,9 @@ public class MarkovChainGenerator {
 	private Parameters myParams;
 	
 	
-	public MarkovChain buildMarkovChainFromStream(String stream, int numTokens, ProbabilityModel m, String paramFile){
+	public MarkovChain buildMarkovChainFromStream(String stream, int numTokens, ProbabilityModel m, Parameters params){
 		myModel=m;
-		myParams=new Parameters(paramFile);
+		myParams=params;
 		parseTFs(stream, true);
 		List<State> stateGraph=linkState(myTFs.size(), numTokens); 
 		/*
@@ -76,8 +76,8 @@ public class MarkovChainGenerator {
 				//two transitions must be made: one linking state i to state i+2^j and one going backwards
 				if( (i&temp) == 0  ){	
 					if( !containsSwitch(i, j)) {
-						transitions.get(i).addState(transitions.get((int)(i+Math.pow(2, j))), myModel.forwardProbability(i, j, myTFs, totalMolecules));
-						transitions.get((int)(i+Math.pow(2, j))).addState(transitions.get(i), myModel.backwardProbability(i, j, myTFs));
+						transitions.get(i).addState(transitions.get((int)(i+Math.pow(2, j))), myModel.getForwardPropensity(i, j, myTFs, totalMolecules));
+						transitions.get((int)(i+Math.pow(2, j))).addState(transitions.get(i), myModel.getBackwardPropensity(i, j, myTFs));
 						}
 				}	
 			}
@@ -90,9 +90,9 @@ public class MarkovChainGenerator {
 	
 
 	private void printStateGraph(List<State> transitions) {
-		for(State s: transitions){
-			System.out.println(s);
-		}
+		//for(State s: transitions){
+		//	System.out.println(s);
+		//}
 	}
 
 	private void addClusterTransitions(int n, List<State> states) {
@@ -101,10 +101,10 @@ public class MarkovChainGenerator {
 			//while the TFs are closer than s_l_real
 			int j=1;
 			while(i>=j && myTFs.get(i-j).getDistanceTo(myTFs.get(i))<myParams.get("s_l_real")){
-				System.out.println("compare "+(i-j)+", "+i);
+				//System.out.println("compare "+(i-j)+", "+i);
 			
 				if(myTFs.get(i-j).hasSameNameAs(myTFs.get(i))){
-					System.out.println("found cluster");
+					//System.out.println("found cluster");
 					for(State s: states){
 						int id=s.getID();
 						int v= id;
@@ -123,13 +123,13 @@ public class MarkovChainGenerator {
 							}
 							if(valid){
 								int nextState=id-(int)Math.pow(2, i-j)+(int)Math.pow(2, i);
-								System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^ If you add: "+i+" to state "+(id-(int)Math.pow(2, i-j))+" then..."+((int) Math.log(states.size()+1)+1));
-								System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^ If you add: "+(i-j)+" to state "+(id-(int)Math.pow(2, i-j))+" then...");
+								//System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^ If you add: "+i+" to state "+(id-(int)Math.pow(2, i-j))+" then..."+((int) Math.log(states.size()+1)+1));
+								//System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^ If you add: "+(i-j)+" to state "+(id-(int)Math.pow(2, i-j))+" then...");
 								
 								if(!containsSwitch(id-(int)Math.pow(2, i-j), i) && !containsSwitch(id-(int)Math.pow(2, i-j), i-j)){
-									System.out.println("you get no switch so link: "+nextState+" and "+id);
-									double p= myModel.getSlideProbability(i-j, i, id, myTFs);
-									System.out.println("cluster transitions: "+id+" "+nextState+": "+p);
+									//System.out.println("you get no switch so link: "+nextState+" and "+id);
+									double p= myModel.getRelocationPropensity(i-j, i, id, myTFs);
+									//System.out.println("cluster transitions: "+id+" "+nextState+": "+p);
 									states.get(id).addState(states.get(nextState), p);
 									states.get(nextState).addState(states.get(id), p);
 								}

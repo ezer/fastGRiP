@@ -43,7 +43,7 @@ public class State{
 			//the reason these are maps rather than arrays is that 1. we don't know the final size of the arrays and 2. they might be very sparse in complex promoters
 			//TODO I might make the total number of states in the system a static variable and then make these into arrays, but I haven't decided yet if that is better or worse
 			private Map<Integer, Double> timesOfFirstTFOccupancy=new TreeMap<Integer,Double>(); //TFs that were visited mapped to the time that they were first visited
-			//private Map<Integer, Double> timesAtEachConfig=new TreeMap<Integer, Double>(); //The states that were visited mapped to the total time that state was occupied
+			private Map<Integer, Double> timesAtEachConfig=new TreeMap<Integer, Double>(); //The states that were visited mapped to the total time that state was occupied
 			private Map<Integer, Double> timeOfFirstConfigOccupancy=new TreeMap<Integer, Double>(); //The states that were visited mapped to the time that each was first occupied
 			private TreeMap<Double, Integer> completePath=new TreeMap<Double, Integer>();
 		}
@@ -72,6 +72,7 @@ public class State{
 		
 		public static int[][][] getTimeCourseTransitions(double time, double delta, State sink){
 			int maxState=0;
+			
 			for(Token t: sink.getTokens()){
 				for(int i: t.completePath.values()){
 					if(i>maxState){
@@ -84,25 +85,44 @@ public class State{
 			
 			int[][][] times=new int[maxBin][maxState+1][maxState+1]; 
 			
-			
 			for(Token token: sink.getTokens()){
+				//System.out.println("new token");
 				int prevBin=-1;
 				int prevState=0;
 				for(Double t: token.completePath.keySet()){
 					int bin=(int)(t/delta);
 					int state=token.completePath.get(t);
 					int tempPrev=prevState;
-					while(bin>=prevBin){
+					
+					if(token.tokenID==1){
+					//	System.out.println(prevBin+", "+ prevState+", "+bin+", "+state+", "+tempPrev);
+					}
+					while(bin>prevBin){ //changed
 						prevBin++;
 						prevState=state;
 						if(maxBin>prevBin){
+							//if(prevBin<20){
+								//System.out.println("ping! "+prevBin+" "+tempPrev+" "+state);
+							//}
 							times[prevBin][tempPrev][state]+=1;
+							tempPrev=prevState;
 						}
 					}
 				
 				}
 			}
-
+   
+			/*
+			for(int i=0; i<10; i++){
+				System.out.println("i: "+i);
+				for(int j=0; j<times[0].length; j++){
+					for(int k=0; k<times[0][0].length; k++){
+						System.out.print(times[i][j][k]+"\t");
+					}
+					System.out.println();
+				}
+			}
+			*/
 			return times;
 		}
 		
@@ -117,19 +137,25 @@ public class State{
 					}
 				}
 			}
+			//System.out.println("max state: "+maxState);
 			
 			int maxBin=(int) (time/delta); 
+			//System.out.println("max bin: "+maxBin);
 			
 			int[][] times=new int[maxState+1][maxBin]; 
 			
 			for(Token token: sink.getTokens()){
 				int prevBin=-1;
 				for(Double t: token.completePath.keySet()){
+					//System.out.println(t+", "+token.completePath.get(t));
 					int bin=(int)(t/delta);
+					//System.out.println("bin:"+bin+ " prevbin: "+prevBin);
 					while(bin>=prevBin){
 						prevBin++;
 						int state=token.completePath.get(t);
+						//System.out.println("state: "+state);
 						if(maxBin>prevBin){
+							//System.out.println("increment: "+state+", "+prevBin);
 							times[state][prevBin]+=1;
 						}
 					}
@@ -159,19 +185,19 @@ public class State{
 					Token t=myTokens.remove(i);
 					
 					//update time in state
-					//if(!t.timesAtEachConfig.containsKey(myID)){
-					//	t.timesAtEachConfig.put(myID, 0.0);
-					//}
+					if(!t.timesAtEachConfig.containsKey(myID)){
+						t.timesAtEachConfig.put(myID, 0.0);
+					}
 					
 					//update time at this config
-					//t.timesAtEachConfig.put(myID, t.timesAtEachConfig.get(myID)+(t.time-t.prevTime)); 
+					t.timesAtEachConfig.put(myID, t.timesAtEachConfig.get(myID)+(t.time-t.prevTime)); 
 					t.prevTime=t.time;
 					
 					//update time
 					t.time+=Gillespie.computeNextReactionTime(myPropensitySum, r);
 					
 					//add to Path:
-					t.completePath.put(t.time, nextState.myID);
+					t.completePath.put(t.time, myID);
 					
 					//add to next state
 					if(mySink!=null && t.time>myMaxTime){
@@ -229,20 +255,22 @@ public class State{
 			//do the same for the first config occupancy map
 			int visitedStates=t.visitedStateBits;
 			int newStateBit=1<<myID;
-		//	if( ((newStateBit|visitedStates)-visitedStates)!=0 ){
-		//		t.timeOfFirstConfigOccupancy.put(myID, t.time);
-		//	}
+			if( ((newStateBit|visitedStates)-visitedStates)!=0 ){
+				t.timeOfFirstConfigOccupancy.put(myID, t.time);
+			}
 			t.visitedStateBits=newStateBit|visitedStates;
 				
 		}
 		
 		public void printTokenData(){
+			/*
 			for(Token t: myTokens){
 				for(Integer i: t.timesOfFirstTFOccupancy.keySet()){
 					System.out.print(t.timesOfFirstTFOccupancy.get(i)+"\t");
 				}
 				System.out.println();
 			}
+			*/
 		}
 		
 		public static String getFirstOccupancyString(List<State> states){
@@ -294,7 +322,7 @@ public static String getFirstStateOccupancyString(List<State> states){
 			String time="State Occupancy<br />";
 			
 				for(Token t: allTokens){
-					
+				
 					int j=0;
 					for(Integer i: t.timeOfFirstConfigOccupancy.keySet()){
 						while(i>j){
@@ -343,7 +371,7 @@ public static String getFirstStateOccupancyString(List<State> states){
 					outFirstOccurance.write("\n");
 					
 					j=0;
-					/*
+					
 					for(Integer i: t.timeOfFirstConfigOccupancy.keySet()){
 							
 						while(i>j){
@@ -356,9 +384,9 @@ public static String getFirstStateOccupancyString(List<State> states){
 						
 					}
 					firstStateOccurance.write("\n");
-					*/
+					
 					j=0;
-					/*
+					
 					for(Integer i: t.timesAtEachConfig.keySet()){
 						while(i>j){
 							outOccupancy.write("\t");
@@ -368,7 +396,7 @@ public static String getFirstStateOccupancyString(List<State> states){
 						j=i+1;
 					}
 					outOccupancy.write("\n");
-					*/
+					
 					
 				}
 				

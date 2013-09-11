@@ -1,0 +1,9 @@
+k_ass	1800
+t_r	0.005
+nonCognateTF	10000
+TFlength	20
+DNAlength	4600000
+f	0.9
+beta	2
+s_l_obs	90
+s_l_real	36

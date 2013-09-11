@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  * this class implements the methods of the Gillespie Direct Method SSA
- * @author n.r.zabet@gen.cam.ac.uk
+ * @author n.r.zabet@gen.cam.ac.uk and de276@cam.ac.uk
  *
  */
 public class Gillespie {
@@ -32,32 +32,6 @@ public class Gillespie {
 		return (waitingTimeSum)*Math.log(1/generator.nextDouble());
 	}
 	
-	/**
-	 * generate the next reaction to take place
-	 * @param value the propensity sum multiplied by a random number
-	 * @return the index of the next mRNA species likely to attract a ribosome
-	 
-	public static  int getNextReaction(double value,double[] ribosomeBindingPropensity){
-		double sum=0;
-
-		for(int i=0;i<ribosomeBindingPropensity.length;i++){
-			if(ribosomeBindingPropensity[i]>0){
-				sum+=ribosomeBindingPropensity[i];
-				if(sum>=value){
-					return i;
-				}
-			}
-		}
-		
-		//double stored error return the last value
-		if(ribosomeBindingPropensity.length>0){
-			return ribosomeBindingPropensity.length-1;
-		}
-
-		throw new RuntimeException("Error with computing next reaction sum:"+value+"\nPropensities: ");
-	}
-	
-	*/
 	/**
 	 * generate the next reaction to take place
 	 * @param value the propensity sum multiplied by a random number

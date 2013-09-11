@@ -27,22 +27,21 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 		myWeight=weight;
 		myConcentration=concentration;
 		params=p;
-		
+		//TODO this is using the files that have specific T_0 and f_0 but that is not appropriate!!!
 		if(t_0s==null){
 			try{
-				
 				Scanner in=new Scanner(new File("t_0"));
 				t_0s=new HashMap<String, Double>();
 				fs=new HashMap<String, Double>();
 				while(in.hasNext()){
 					String tf=in.next().toUpperCase();
 					Double val=in.nextDouble();
-					Double fVal=in.nextDouble();
+					//Double fVal=in.nextDouble();
 					t_0s.put(tf, val);
-					fs.put(tf, fVal);
+					//fs.put(tf, fVal);
 				}
 			}catch(Throwable x){
-				System.out.println("t_0 file not found");
+				System.out.println("t_0 file not found: "+x);
 			}
 		}
 	}
@@ -55,14 +54,10 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 		if(myLambda>0)
 			return myLambda;
 		else{
-			int covered= spaceCoveredByTF(tfs, distance);
-			System.out.println("covered: "+covered);
-			System.out.println("uncpveered: "+(distance-covered));
-			System.out.println("time in binding: "+timeInBindingSite());
-			System.out.println("time in background: "+timeInBackground());
-			double timeInRegion=(covered*timeInBindingSite()+(distance-covered)*timeInBackground());
-			System.out.println("timeInRegion: "+timeInRegion+" denominator "+(timeInRegion+(params.get("DNAlength")-distance)*timeInBackground()));
-			myLambda= timeInRegion/(timeInRegion+(4600000-distance)*timeInBackground());
+			//int covered= spaceCoveredByTF(tfs, distance);	
+			//double timeInRegion=(covered*timeInBindingSite()+(distance-covered)*timeInBackground());
+			//myLambda= timeInRegion/(timeInRegion+(4600000-distance)*timeInBackground());
+			//TODO What is lambda and why is it 0.00434?  Why is it not in params?
 			myLambda= 0.00434;
 			return myLambda;
 		}
@@ -77,9 +72,9 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 		return params.get("f");
 	}
 	
-	private int spaceCoveredByTF(List<TranscriptionFactor> tfs, int distance){
-		return tfs.size();
-	}
+	//private int spaceCoveredByTF(List<TranscriptionFactor> tfs, int distance){
+	//	return tfs.size();
+	//}
 	
 	public String toString(){
 		return myName+": "+myStart+", "+myStop;
@@ -120,6 +115,7 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 		if(t_0s.containsKey(myName.toUpperCase())){
 			t_0=t_0s.get(myName.toUpperCase());
 		}else{
+			//TODO this was an arbitrary thing to generate reasonable results.  Figure out what it should be and add it to params
 			t_0=Math.pow(10, -6);//((t_r/slides())/avgExponent);
 		}
 		double beta=params.get("beta");
@@ -151,7 +147,6 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 	}
 	
 	public double visitsToOrigin(int slideWindow){
-		System.out.println("*******Slide Window"+slideWindow+", "+slides());
 		return slides()/slideWindow;
 	}
 	
@@ -173,7 +168,7 @@ public class TranscriptionFactor implements Comparable<TranscriptionFactor>{
 
 	public double slides() {
 		double s_l_obs=params.get("s_l_obs");
-		return (s_l_obs)*(s_l_obs)/2.0;
+		return (s_l_obs)*(s_l_obs)/2.0; 
 	}
 
 	public int getDistanceTo(TranscriptionFactor other) {

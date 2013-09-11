@@ -10,8 +10,14 @@ public class SwitchSlideModel extends ProbabilityModel{
 		super(p);
 	}
 	
-	@Override
-	public double forwardProbability(int oldID, int tfID,
+
+	/*@Override
+	 * 
+	 * Calculates propensity of a TF binding 
+	 * 
+	 * @see edu.cam.fgrip.ProbabilityModel#getForwardPropensity(int, int, java.util.List, double)
+	 */
+	public double getForwardPropensity(int oldID, int tfID,
 			List<TranscriptionFactor> tfs, double totalTF) {
 	
 		int usedUp = numTFsBasedOnState(oldID, tfID, tfs);
@@ -21,15 +27,37 @@ public class SwitchSlideModel extends ProbabilityModel{
 		
 		rightmostBound = Math.min((int)(s_l_real/2), getRightBound(oldID, tfID, tfs));
 		leftmostBound = Math.min((int)(s_l_real/2), getLeftBound(oldID, tfID, tfs));
-		System.out.println("^^^^^^^^^ leftmostbound: "+leftmostBound+"   rightmostBound: "+rightmostBound);
+		//System.out.println("Forward params: "+rightmostBound+", "+leftmostBound);
 		double modelLength=tfs.get(0).getCoveringTo(tfs.get(tfs.size()-1))+2*params.get("s_l_obs");
-		System.out.println("oldID: "+oldID+ " TFIF "+tfID+" modelLength: "+modelLength+" usedUp: "+usedUp+" totalTF: "+totalTF);
-		
 		return propensityBindingUniform(tfs.get(tfID), leftmostBound+rightmostBound, usedUp, totalTF, (int)modelLength, tfs);
 	}
+	
+	/*@Override
+	 * 
+	 * Calculates propensity of TF unbinding
+	 * 
+	 * @see edu.cam.fgrip.ProbabilityModel#getBackwardPropensity(int, int, java.util.List)
+	 */
+	public double getBackwardPropensity(int oldID, int tfID,
+			List<TranscriptionFactor> tfs) {
+	
+		int rightmostBound = getRightBoundWithoutCluster(oldID, tfID, tfs);
+		int leftmostBound = getLeftBoundWithoutCluster(oldID, tfID, tfs);
+		List<Integer> clusters=countClusters(rightmostBound, leftmostBound, tfID, tfs);
+		double expectedVisitsOrigin=tfs.get(tfID).visitsToOrigin(rightmostBound+leftmostBound);
+		double expectedVisitsNotOrigin = tfs.get(tfID).slides()-expectedVisitsOrigin*(1+clusters.size());	
+		double expectedTimeInOrigin=tfs.get(tfID).timeInBindingSite()*expectedVisitsOrigin;
+		for(Integer i: clusters){
+			expectedTimeInOrigin+=tfs.get(i).timeInBindingSite()*expectedVisitsOrigin;
+		}
+		
+		double expectedTime=expectedTimeInOrigin + tfs.get(tfID).timeInBackground() * expectedVisitsNotOrigin;
+		double k=(1.0/(expectedTime));
+		return k;
+	}
 
-	private int getLeftBound(int oldID, int tfID, List<TranscriptionFactor> tfs) {
-		int leftmostBound;
+	private double getLeftBound(int oldID, int tfID, List<TranscriptionFactor> tfs) {
+		double leftmostBound;
 		int id;
 		int i;
 		i=tfID+1;
@@ -45,10 +73,11 @@ public class SwitchSlideModel extends ProbabilityModel{
 		if(i>=tfs.size())
 			leftmostBound=(int)maxSlide;
 		else if((id&1)==0 && tfs.get(i).hasSameNameAs(tfs.get(tfID))){ //cluster
-			leftmostBound= (int) Math.min(maxSlide, tfs.get(tfID).getDistanceTo(tfs.get(i))/2.0);
+			//System.out.println("distanceTo: "+tfs.get(tfID).getDistanceTo(tfs.get(i))/2.0);
+			leftmostBound= Math.min(maxSlide, tfs.get(tfID).getDistanceTo(tfs.get(i))/2.0);
 		}
 		else{ //barrier
-			leftmostBound=(int) Math.min(maxSlide, tfs.get(i).getDistanceBetween(tfs.get(tfID)));
+			leftmostBound= Math.min(maxSlide, tfs.get(i).getDistanceBetween(tfs.get(tfID)));
 		}
 		return leftmostBound;
 	}
@@ -56,8 +85,7 @@ public class SwitchSlideModel extends ProbabilityModel{
 	private double getRightBound(int oldID, int tfID, List<TranscriptionFactor> tfs) {
 	
 		double maxSlide=params.get("s_l_obs")/2;
-		
-		
+			
 		double rightmostBound;
 		int id=oldID;
 		int i=tfID-1;
@@ -65,8 +93,6 @@ public class SwitchSlideModel extends ProbabilityModel{
 			i--;
 			id=oldID;
 		}
-		
-	
 		
 		if(i<0)
 			rightmostBound=maxSlide;
@@ -79,23 +105,16 @@ public class SwitchSlideModel extends ProbabilityModel{
 		return rightmostBound;
 	}
 
-	//TODO
-
-
-	
-	
-	//TODO clean this up: hack to test new functiom
 	private int getLeftBoundWithoutCluster(int oldID, int tfID, List<TranscriptionFactor> tfs) {
 		int leftmostBound;
 		int id;
 		int i;
 		i=tfID+1;
 		id=oldID>>>i;
-		//System.out.println("Starts with: oldID: "+oldID+" tfID "+tfID+"iter i "+i+" id "+id);
+		
 		while(i<tfs.size() && ((id&1)==0) ){
 			i++;
 			id=id>>>1;
-			//System.out.println("iter i "+i+" id "+id);
 		}
 		
 		double maxSlide=params.get("s_l_obs")/2;
@@ -127,62 +146,6 @@ public class SwitchSlideModel extends ProbabilityModel{
 	}
 
 	
-	
-	
-	
-	
-	
-	@Override
-	public double backwardProbability(int oldID, int tfID,
-			List<TranscriptionFactor> tfs) {
-		//TODO
-		int rightmostBound = getRightBoundWithoutCluster(oldID, tfID, tfs);
-		int leftmostBound = getLeftBoundWithoutCluster(oldID, tfID, tfs);
-		List<Integer> clusters=countClusters(rightmostBound, leftmostBound, tfID, tfs);
-		//List<Integer> clusters=new ArrayList<Integer>();
-			System.out.println("for state: "+oldID+" ridding tf: "+tfID+" distance: "+(rightmostBound+leftmostBound));
-		double expectedVisitsOrigin=tfs.get(tfID).visitsToOrigin(rightmostBound+leftmostBound);//tfs.get(tfID).visitsToOrigin(rightmostBound+leftmostBound-tfs.get(tfID).getSize());
-			System.out.println("expected visits origin: "+expectedVisitsOrigin+" clusters size: "+clusters.size());
-		double expectedVisitsNotOrigin = tfs.get(tfID).slides()-expectedVisitsOrigin*(1+clusters.size());
-		//TODO (only works if bindng sites have same strength)	
-		double expectedTimeInOrigin=tfs.get(tfID).timeInBindingSite()*expectedVisitsOrigin*(1+clusters.size());
-		double expectedTime=expectedTimeInOrigin + tfs.get(tfID).timeInBackground() * expectedVisitsNotOrigin;
-		
-		//check:
-		/*
-		double estimatedClockResets=1;
-		for(int i: clusters){
-			
-			System.out.println("timeToSlide: "+slideProb(tfID, i, oldID, tfs)+"  expectedTime: "+expectedTime);
-			//TODO
-			estimatedClockResets=estimatedClockResets+1.0/slideProb(tfID, i, oldID, tfs);
-		}
-		System.out.println("clooooock resets: "+estimatedClockResets);
-		*/
-		System.out.println("expectedTimeInOrigin: "+expectedTimeInOrigin);
-		//System.out.println("visits: "+expectedVisitsOrigin+", "+expectedVisitsNotOrigin+", time in binding: "+tfs.get(tfID).timeInBindingSite() + ", background: " + tfs.get(tfID).timeInBackground());
-		System.out.println("expected time: "+expectedTime);
-		double k=(1.0/(expectedTime));
-		return k;
-	}
-/*
-	private double getBackwardTimeBeforeClusterAdjustment(int oldID, int tfID,
-			List<TranscriptionFactor> tfs){
-		int rightmostBound = getRightBoundWithoutCluster(oldID, tfID, tfs);
-		int leftmostBound = getLeftBoundWithoutCluster(oldID, tfID, tfs);
-		List<Integer> clusters=countClusters(rightmostBound, leftmostBound, tfID, tfs);
-		//List<Integer> clusters=new ArrayList<Integer>();
-			System.out.println("for state: "+oldID+" ridding tf: "+tfID+" distance: "+(rightmostBound+leftmostBound));
-		double expectedVisitsOrigin=tfs.get(tfID).visitsToOrigin(rightmostBound+leftmostBound);//tfs.get(tfID).visitsToOrigin(rightmostBound+leftmostBound-tfs.get(tfID).getSize());
-			System.out.println("expected visits origin: "+expectedVisitsOrigin+" clusters size: "+clusters.size());
-		double expectedVisitsNotOrigin = tfs.get(tfID).slides()-expectedVisitsOrigin*(1+clusters.size());
-			
-		double expectedTimeInOrigin=tfs.get(tfID).timeInBindingSite()*expectedVisitsOrigin*(1+clusters.size());
-		double expectedTime=expectedTimeInOrigin + tfs.get(tfID).timeInBackground() * expectedVisitsNotOrigin;
-		
-		return expectedTime;
-	}
-	*/
 	private List<Integer> countClusters(int rightmostBound, int leftmostBound, int tfID,
 			List<TranscriptionFactor> tfs) {
 		
@@ -204,43 +167,29 @@ public class SwitchSlideModel extends ProbabilityModel{
 		return clusters;
 	}
 
-	
+	//TODO 
+	/*
 	private double slideProb(int tfIDstart, int tfIDstop, int oldID,
 			List<TranscriptionFactor> tfs){
 		
 		int distance=tfs.get(tfIDstart).getDistanceTo(tfs.get(tfIDstop));
-		System.out.println("***************************************  "+distance);
 		double N=2*(distance)*(distance);
 		return (N+0.0)/tfs.get(tfIDstart).slides();
 	}
+	*/
 	
 	@Override
-	public double getSlideProbability(int tfIDstart, int tfIDstop, int oldID,
+	public double getRelocationPropensity(int tfIDstart, int tfIDstop, int oldID,
 			List<TranscriptionFactor> tfs) {	
-		/*
-		int rightmostBound = getRightBoundWithoutCluster(oldID, tfIDstart, tfs);
-		int leftmostBound = getLeftBoundWithoutCluster(oldID, tfIDstart, tfs);
-		int rightWithCluster = getRightBound(oldID, tfIDstart, tfs);
-		int leftWithCluster = getLeftBound(oldID, tfIDstart, tfs);
-		int a=rightWithCluster+leftWithCluster;
-		int b=rightmostBound+leftmostBound-a;
-		double s=tfs.get(tfIDstart).slides();
-		double timeInSite=(s/(a+b))*tfs.get(tfIDstart).timeInBindingSite();
-		double expectedTime=timeInSite+(s*a/(a+b)-s/(a+b))*tfs.get(tfIDstart).timeInBackground();
-		double k=1.0/expectedTime-backwardProbability(oldID, tfIDstart, tfs);
-		*/
 		
 		double k=0;
 		double distance=tfs.get(tfIDstart).getDistanceTo(tfs.get(tfIDstop));
-		System.out.println("***************************************  "+distance);
 		double N=2*(distance)*(distance);
 		double passesThroughOrigin=N/(distance);
 		double t_bp=tfs.get(tfIDstart).timeInBackground();
 		k=1.0/((N-passesThroughOrigin)*t_bp+passesThroughOrigin*tfs.get(tfIDstart).timeInBindingSite());
 		return k;
-		//double slideP=slideProb(tfIDstart, tfIDstop, oldID, tfs);
-		//double slideT=slideP*getBackwardTimeBeforeClusterAdjustment(oldID, tfIDstart, tfs);
-		//return 1/slideT;  //about 1000x off
+		
 	}
 	
 	
@@ -257,27 +206,11 @@ public class SwitchSlideModel extends ProbabilityModel{
 		if(params.contains("k_a")){
 			return 1.0/params.get("k_a");
 		}
-		
-		
-		double t_r=params.get("t_r");
-		double nonCognateTF=params.get("nonCognateTF");
-		double TFlength=params.get("TFlength");
-		double DNAlength=params.get("DNAlength");
+	
 		double f=tf.f();
-		
-		double TF_free=tf.freeTFs(usedUpTFs);
-		double TF_bound=tf.getConcentration()-TF_free;
-
-		double A_ratio=1-((totalTF+nonCognateTF)*f*TFlength)/DNAlength;
-		double k_a=1/t_r*(TF_bound/TF_free)*1.0/A_ratio;
-		//TODO
-		k_a=1800;
+		double k_a=params.get("k_assoc");
 		double lambda=tf.getLambda(tfs, modelLength);
-		System.out.println("f: "+f);
 		double k_a_adj=k_a*(lambda-f*lambda)/(1-f*lambda);
-		//TODO
-		//k_a_adj=1.31;
-		System.out.println("TF_free: "+TF_free+" TF_bound: "+TF_bound+" A_ratio: "+A_ratio+" k_a: "+k_a+" lambda: "+lambda+" k_a_adj: "+k_a_adj);
 		return 1/k_a_adj;
 	}
 	
@@ -288,8 +221,7 @@ public class SwitchSlideModel extends ProbabilityModel{
 		double t_3D=timeOfBinding3D(tf, usedUpTfs, totalTF, modelLength, tfs);
 		double t_1D=tf.slides()*tf.timeInBackground();
 		double t_binding=((M/(d))*(t_1D+t_3D));	
-		System.out.println("t_binding: "+t_binding+" t_3D "+t_3D+" t_1D "+t_1D+" tf.getConcentration: "+tf.getConcentration()+" usedUp: "+usedUpTfs);
-		return (1.0/t_binding)*(tf.getConcentration()-usedUpTfs);	
+	    return (1.0/t_binding)*(tf.getConcentration()-usedUpTfs);	
 	}
 	
 }
