@@ -22,7 +22,7 @@
               [:li
                 [:a {:href "nonuniform"} "Nonuniform Landscape"]]
              [:li
-                [:a {:href "help"} "Help"]]
+                [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
           [:form {:class "form-horizontal" :method "post" :action "/"}
