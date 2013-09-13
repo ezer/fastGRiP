@@ -26,7 +26,9 @@
                 [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
-          [:form {:class "form-horizontal" :method "post" :action "/"}
+          [:form {:class "form-horizontal" :method "post" :onsubmit "if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
+                                                                     if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; };
+                                                                     return true;" :action "/"}
             [:div {:class "row"}
               [:div {:class "span6"} 
                 [:div {:class "control-group"}
@@ -34,7 +36,7 @@
                   [:div {:class "control-group"}
                     [:textarea {:rows "10" :name "tfs" :class "span5"  :id "tfs" :placeholder "TF_name    start    end    tau_0    copy_number"}]]
                   [:div {:class "control-group"}
-                      [:input {:type "text" :name "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
+                      [:input {:type "text" :name "time" :id "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
                   [:div {:class "control-group"}
                     [:button {:type "submit" :class "btn"} "Submit"]]
                   [:div {:class "control-group"}
