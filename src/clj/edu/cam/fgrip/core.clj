@@ -311,7 +311,7 @@
           new-id (Integer/toString (rand-int (* 10000 10000)) 16)
           data   (.getResults
                         (.buildMarkovChainFromStream sm (new String tfs) 400 pm params )
-                        (new Double time) 2 "cluster")]
+                        (new Double (if(.equals "" time) 300.0 time)) 2 "cluster")]
                       ;figure out what to do here
                      
                     ;(.runSimulationUntil 
