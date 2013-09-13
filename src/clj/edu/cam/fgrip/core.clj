@@ -10,6 +10,7 @@
     (html5
       (include-js "/js/bootstrap.js")
       (include-css "/css/bootstrap.css")
+      (include-js "/js/jquery.js")
       [:body
         [:div {:class "navbar"}
           [:div {:class "navbar-inner"}
@@ -31,11 +32,13 @@
                 [:div {:class "control-group"}
                   [:label "Transcription Factors"]
                   [:div {:class "control-group"}
-                    [:textarea {:rows "10" :name "tfs" :class "span5"  :placeholder "TF_name    start    end    tau_0    copy_number"}]]
+                    [:textarea {:rows "10" :name "tfs" :class "span5"  :id "tfs" :placeholder "TF_name    start    end    tau_0    copy_number"}]]
                   [:div {:class "control-group"}
                       [:input {:type "text" :name "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
                   [:div {:class "control-group"}
-                    [:button {:type "submit" :class "btn"} "Submit"]]]]
+                    [:button {:type "submit" :class "btn"} "Submit"]]
+                  [:div {:class "control-group"}
+                     [:button {:type "button" :class "btn" :onclick "$(\"#tfs\").val(\"Lrp 1 10 0.33 10 \\nHNS 11 20 3.3 100 \\nLrp 15 35 0.33 10\\n\");"} "Demo Data"]]]]
               [:div {:class "span6"}
                 [:div {:class "control-group"}
                   [:label "Advanced Options (Defaults are fine in most applications)"]
@@ -90,7 +93,7 @@
               [:li
                 [:a {:href "nonuniform"} "Nonuniform Landscape"]]
              [:li
-                [:a {:href "help"} "Help"]]
+                [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
           [:form {:class "form-horizontal" :method "post" :action "/"}
@@ -158,7 +161,7 @@
               [:li {:class "active"}
                 [:a {:href "nonuniform"} "Nonuniform Landscape"]]
              [:li
-                [:a {:href "help"} "Help"]]
+                [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
           [:form {:class "form-horizontal" :method "post" :action "/pwm_uniform"}
