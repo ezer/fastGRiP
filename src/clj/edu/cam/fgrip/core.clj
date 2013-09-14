@@ -28,7 +28,7 @@
         [:div {:class "container"}
           [:form {:class "form-horizontal" :method "post" :onsubmit "if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
                                                                      if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; };
-                                                                     return true;" :action "/"}
+                                                                     return true; " :action "/"}
             [:div {:class "row"}
               [:div {:class "span6"} 
                 [:div {:class "control-group"}
