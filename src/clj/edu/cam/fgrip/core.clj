@@ -26,9 +26,52 @@
                 [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
-          [:form {:class "form-horizontal" :method "post" :onsubmit "if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
-                                                                     if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; };
-                                                                     return true; " :action "/"}
+          [:form {:class "form-horizontal" :method "post" :onsubmit "inputValue=new String($(tfs).val());
+                                                                     arrVals=(inputValue.trim()).split(/\\s+/);
+                                                                     if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
+                                                                     if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; }; 
+                                                                     if( (($(tfs).val()).trim().split(/\\s+/).length)%5!=0){window.alert(\"TF binding site table does not have valid number of elements.\"); return false;};
+                                                                     if( (arrVals.length/5)>8 ){ window.alert(\"We are currently limiting the number of binding sites to 8.\"); return false;}
+                                                                    
+                                                                     var tfSet={};
+                                                                     
+                                                                     for (var i=0; i<arrVals.length; i++)
+                                                                     {
+                                                                      
+                                                                       
+                                                                      if( (i%5)!=0 && (isNaN(5+arrVals[i])  || parseFloat(arrVals[i]) <0  )){
+                                                                        window.alert(\"Start and end locations, binding affinities, and abundances must be positive numbers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ( ((i+4)%5)==0  ||  ((i+3)%5)==0 )&& ((parseFloat(arrVals[i]))%1)!=0){
+                                                                        window.alert(\"Start and end locations must be Integers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ((i+4)%5)==0 &&  parseFloat(arrVals[i+1]) <= parseFloat(arrVals[i])){
+                                                                         window.alert(\"TF binding site must have a length >0bp:  \"+arrVals[i-1]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( (i%5)==0 ){
+                                                                        var str=arrVals[i]+arrVals[i+1];
+                                                                        
+                                                                        if( (str in tfSet) ){
+                                                                           window.alert(\"Duplicate TF binding sites (with the same TF name and location):  \"+arrVals[i]);
+                                                                           return false;
+                                                                        }
+
+                                                                        tfSet[str] = true;
+                                                                        
+                                                                      }
+                                                                      
+                                                                      
+                                                                     }
+                                                                    
+                                                                     
+                                                                     return true; 
+                                                                      " :action "/"}
             [:div {:class "row"}
               [:div {:class "span6"} 
                 [:div {:class "control-group"}
@@ -81,6 +124,7 @@
 (defpage "/pwm_uniform" []
   (html
     (html5
+      (include-js "/js/jquery.js")
       (include-js "/js/bootstrap.js")
       (include-css "/css/bootstrap.css")
       [:body
@@ -98,15 +142,60 @@
                 [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
-          [:form {:class "form-horizontal" :method "post" :action "/"}
+          [:form {:class "form-horizontal" :method "post" :onsubmit "inputValue=new String($(tfs).val());
+                                                                     arrVals=(inputValue.trim()).split(/\\s+/);
+                                                                     if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
+                                                                     if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; }; 
+                                                                     if( (($(tfs).val()).trim().split(/\\s+/).length)%5!=0){window.alert(\"TF binding site table does not have valid number of elements.\"); return false;};
+                                                                     if( (arrVals.length/5)>8 ){ window.alert(\"We are currently limiting the number of binding sites to 8.\"); return false;}
+                                                                    
+                                                                     var tfSet={};
+                                                                     
+                                                                     for (var i=0; i<arrVals.length; i++)
+                                                                     {
+                                                                      
+                                                                       
+                                                                      if( (i%5)!=0 && (isNaN(5+arrVals[i])  || parseFloat(arrVals[i]) <0  )){
+                                                                        window.alert(\"Start and end locations, binding affinities, and abundances must be positive numbers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ( ((i+4)%5)==0  ||  ((i+3)%5)==0 )&& ((parseFloat(arrVals[i]))%1)!=0){
+                                                                        window.alert(\"Start and end locations must be Integers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ((i+4)%5)==0 &&  parseFloat(arrVals[i+1]) <= parseFloat(arrVals[i])){
+                                                                         window.alert(\"TF binding site must have a length >0bp:  \"+arrVals[i-1]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( (i%5)==0 ){
+                                                                        var str=arrVals[i]+arrVals[i+1];
+                                                                        
+                                                                        if( (str in tfSet) ){
+                                                                           window.alert(\"Duplicate TF binding sites (with the same TF name and location):  \"+arrVals[i]);
+                                                                           return false;
+                                                                        }
+
+                                                                        tfSet[str] = true;
+                                                                        
+                                                                      }
+                                                                      
+                                                                      
+                                                                     }
+                                                                    
+                                                                     
+                                                                     return true; 
+                                                                      " :action "/"}
             [:div {:class "row"}
               [:div {:class "span6"} 
                 [:div {:class "control-group"}
                   [:label "Transcription Factors"]
                   [:div {:class "control-group"}
-                    [:textarea {:rows "10" :name "tfs" :class "span5"  :placeholder "TF_name    start    end    PWM_score    copy_number"}]]
+                    [:textarea {:rows "10" :name "tfs" :id "tfs" :class "span5"  :placeholder "TF_name    start    end    PWM_score    copy_number"}]]
                   [:div {:class "control-group"}
-                      [:input {:type "text" :name "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
+                      [:input {:type "text" :name "time" :id "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
                   [:div {:class "control-group"}
                     [:button {:type "submit" :class "btn"} "Submit"]]]]
               [:div {:class "span6"}
@@ -149,6 +238,7 @@
 (defpage "/nonuniform" []
   (html
     (html5
+      (include-js "/js/jquery.js")
       (include-js "/js/bootstrap.js")
       (include-css "/css/bootstrap.css")
       [:body
@@ -166,89 +256,63 @@
                 [:a {:href "promoter_arhitecture.pdf"} "Help"]]
               ]]]
         [:div {:class "container"}
-          [:form {:class "form-horizontal" :method "post" :action "/pwm_uniform"}
+          [:form {:class "form-horizontal" :method "post" :onsubmit "inputValue=new String($(tfs).val());
+                                                                     arrVals=(inputValue.trim()).split(/\\s+/);
+                                                                     if($(tfs).val()==\"\"){ window.alert(\"User must include binding sites.\"); return false; }; 
+                                                                     if($(time).val().length>4){ window.alert(\"Please run for less time. Limit is currently 9999 seconds.\"); return false; }; 
+                                                                     if( (($(tfs).val()).trim().split(/\\s+/).length)%4!=0){window.alert(\"TF binding site table does not have valid number of elements.\"); return false;};
+                                                                     if( (arrVals.length/4)>8 ){ window.alert(\"We are currently limiting the number of binding sites to 8.\"); return false;}
+                                                                    
+                                                                     var tfSet={};
+                                                                     
+                                                                     for (var i=0; i<arrVals.length; i++)
+                                                                     {
+                                                                      
+                                                                       
+                                                                      if( (i%4)!=0 && (isNaN(5+arrVals[i])  || parseFloat(arrVals[i]) <0  )){
+                                                                        window.alert(\"Start and end locations, binding affinities, and abundances must be positive numbers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ( ((i+3)%4)==0  ||  ((i+2)%4)==0 )&& ((parseFloat(arrVals[i]))%1)!=0){
+                                                                        window.alert(\"Start and end locations must be Integers:  \"+arrVals[i]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( ((i+3)%4)==0 &&  parseFloat(arrVals[i+1]) <= parseFloat(arrVals[i])){
+                                                                         window.alert(\"TF binding site must have a length >0bp:  \"+arrVals[i-1]);
+                                                                        return false;
+                                                                      }
+
+                                                                      if( (i%4)==0 ){
+                                                                        var str=arrVals[i]+arrVals[i+1];
+                                                                        
+                                                                        if( (str in tfSet) ){
+                                                                           window.alert(\"Duplicate TF binding sites (with the same TF name and location):  \"+arrVals[i]);
+                                                                           return false;
+                                                                        }
+
+                                                                        tfSet[str] = true;
+                                                                        
+                                                                      }
+                                                                      
+                                                                      
+                                                                     }
+                                                                    
+                                                                     
+                                                                     return true; 
+                                                                      " :action "/pwm_uniform"}
             [:div {:class "row"}
               [:div {:class "span6"} 
                 [:div {:class "control-group"}
                   [:label "Transcription Factor Info"]
                   [:div {:class "control-group"}
-                    [:textarea {:rows "10" :name "tfs" :class "span5"  :placeholder "TF_name    start    end    copy_number"}]]
+                    [:textarea {:rows "10" :name "tfs" :id "tfs" :class "span5"  :placeholder "TF_name    start    end    copy_number"}]]
                   [:label "DNA in fasta format"]
                   [:div {:class "control-group"}
-                    [:textarea {:rows "10" :name "dna" :class "span5"  :placeholder ">seq1 GAATTC"}]]
+                    [:textarea {:rows "10" :name "dna" :id "dna" :class "span5"  :placeholder ">seq1 GAATTC"}]]
                   [:div {:class "control-group"}
-                      [:input {:type "text" :name "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
-                  [:div {:class "control-group"}
-                    [:button {:type "submit" :class "btn"} "Submit"]]]]
-              [:div {:class "span6"}
-                [:div {:class "control-group"}
-                  [:label "Advanced Options (Defaults are fine in most applications)"]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "k_a"} "propensity of association"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "k_a" :id "k_a" :placeholder "0.8654"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "nonCognateTF"} "noncognate TFs"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "nonCognateTF" :id "nonCognateTF" :placeholder "0"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "TFlength"} "avg length noncognate"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "TFlength" :id "TFlength" :placeholder "46"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "DNAlength"} "bases simulated"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "DNAlength" :id "DNAlength" :placeholder "20000"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "f"} "proportion of time bound"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "f" :id "f" :placeholder "0.9"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "beta"} "beta"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "beta" :id "beta" :placeholder "2"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "s_l"} "sliding length"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "s_l" :id "s_l" :placeholder "90"}]]]
-                  [:div {:class "control-group"}
-                    [:label {:class "control-label" :for "t_r"} "seconds for random walk"]
-                    [:div {:class "controls"}
-                      [:input {:type "text" :name "t_r" :id "t_r" :placeholder "0.005"}]]]]]]]]])))              
-
-
-
-(defpage "/no_sliding" []
-  (html
-    (html5
-      (include-js "/js/bootstrap.js")
-      (include-css "/css/bootstrap.css")
-      [:body
-        [:div {:class "navbar"}
-          [:div {:class "navbar-inner"}
-            [:a {:class "brand" :href "#"} "fastGRiP"]
-            [:ul {:class "nav"} 
-              [:li 
-                [:a {:href "/"} "Uniform Landscape"]]
-              [:li 
-                [:a {:href "pwm_uniform"} "Uniform Landscape, PWM weights"]]
-              [:li
-                [:a {:href "nonuniform"} "Nonuniform Landscape"]]
-               [:li {:class "active"}
-                [:a {:href "no_sliding"} "No sliding effects"]]
-              [:li 
-                [:a {:href "batch"} "Batch Submition"]]
-              ]]]
-        [:div {:class "container"}
-          [:form {:class "form-horizontal" :method "post" :action "/"}
-            [:div {:class "row"}
-              [:div {:class "span6"} 
-                [:div {:class "control-group"}
-                  [:label "Transcription Factors"]
-                  [:div {:class "control-group"}
-                    [:textarea {:rows "10" :name "tfs" :class "span5"  :placeholder "TF_name    start    end    PWM_score    copy_number"}]]
-                  [:div {:class "control-group"}
-                      [:input {:type "text" :name "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
+                      [:input {:type "text" :name "time" :id "time" :placeholder "300" :class "span1"} " seconds of simulation time"]]
                   [:div {:class "control-group"}
                     [:button {:type "submit" :class "btn"} "Submit"]]]]
               [:div {:class "span6"}
@@ -286,6 +350,8 @@
                     [:label {:class "control-label" :for "t_r"} "seconds for random walk"]
                     [:div {:class "controls"}
                       [:input {:type "text" :name "t_r" :id "t_r" :placeholder "0.005"}]]]]]]]]])))              
+
+             
 
 
 
@@ -306,14 +372,40 @@
 (defn results-data [id]
   (get results id))
 
+
+(defpage "/error" []
+  (html
+    (html5
+      (include-js "/js/bootstrap.js")
+      (include-css "/css/bootstrap.css")
+      (include-js "/js/jquery.js")
+      [:body
+        [:div {:class "navbar"}
+          [:div {:class "navbar-inner"}
+            [:a {:class "brand" :href "#"} "fastGRiP"]
+            [:ul {:class "nav"} 
+              [:li {:class "active"}
+                [:a {:href "/"} "Uniform Landscape"]]
+              [:li
+                [:a {:href "pwm_uniform"} "Uniform Landscape, PWM weights"]]
+              [:li
+                [:a {:href "nonuniform"} "Nonuniform Landscape"]]
+             [:li
+                [:a {:href "promoter_arhitecture.pdf"} "Help"]]
+              ]]]
+        [:div {:class "container"} ]])))
+
+
 (defpage [:post "/"] {:keys [tfs time k_a nonCognateTF TFlength DNAlength f s_l e_star]}
     (let [sm     (new MarkovChainGenerator)
           params (.updateParameters (new Parameters "params2") k_a nonCognateTF TFlength DNAlength f s_l e_star)
-          pm     (new SwitchSlideModel params)
+          pm     (try(new SwitchSlideModel params) (catch Exception t nil))
           new-id (Integer/toString (rand-int (* 10000 10000)) 16)
-          data   (.getResults
+          data   (try (.getResults
                         (.buildMarkovChainFromStream sm (new String tfs) 400 pm params )
-                        (new Double (if(.equals "" time) 300.0 time)) 2 "cluster")]
+                        (new Double (if(.equals "" time) 300.0 time)) 2 "cluster")
+                       (catch Exception t nil)
+                       )]
                       ;figure out what to do here
                      
                     ;(.runSimulationUntil 
@@ -329,9 +421,20 @@
              ;         (.runSimulationUntilStateReached
               ;          (.buildMarkovChain sm "Cluster" (int 2) (int 10) pm "params")
                ;           config "cluster"))]
+
+
+     (if (nil? data)
+       
+            (response/redirect "/error")
+        
+          
+
+      )
+
+     
      (save-result-data new-id data)
-     (response/redirect (str "/results/" new-id) data)
-     )
+     (response/redirect (str "/results/" new-id) data))
+     
   
     )
 
