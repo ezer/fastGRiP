@@ -29,7 +29,7 @@ var bb_switch=[0, 1];
 var bb_cluster=[Math.sqrt(3)/2.0, -0.5];
 var bb_barrier=[-Math.sqrt(3)/2.0, -0.5];
 
-var data=$.getJSON("dataexample.json");
+$.getJSON("dataexample.json", function(data){
 /*
 [{ "id":"101", "parent": "1200", "count": 1},
 { "id":"110", "parent": "1200", "count": 1},
@@ -108,7 +108,7 @@ Object.keys(parents).forEach(function(d){
      par=parseInt(d);
      bar=par%10;
      swi=(par%100-bar)/10;
-     clu=(par%1000-bar-swi*10)/100;                                               	 
+     clu=(par%1000-bar-swi*10)/100;                                                  
      cx=center_x+str*bb_barrier[0]*bar+str*bb_cluster[0]*clu;
 
      //cy
@@ -134,35 +134,37 @@ Object.keys(parents).forEach(function(d){
   g.append("text")
       .attr("transform", function(d_1, i) { 
         if(parents[d][i].id=="111"){
-        	return "translate(-1, 2)";
+          return "translate(-1, 2)";
         }
         if(parents[d][i].id=="333"){
-        	return "translate(-1, 2)";
+          return "translate(-1, 2)";
         }
         if(parents[d][i].id=="222"){
-        	return "translate(-1, 2)";
+          return "translate(-1, 2)";
         }
         if(parents[d][i].id=="3112"){
-        	return "translate(-8, 40)";
+          return "translate(-8, 40)";
         }
         if(parents[d][i].id=="2332"){
-        	return "translate(15, -50)";
+          return "translate(15, -50)";
        }
         if(parents[d][i].id=="2121"){
-        	return "translate(20, 40)";
+          return "translate(20, 40)";
         }
-      	return "translate(" + arc.centroid(d_1) + ")"; })
+        return "translate(" + arc.centroid(d_1) + ")"; })
       .attr("font-size", 12)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
             d3.select(this).attr("transform", "translate(20, 40)" )})
       .text(function(d_1, i) { 
         
-      	return ""+parents[d][i].count; });
+        return ""+parents[d][i].count; });
 
    }
 
-  });/*
+  });
+});
+  /*
 n=40;
 n2=-630;
 n3=-(width/2-180);
@@ -216,28 +218,28 @@ svg.selectAll("rect").data(rectLocs).enter().append("rect")
 /*
 svg.selectAll("circle").data(Object.keys(parents)).enter().append("circle")
                                                      .attr("r", function(d){ 
-                                                     	sum=0;
-                                                     	parents[d].forEach( function(i){ sum=sum+i.count; })
-                                                     	return 4*Math.sqrt(sum); 
+                                                      sum=0;
+                                                      parents[d].forEach( function(i){ sum=sum+i.count; })
+                                                      return 4*Math.sqrt(sum); 
                                                      })
                                                      .attr("cx", function(d){ 
-                                                     	  par=parseInt(d);
-                                                     	  bar=par%10;
-                                                     	  swi=(par%100-bar)/10;
-                                                     	  clu=(par%1000-bar-swi*10)/100;
-                                                     	 
-                                                     	  return center_x+str*bb_barrier[0]*bar+str*bb_cluster[0]*clu;
+                                                        par=parseInt(d);
+                                                        bar=par%10;
+                                                        swi=(par%100-bar)/10;
+                                                        clu=(par%1000-bar-swi*10)/100;
+                                                       
+                                                        return center_x+str*bb_barrier[0]*bar+str*bb_cluster[0]*clu;
               
                                                           })
                                                      .attr("cy", function(d){
-                                                     	  par=parseInt(d);
-                                                     	  bar=par%10;
-                                                     	  swi=(par%100-bar)/10;
-                                                     	  clu=(par%1000-bar-swi*10)/100;
-                                                     	  return center_x+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
+                                                        par=parseInt(d);
+                                                        bar=par%10;
+                                                        swi=(par%100-bar)/10;
+                                                        clu=(par%1000-bar-swi*10)/100;
+                                                        return center_x+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
               
                                                      }
-                                                     	)
+                                                      )
                                                      .attr("fill", "grey");
 */
 
