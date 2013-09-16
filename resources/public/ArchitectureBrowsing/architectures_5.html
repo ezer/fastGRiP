@@ -207,11 +207,57 @@ Object.keys(parents).forEach(function(d){
       .data(pie(parents[d]))
       .enter().append("g")
       .attr("class", "arc")
-      .attr("transform", "translate(" + cx + "," + cy + ")");
+      .attr("transform", "translate(" + cx + "," + cy + ")").on("click", function(d_1,i) {
+           // window.alert("click found");
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+               // window.alert("promoters found");
+                promoters=promoter_data[parents[d][i].id];
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+                d3.select("#labels").selectAll("div").remove();
+                geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
+                .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
+
+                
+
+              promoters.forEach(function(p){
+               // window.alert(p);
+                
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
+                
+              }); 
+
+
+   
+            });
+      });
 
   g.append("path")
       .attr("d", arc)
-      .style("fill", function(d_1, i) { return color(i); });
+      .style("fill", function(d_1, i) { return color(i); }).on("click", function(d_1,i) {
+           // window.alert("click found");
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+               // window.alert("promoters found");
+                promoters=promoter_data[parents[d][i].id];
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+                d3.select("#labels").selectAll("div").remove();
+                geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
+                .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
+
+                
+
+              promoters.forEach(function(p){
+               // window.alert(p);
+                
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
+                
+              }); 
+
+
+   
+            });
+      });
 
   g.append("text")
       .attr("transform", function(d_1, i) { 
@@ -228,7 +274,29 @@ Object.keys(parents).forEach(function(d){
       .attr("font-size", 12)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
-            d3.select(this).attr("transform", "translate(20, 40)" )})
+           // window.alert("click found");
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+               // window.alert("promoters found");
+                promoters=promoter_data[parents[d][i].id];
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+                d3.select("#labels").selectAll("div").remove();
+                geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
+                .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
+
+                
+
+              promoters.forEach(function(p){
+               // window.alert(p);
+                
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
+                
+              }); 
+
+
+   
+            });
+      })
       .text(function(d_1, i) { 
         
         return ""+parents[d][i].count; });
