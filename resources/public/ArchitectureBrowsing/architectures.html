@@ -55,7 +55,7 @@
 <script>
 
 
-function drawGenes(divName, config, leftBuffer, index){
+function drawGenes(divName, config, leftBuffer, promoter, position){
           // window.alert("drawing: "+divName+" with "+config.length);
            var w=300;
            var h=70;
@@ -102,7 +102,7 @@ function drawGenes(divName, config, leftBuffer, index){
                 return h/levels;
               })
               .attr("fill", function(d, i){
-                return "black";
+                return "darkblue";
               });
 
               var bins=[0, 0];
@@ -131,7 +131,7 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("font-size", 9);
 
 
-              svg.append("text").attr("x", 2).attr("y", 10).text(divName).attr("fill", "black").attr("font-size", 12);
+              svg.append("text").attr("x", 2).attr("y", 10).text(promoter+" at position "+position).attr("fill", "black").attr("font-size", 12);
 
 
              }
@@ -248,7 +248,7 @@ Object.keys(parents).forEach(function(d){
               promoters.forEach(function(p){
                // window.alert(p);
                 
-                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20);
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
                 
               }); 
 
