@@ -247,9 +247,9 @@ Object.keys(parents).forEach(function(d){
              */
 
               promoters.forEach(function(p){
-                window.alert(p);
-                if(!isNaN(p.config)){
-                drawGenes(p.promoter, p.config, 20);
+               // window.alert(p);
+                if(!isNaN(p["config"])){
+                drawGenes(p.promoter, p["config"], 20);
                  }else{
                   window.alert(p.promoter+" has no configs?  ");
                  }
