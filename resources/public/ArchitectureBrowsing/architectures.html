@@ -171,6 +171,10 @@ data.forEach( function(d) {
 });
 
 
+
+
+
+
 cols=["#fff999", "#ff9999", "#ff99ff", "#99ccff", "#66cc99", "#ccff66"];
 
 
@@ -221,11 +225,59 @@ Object.keys(parents).forEach(function(d){
       .data(pie(parents[d]))
       .enter().append("g")
       .attr("class", "arc")
-      .attr("transform", "translate(" + cx + "," + cy + ")");
+      .attr("transform", "translate(" + cx + "," + cy + ")") 
+      .on("click", function(d_1,i) {
+           // window.alert("click found");
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+               // window.alert("promoters found");
+                promoters=promoter_data[parents[d][i].id];
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+                d3.select("#labels").selectAll("div").remove();
+                geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
+                .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
+
+                
+
+              promoters.forEach(function(p){
+               // window.alert(p);
+                
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
+                
+              }); 
+
+
+   
+            })
+      });
 
   g.append("path")
       .attr("d", arc)
-      .style("fill", function(d_1, i) { return color(i); });
+      .style("fill", function(d_1, i) { return color(i); })
+      .on("click", function(d_1,i) {
+           // window.alert("click found");
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+               // window.alert("promoters found");
+                promoters=promoter_data[parents[d][i].id];
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+                d3.select("#labels").selectAll("div").remove();
+                geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
+                .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
+
+                
+
+              promoters.forEach(function(p){
+               // window.alert(p);
+                
+                drawGenes(p.promoter+"_at_"+p.config[0].start, p.config, 20, p.promoter, p.config[0].start);
+                
+              }); 
+
+
+   
+            })
+      });
      
   g.append("text")
       .attr("transform", function(d_1, i) { 
@@ -265,5 +317,16 @@ Object.keys(parents).forEach(function(d){
   });
 });  
 
+str2=str+20;
+var sw_x=bb_switch[0]*str2;
+var sw_y=bb_switch[1]*str2;
+var ba_x=bb_barrier[0]*str2;
+var ba_y=bb_barrier[1]*str2;
+var cl_x=bb_cluster[0]*str2;
+var cl_y=bb_cluster[1]*str2;
+
+svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+" "+cl_y+" L "+sw_x+" "+sw_y+" ")
+                  .attr("stroke", "grey")
+                  .attr("stroke-width", "2");
 
 </script>
