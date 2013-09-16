@@ -44,8 +44,89 @@
 
 <script>
 
-var width = 800,
-    height = 800;
+function drawGenes(divName, config, leftBuffer, promoter, position){
+          // window.alert("drawing: "+divName+" with "+config.length);
+           var w=300;
+           var h=70;
+           var topBuffer=10;
+           var bins=[0, 0];
+           var levels=6;
+           //d3.select(divName).selectAll("svg").remove();
+
+           var svg = d3.select("#"+divName).append("svg")
+              .attr("width", w+leftBuffer)
+              .attr("height", h);
+
+           var arr=new Array;
+           arr[0]=1;
+               
+            var xScale = d3.scale.linear()
+                     .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
+                     .range([0, w]);
+            var rects = svg.selectAll("rect")
+              .data(config)
+              .enter()
+              .append("rect")
+              .attr("x", function(d, i){
+                return leftBuffer+xScale(d.start);
+              })
+              .attr("y", function(d, i){
+                if(i==0){
+                  bins[0]=d.end;
+                  return 5+topBuffer;
+                }
+                for(var j = 0; j<bins.length; j++){
+                  if(bins[j]<d.start){
+                    bins[j]=d.end;
+                    return (h/levels*j)+(5*(1+j))+topBuffer;
+                  }
+                }
+                bins[bins.length]=d.end;
+                return (h/levels*(bins.length-1))+(5*(bins.length))+topBuffer;
+              })
+              .attr("width", function(d, i){
+                return xScale(d.end)-xScale(d.start);
+              })
+              .attr("height", function(d, i){
+                return h/levels;
+              })
+              .attr("fill", function(d, i){
+                return "darkblue";
+              });
+
+              var bins=[0, 0];
+              svg.selectAll("text").data(config)
+                                   .enter()
+                                   .append("svg:text")
+                                   .attr("x", function(d, i){
+                return xScale(d.start)+5+leftBuffer;
+              })
+              .attr("y", function(d, i){
+                if(i==0){
+                  bins[0]=d.end;
+                  return 3+h/levels+topBuffer;
+                }
+                for(var j = 0; j<bins.length; j++){
+                  if(bins[j]<d.start){
+                    bins[j]=d.end;
+                    return (h/levels*j)+(5*(1+j))+h/levels-2+topBuffer;
+                  }
+                }
+                bins[bins.length]=d.end;
+                return (h/levels*(bins.length-1))+(5*(bins.length))+h/levels-2+topBuffer;
+              })
+              .text(function(datum) {return datum.name;})
+              .attr("fill", "white")
+              .attr("font-size", 9);
+
+
+              svg.append("text").attr("x", 2).attr("y", 10).text(promoter+" at position "+position).attr("fill", "black").attr("font-size", 12);
+
+
+             }
+
+var width = 600,
+    height = 600;
 
 var center_x=width/2.0;
 var canter_y=height/2.0;
@@ -62,7 +143,7 @@ var svg = d3.select("body").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var str=90;
+var str=60;
 
 
 

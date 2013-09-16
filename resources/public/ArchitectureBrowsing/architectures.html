@@ -280,7 +280,7 @@ Object.keys(parents).forEach(function(d){
       });
    width = 600,
 height = 600;
-str2=90+20;
+str2=2.5*(90+20);
 bb_switch=[0, 1];
 bb_cluster=[Math.sqrt(3)/2.0, -0.5];
 bb_barrier=[-Math.sqrt(3)/2.0, -0.5];
@@ -295,7 +295,8 @@ var cl_y=center_y+bb_cluster[1]*str2;
 
 svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+" "+cl_y+" L "+sw_x+" "+sw_y+" ")
                   .attr("stroke", "grey")
-                  .attr("stroke-width", "2");  
+                  .attr("stroke-width", "2")
+                  .attr("fill", "none");  
   g.append("text")
       .attr("transform", function(d_1, i) { 
         return "translate(0, 0)"; })
