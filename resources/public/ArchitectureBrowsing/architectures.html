@@ -228,6 +228,7 @@ Object.keys(parents).forEach(function(d){
             $.getJSON("ecoli_promoters_3", function(promoter_data){
                 window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
+                window.alert("id is"+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter; })
                 .attr("id", function(d){ return d.promoter; });
