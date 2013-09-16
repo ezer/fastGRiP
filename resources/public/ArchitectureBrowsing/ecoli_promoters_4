@@ -1,0 +1,3472 @@
+{
+"101" :
+[{ "promoter" : "ompCp2"
+"config" : [{"start" : "2310781", "end" : "2310795", "name" : "Lrp"},
+{"start" : "2310783", "end" : "2310794", "name" : "Lrp"},
+{"start" : "2310844", "end" : "2310858", "name" : "Lrp"},
+{"start" : "2310874", "end" : "2310888", "name" : "Lrp"}]}
+],
+"201" :
+[{ "promoter" : "sufAp"
+"config" : [{"start" : "1762575", "end" : "1762600", "name" : "IscR"},
+{"start" : "1762581", "end" : "1762593", "name" : "IHF"},
+{"start" : "1762644", "end" : "1762660", "name" : "OxyR"},
+{"start" : "1762666", "end" : "1762682", "name" : "OxyR"}]}
+],
+"311" :
+[{ "promoter" : "narXp"
+"config" : [{"start" : "1276887", "end" : "1276900", "name" : "FNR"},
+{"start" : "1276938", "end" : "1276944", "name" : "NarL"},
+{"start" : "1276958", "end" : "1276964", "name" : "NarL"},
+{"start" : "1276975", "end" : "1276981", "name" : "NarL"}]},
+{ "promoter" : "aldBp"
+"config" : [{"start" : "3754608", "end" : "3754629", "name" : "CRP"},
+{"start" : "3754664", "end" : "3754678", "name" : "Fis"},
+{"start" : "3754686", "end" : "3754700", "name" : "Fis"},
+{"start" : "3754709", "end" : "3754723", "name" : "Fis"}]},
+{ "promoter" : "glnAp1"
+"config" : [{"start" : "4056211", "end" : "4056227", "name" : "NtrC"},
+{"start" : "4056230", "end" : "4056246", "name" : "NtrC"},
+{"start" : "4056262", "end" : "4056278", "name" : "NtrC"},
+{"start" : "4056306", "end" : "4056327", "name" : "CRP"}]},
+{ "promoter" : "purHp"
+"config" : [{"start" : "4205663", "end" : "4205678", "name" : "PurR"},
+{"start" : "4205709", "end" : "4205723", "name" : "Fis"},
+{"start" : "4205736", "end" : "4205750", "name" : "Fis"},
+{"start" : "4205762", "end" : "4205776", "name" : "Fis"}]},
+{ "promoter" : "dcuBp"
+"config" : [{"start" : "4346761", "end" : "4346767", "name" : "NarL"},
+{"start" : "4346766", "end" : "4346772", "name" : "NarL"},
+{"start" : "4346783", "end" : "4346789", "name" : "NarL"},
+{"start" : "4346826", "end" : "4346839", "name" : "FNR"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347722", "end" : "347727", "name" : "AscG"},
+{"start" : "347729", "end" : "347734", "name" : "AscG"},
+{"start" : "347739", "end" : "347744", "name" : "AscG"},
+{"start" : "347745", "end" : "347768", "name" : "PrpR"}]},
+{ "promoter" : "entCp"
+"config" : [{"start" : "624014", "end" : "624035", "name" : "CRP"},
+{"start" : "624057", "end" : "624075", "name" : "Fur"},
+{"start" : "624060", "end" : "624078", "name" : "Fur"},
+{"start" : "624063", "end" : "624081", "name" : "Fur"}]},
+{ "promoter" : "glnHp2"
+"config" : [{"start" : "847371", "end" : "847387", "name" : "NtrC"},
+{"start" : "847384", "end" : "847400", "name" : "NtrC"},
+{"start" : "847397", "end" : "847413", "name" : "NtrC"},
+{"start" : "847416", "end" : "847428", "name" : "IHF"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229608", "end" : "1229619", "name" : "SlyA"},
+{"start" : "1229623", "end" : "1229634", "name" : "SlyA"},
+{"start" : "1229632", "end" : "1229643", "name" : "SlyA"},
+{"start" : "1229664", "end" : "1229678", "name" : "Fis"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1276975", "end" : "1276981", "name" : "NarL"},
+{"start" : "1276992", "end" : "1276998", "name" : "NarL"},
+{"start" : "1276998", "end" : "1277004", "name" : "NarL"},
+{"start" : "1277019", "end" : "1277031", "name" : "IHF"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277019", "end" : "1277031", "name" : "IHF"},
+{"start" : "1277049", "end" : "1277055", "name" : "NarL"},
+{"start" : "1277054", "end" : "1277060", "name" : "NarL"},
+{"start" : "1277062", "end" : "1277068", "name" : "NarL"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310844", "end" : "2310858", "name" : "Lrp"},
+{"start" : "2310874", "end" : "2310888", "name" : "Lrp"},
+{"start" : "2310875", "end" : "2310889", "name" : "Lrp"},
+{"start" : "2310890", "end" : "2310909", "name" : "OmpR"}]},
+{ "promoter" : "ompCp3"
+"config" : [{"start" : "2310875", "end" : "2310889", "name" : "Lrp"},
+{"start" : "2310890", "end" : "2310909", "name" : "OmpR"},
+{"start" : "2310910", "end" : "2310929", "name" : "OmpR"},
+{"start" : "2310931", "end" : "2310950", "name" : "OmpR"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2311196", "end" : "2311210", "name" : "CpxR"},
+{"start" : "2311221", "end" : "2311235", "name" : "Lrp"},
+{"start" : "2311221", "end" : "2311232", "name" : "Lrp"},
+{"start" : "2311221", "end" : "2311235", "name" : "Lrp"}]},
+{ "promoter" : "nuoAp2"
+"config" : [{"start" : "2403218", "end" : "2403231", "name" : "FNR"},
+{"start" : "2403244", "end" : "2403256", "name" : "IHF"},
+{"start" : "2403252", "end" : "2403264", "name" : "IHF"},
+{"start" : "2403261", "end" : "2403273", "name" : "IHF"}]},
+{ "promoter" : "nuoAp2"
+"config" : [{"start" : "2403244", "end" : "2403256", "name" : "IHF"},
+{"start" : "2403252", "end" : "2403264", "name" : "IHF"},
+{"start" : "2403261", "end" : "2403273", "name" : "IHF"},
+{"start" : "2403285", "end" : "2403299", "name" : "ArcA"}]},
+{ "promoter" : "yqjHp"
+"config" : [{"start" : "3214534", "end" : "3214553", "name" : "YqjI"},
+{"start" : "3214560", "end" : "3214578", "name" : "Fur"},
+{"start" : "3214566", "end" : "3214584", "name" : "Fur"},
+{"start" : "3214570", "end" : "3214588", "name" : "Fur"}]},
+{ "promoter" : "nanAp"
+"config" : [{"start" : "3371615", "end" : "3371633", "name" : "Fis"},
+{"start" : "3371634", "end" : "3371639", "name" : "NanR"},
+{"start" : "3371642", "end" : "3371647", "name" : "NanR"},
+{"start" : "3371651", "end" : "3371656", "name" : "NanR"}]},
+{ "promoter" : "rhaBp"
+"config" : [{"start" : "4095560", "end" : "4095576", "name" : "RhaS"},
+{"start" : "4095577", "end" : "4095598", "name" : "CRP"},
+{"start" : "4095607", "end" : "4095628", "name" : "CRP"},
+{"start" : "4095612", "end" : "4095633", "name" : "CRP"}]},
+{ "promoter" : "metJp2"
+"config" : [{"start" : "4126544", "end" : "4126562", "name" : "Fur"},
+{"start" : "4126599", "end" : "4126606", "name" : "MetJ"},
+{"start" : "4126607", "end" : "4126614", "name" : "MetJ"},
+{"start" : "4126609", "end" : "4126616", "name" : "MetJ"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213260", "end" : "4213272", "name" : "IHF"},
+{"start" : "4213281", "end" : "4213287", "name" : "IclR"},
+{"start" : "4213291", "end" : "4213297", "name" : "IclR"},
+{"start" : "4213300", "end" : "4213306", "name" : "IclR"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244648", "end" : "4244669", "name" : "CRP"},
+{"start" : "4244680", "end" : "4244689", "name" : "MalT"},
+{"start" : "4244690", "end" : "4244699", "name" : "MalT"},
+{"start" : "4244714", "end" : "4244723", "name" : "MalT"}]},
+{ "promoter" : "frdAp"
+"config" : [{"start" : "4380436", "end" : "4380442", "name" : "NarL"},
+{"start" : "4380444", "end" : "4380450", "name" : "NarL"},
+{"start" : "4380458", "end" : "4380464", "name" : "NarL"},
+{"start" : "4380474", "end" : "4380487", "name" : "FNR"}]},
+{ "promoter" : "fhuFp"
+"config" : [{"start" : "4603730", "end" : "4603746", "name" : "OxyR"},
+{"start" : "4603764", "end" : "4603782", "name" : "Fur"},
+{"start" : "4603770", "end" : "4603788", "name" : "Fur"},
+{"start" : "4603787", "end" : "4603805", "name" : "Fur"}]},
+{ "promoter" : "deoCp2"
+"config" : [{"start" : "4615203", "end" : "4615223", "name" : "CytR"},
+{"start" : "4615223", "end" : "4615238", "name" : "CytR"},
+{"start" : "4615231", "end" : "4615249", "name" : "CytR"},
+{"start" : "4615250", "end" : "4615271", "name" : "CRP"}]},
+{ "promoter" : "gltBp"
+"config" : [{"start" : "3352309", "end" : "3352323", "name" : "Lrp"},
+{"start" : "3352372", "end" : "3352386", "name" : "Lrp"},
+{"start" : "3352416", "end" : "3352430", "name" : "Lrp"},
+{"start" : "3352436", "end" : "3352448", "name" : "IHF"}]},
+{ "promoter" : "ssbp3"
+"config" : [{"start" : "4271978", "end" : "4271997", "name" : "LexA"},
+{"start" : "4272017", "end" : "4272031", "name" : "ArcA"},
+{"start" : "4272057", "end" : "4272071", "name" : "ArcA"},
+{"start" : "4272100", "end" : "4272114", "name" : "ArcA"}]},
+{ "promoter" : "aroLp"
+"config" : [{"start" : "405450", "end" : "405467", "name" : "TyrR"},
+{"start" : "405506", "end" : "405523", "name" : "TyrR"},
+{"start" : "405525", "end" : "405542", "name" : "TyrR"},
+{"start" : "405543", "end" : "405560", "name" : "TrpR"}]},
+{ "promoter" : "araFp"
+"config" : [{"start" : "1984293", "end" : "1984314", "name" : "CRP"},
+{"start" : "1984324", "end" : "1984340", "name" : "AraC"},
+{"start" : "1984345", "end" : "1984361", "name" : "AraC"},
+{"start" : "1984399", "end" : "1984415", "name" : "AraC"}]},
+{ "promoter" : "ilvLp2"
+"config" : [{"start" : "3948444", "end" : "3948456", "name" : "IHF"},
+{"start" : "3948474", "end" : "3948485", "name" : "Lrp"},
+{"start" : "3948505", "end" : "3948519", "name" : "Lrp"},
+{"start" : "3948537", "end" : "3948551", "name" : "Lrp"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131373", "end" : "131387", "name" : "ArcA"},
+{"start" : "131393", "end" : "131407", "name" : "ArcA"},
+{"start" : "131399", "end" : "131413", "name" : "ArcA"},
+{"start" : "131438", "end" : "131452", "name" : "Fis"}]},
+{ "promoter" : "entCp"
+"config" : [{"start" : "623945", "end" : "623963", "name" : "Fur"},
+{"start" : "623948", "end" : "623966", "name" : "Fur"},
+{"start" : "623954", "end" : "623972", "name" : "Fur"},
+{"start" : "624014", "end" : "624035", "name" : "CRP"}]},
+{ "promoter" : "glnHp2"
+"config" : [{"start" : "847311", "end" : "847323", "name" : "IHF"},
+{"start" : "847341", "end" : "847357", "name" : "NtrC"},
+{"start" : "847371", "end" : "847387", "name" : "NtrC"},
+{"start" : "847384", "end" : "847400", "name" : "NtrC"}]},
+{ "promoter" : "csgBp"
+"config" : [{"start" : "1103018", "end" : "1103031", "name" : "CsgD"},
+{"start" : "1103039", "end" : "1103049", "name" : "CsgD"},
+{"start" : "1103048", "end" : "1103061", "name" : "CsgD"},
+{"start" : "1103082", "end" : "1103096", "name" : "CpxR"}]},
+{ "promoter" : "hipBp"
+"config" : [{"start" : "1590515", "end" : "1590534", "name" : "HipB"},
+{"start" : "1590554", "end" : "1590573", "name" : "HipB"},
+{"start" : "1590582", "end" : "1590601", "name" : "HipB"},
+{"start" : "1590617", "end" : "1590629", "name" : "IHF"}]},
+{ "promoter" : "gyrAp"
+"config" : [{"start" : "2337514", "end" : "2337528", "name" : "Fis"},
+{"start" : "2337536", "end" : "2337542", "name" : "CspA"},
+{"start" : "2337564", "end" : "2337570", "name" : "CspA"},
+{"start" : "2337584", "end" : "2337590", "name" : "CspA"}]},
+{ "promoter" : "acrDp2"
+"config" : [{"start" : "2585436", "end" : "2585453", "name" : "CpxR"},
+{"start" : "2585468", "end" : "2585480", "name" : "CpxR"},
+{"start" : "2585498", "end" : "2585514", "name" : "CpxR"},
+{"start" : "2585526", "end" : "2585545", "name" : "BaeR"}]},
+{ "promoter" : "malPp"
+"config" : [{"start" : "3550588", "end" : "3550597", "name" : "MalT"},
+{"start" : "3550601", "end" : "3550610", "name" : "MalT"},
+{"start" : "3550623", "end" : "3550632", "name" : "MalT"},
+{"start" : "3550653", "end" : "3550666", "name" : "FNR"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213291", "end" : "4213297", "name" : "IclR"},
+{"start" : "4213300", "end" : "4213306", "name" : "IclR"},
+{"start" : "4213318", "end" : "4213324", "name" : "IclR"},
+{"start" : "4213347", "end" : "4213359", "name" : "IHF"}]},
+{ "promoter" : "nanCp"
+"config" : [{"start" : "4537943", "end" : "4537948", "name" : "NanR"},
+{"start" : "4537951", "end" : "4537956", "name" : "NanR"},
+{"start" : "4537960", "end" : "4537965", "name" : "NanR"},
+{"start" : "4538002", "end" : "4538023", "name" : "CRP"}]}
+],
+"232" :
+[{ "promoter" : "acrAp"
+"config" : [{"start" : "484933", "end" : "484956", "name" : "AcrR"},
+{"start" : "484933", "end" : "484956", "name" : "EnvR"},
+{"start" : "484984", "end" : "485004", "name" : "MarA"},
+{"start" : "484986", "end" : "485003", "name" : "SoxS"}]},
+{ "promoter" : "dpiBp"
+"config" : [{"start" : "651241", "end" : "651262", "name" : "CRP"},
+{"start" : "651245", "end" : "651258", "name" : "FNR"},
+{"start" : "651272", "end" : "651294", "name" : "DpiA"},
+{"start" : "651289", "end" : "651305", "name" : "DcuR"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "940044", "end" : "940062", "name" : "Fis"},
+{"start" : "940057", "end" : "940063", "name" : "NarL"},
+{"start" : "940073", "end" : "940085", "name" : "IHF"},
+{"start" : "940083", "end" : "940109", "name" : "ModE"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986399", "end" : "986415", "name" : "RstA"},
+{"start" : "986401", "end" : "986415", "name" : "CpxR"},
+{"start" : "986417", "end" : "986429", "name" : "IHF"},
+{"start" : "986426", "end" : "986447", "name" : "CRP"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156934", "end" : "1156948", "name" : "ArcA"},
+{"start" : "1156938", "end" : "1156959", "name" : "CRP"},
+{"start" : "1156963", "end" : "1156977", "name" : "Fis"},
+{"start" : "1156972", "end" : "1156994", "name" : "DgsA"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570149", "end" : "1570168", "name" : "GadE"},
+{"start" : "1570155", "end" : "1570168", "name" : "RcsB"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadW"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadX"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350554", "end" : "2350575", "name" : "CRP"},
+{"start" : "2350558", "end" : "2350571", "name" : "FNR"},
+{"start" : "2350577", "end" : "2350596", "name" : "GlpR"},
+{"start" : "2350579", "end" : "2350593", "name" : "Fis"}]},
+{ "promoter" : "ptsHp4"
+"config" : [{"start" : "2531524", "end" : "2531546", "name" : "DgsA"},
+{"start" : "2531524", "end" : "2531546", "name" : "NagC"},
+{"start" : "2531566", "end" : "2531583", "name" : "Cra"},
+{"start" : "2531577", "end" : "2531598", "name" : "CRP"}]},
+{ "promoter" : "glcDp"
+"config" : [{"start" : "3126146", "end" : "3126162", "name" : "PdhR"},
+{"start" : "3126155", "end" : "3126169", "name" : "Fis"},
+{"start" : "3126195", "end" : "3126209", "name" : "ArcA"},
+{"start" : "3126199", "end" : "3126220", "name" : "CRP"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491905", "end" : "3491919", "name" : "Fis"},
+{"start" : "3491915", "end" : "3491927", "name" : "IHF"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarL"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarP"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491941", "end" : "3491947", "name" : "NarL"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarP"},
+{"start" : "3491957", "end" : "3491978", "name" : "CRP"},
+{"start" : "3491961", "end" : "3491974", "name" : "FNR"}]},
+{ "promoter" : "caiTp"
+"config" : [{"start" : "42068", "end" : "42089", "name" : "CRP"},
+{"start" : "42072", "end" : "42085", "name" : "FNR"},
+{"start" : "42121", "end" : "42135", "name" : "ArcA"},
+{"start" : "42121", "end" : "42134", "name" : "FNR"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156897", "end" : "1156911", "name" : "ArcA"},
+{"start" : "1156902", "end" : "1156916", "name" : "Fis"},
+{"start" : "1156934", "end" : "1156948", "name" : "ArcA"},
+{"start" : "1156938", "end" : "1156959", "name" : "CRP"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165234", "end" : "1165246", "name" : "IHF"},
+{"start" : "1165243", "end" : "1165257", "name" : "ArcA"},
+{"start" : "1165258", "end" : "1165272", "name" : "Fis"},
+{"start" : "1165259", "end" : "1165273", "name" : "ArcA"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310931", "end" : "2310950", "name" : "OmpR"},
+{"start" : "2310942", "end" : "2310952", "name" : "CpxR"},
+{"start" : "2310978", "end" : "2310995", "name" : "SoxS"},
+{"start" : "2310979", "end" : "2310993", "name" : "CpxR"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342604", "end" : "2342623", "name" : "ArgP"},
+{"start" : "2342614", "end" : "2342628", "name" : "Fis"},
+{"start" : "2342630", "end" : "2342651", "name" : "CRP"},
+{"start" : "2342642", "end" : "2342656", "name" : "Fis"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714575", "end" : "2714596", "name" : "CRP"},
+{"start" : "2714579", "end" : "2714592", "name" : "FNR"},
+{"start" : "2714620", "end" : "2714634", "name" : "ArcA"},
+{"start" : "2714632", "end" : "2714645", "name" : "FNR"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665642", "end" : "3665655", "name" : "RcsB"},
+{"start" : "3665652", "end" : "3665671", "name" : "GadX"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadW"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadX"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285641", "end" : "4285647", "name" : "NarL"},
+{"start" : "4285646", "end" : "4285659", "name" : "FNR"},
+{"start" : "4285669", "end" : "4285675", "name" : "NarL"},
+{"start" : "4285672", "end" : "4285686", "name" : "Fis"}]},
+{ "promoter" : "micFp"
+"config" : [{"start" : "2311056", "end" : "2311075", "name" : "Rob"},
+{"start" : "2311059", "end" : "2311076", "name" : "SoxS"},
+{"start" : "2311125", "end" : "2311139", "name" : "Lrp"},
+{"start" : "2311134", "end" : "2311157", "name" : "AcrR"}]},
+{ "promoter" : "fixAp"
+"config" : [{"start" : "42121", "end" : "42134", "name" : "FNR"},
+{"start" : "42131", "end" : "42145", "name" : "ArcA"},
+{"start" : "42181", "end" : "42196", "name" : "CaiF"},
+{"start" : "42188", "end" : "42209", "name" : "CRP"}]},
+{ "promoter" : "dcuBp"
+"config" : [{"start" : "4346826", "end" : "4346839", "name" : "FNR"},
+{"start" : "4346829", "end" : "4346835", "name" : "NarL"},
+{"start" : "4346883", "end" : "4346904", "name" : "CRP"},
+{"start" : "4346893", "end" : "4346899", "name" : "NarL"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229674", "end" : "1229688", "name" : "Fis"},
+{"start" : "1229688", "end" : "1229702", "name" : "H-NS"},
+{"start" : "1229728", "end" : "1229739", "name" : "SlyA"},
+{"start" : "1229738", "end" : "1229752", "name" : "H-NS"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350577", "end" : "2350596", "name" : "GlpR"},
+{"start" : "2350579", "end" : "2350593", "name" : "Fis"},
+{"start" : "2350594", "end" : "2350615", "name" : "CRP"},
+{"start" : "2350596", "end" : "2350615", "name" : "GlpR"}]},
+{ "promoter" : "fdnGp"
+"config" : [{"start" : "1545284", "end" : "1545290", "name" : "NarL"},
+{"start" : "1545284", "end" : "1545290", "name" : "NarP"},
+{"start" : "1545292", "end" : "1545305", "name" : "FNR"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarL"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570116", "end" : "1570130", "name" : "Fis"},
+{"start" : "1570126", "end" : "1570145", "name" : "GadX"},
+{"start" : "1570148", "end" : "1570169", "name" : "CRP"},
+{"start" : "1570148", "end" : "1570162", "name" : "Fis"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350596", "end" : "2350615", "name" : "GlpR"},
+{"start" : "2350598", "end" : "2350611", "name" : "FNR"},
+{"start" : "2350632", "end" : "2350646", "name" : "Fis"},
+{"start" : "2350636", "end" : "2350655", "name" : "GlpR"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285612", "end" : "4285618", "name" : "NarL"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarP"},
+{"start" : "4285620", "end" : "4285642", "name" : "NsrR"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarL"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285621", "end" : "4285627", "name" : "NarL"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarP"},
+{"start" : "4285633", "end" : "4285645", "name" : "IHF"},
+{"start" : "4285641", "end" : "4285647", "name" : "NarL"}]},
+{ "promoter" : "hcpp"
+"config" : [{"start" : "913165", "end" : "913171", "name" : "NarL"},
+{"start" : "913165", "end" : "913171", "name" : "NarP"},
+{"start" : "913174", "end" : "913180", "name" : "NarL"},
+{"start" : "913174", "end" : "913180", "name" : "NarP"}]},
+{ "promoter" : "hyaAp"
+"config" : [{"start" : "1031194", "end" : "1031200", "name" : "NarL"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarP"},
+{"start" : "1031210", "end" : "1031216", "name" : "NarL"},
+{"start" : "1031210", "end" : "1031216", "name" : "NarP"}]},
+{ "promoter" : "yciGp"
+"config" : [{"start" : "1314173", "end" : "1314194", "name" : "McbR"},
+{"start" : "1314177", "end" : "1314186", "name" : "H-NS"},
+{"start" : "1314194", "end" : "1314215", "name" : "McbR"},
+{"start" : "1314200", "end" : "1314209", "name" : "H-NS"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570297", "end" : "1570316", "name" : "GadW"},
+{"start" : "1570297", "end" : "1570316", "name" : "GadX"},
+{"start" : "1570318", "end" : "1570337", "name" : "GadW"},
+{"start" : "1570318", "end" : "1570337", "name" : "GadX"}]},
+{ "promoter" : "ydhYp"
+"config" : [{"start" : "1752649", "end" : "1752655", "name" : "NarL"},
+{"start" : "1752649", "end" : "1752655", "name" : "NarP"},
+{"start" : "1752658", "end" : "1752664", "name" : "NarL"},
+{"start" : "1752658", "end" : "1752664", "name" : "NarP"}]},
+{ "promoter" : "yeaRp"
+"config" : [{"start" : "1878054", "end" : "1878060", "name" : "NarL"},
+{"start" : "1878054", "end" : "1878060", "name" : "NarP"},
+{"start" : "1878063", "end" : "1878069", "name" : "NarL"},
+{"start" : "1878063", "end" : "1878069", "name" : "NarP"}]},
+{ "promoter" : "napFp1"
+"config" : [{"start" : "2301633", "end" : "2301639", "name" : "NarL"},
+{"start" : "2301633", "end" : "2301639", "name" : "NarP"},
+{"start" : "2301642", "end" : "2301648", "name" : "NarL"},
+{"start" : "2301642", "end" : "2301648", "name" : "NarP"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342433", "end" : "2342452", "name" : "ArgP"},
+{"start" : "2342447", "end" : "2342461", "name" : "Fis"},
+{"start" : "2342486", "end" : "2342505", "name" : "ArgP"},
+{"start" : "2342501", "end" : "2342515", "name" : "Fis"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830380", "end" : "2830386", "name" : "NarL"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarP"},
+{"start" : "2830389", "end" : "2830395", "name" : "NarL"},
+{"start" : "2830389", "end" : "2830395", "name" : "NarP"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086026", "end" : "3086041", "name" : "GalR"},
+{"start" : "3086026", "end" : "3086041", "name" : "GalS"},
+{"start" : "3086062", "end" : "3086077", "name" : "GalR"},
+{"start" : "3086062", "end" : "3086077", "name" : "GalS"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086062", "end" : "3086077", "name" : "GalR"},
+{"start" : "3086062", "end" : "3086077", "name" : "GalS"},
+{"start" : "3086091", "end" : "3086106", "name" : "GalR"},
+{"start" : "3086091", "end" : "3086106", "name" : "GalS"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086162", "end" : "3086177", "name" : "GalR"},
+{"start" : "3086162", "end" : "3086177", "name" : "GalS"},
+{"start" : "3086208", "end" : "3086223", "name" : "GalR"},
+{"start" : "3086208", "end" : "3086223", "name" : "GalS"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491932", "end" : "3491938", "name" : "NarL"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarP"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarL"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarP"}]},
+{ "promoter" : "slpp"
+"config" : [{"start" : "3651868", "end" : "3651887", "name" : "GadW"},
+{"start" : "3651868", "end" : "3651887", "name" : "GadX"},
+{"start" : "3651889", "end" : "3651908", "name" : "GadW"},
+{"start" : "3651889", "end" : "3651908", "name" : "GadX"}]},
+{ "promoter" : "gadEp"
+"config" : [{"start" : "3655763", "end" : "3655782", "name" : "GadW"},
+{"start" : "3655763", "end" : "3655782", "name" : "GadX"},
+{"start" : "3655784", "end" : "3655803", "name" : "GadW"},
+{"start" : "3655784", "end" : "3655803", "name" : "GadX"}]},
+{ "promoter" : "gadYp"
+"config" : [{"start" : "3662827", "end" : "3662846", "name" : "GadW"},
+{"start" : "3662827", "end" : "3662846", "name" : "GadX"},
+{"start" : "3662848", "end" : "3662867", "name" : "GadW"},
+{"start" : "3662848", "end" : "3662867", "name" : "GadX"}]},
+{ "promoter" : "ytfEp"
+"config" : [{"start" : "4430070", "end" : "4430076", "name" : "NarL"},
+{"start" : "4430070", "end" : "4430076", "name" : "NarP"},
+{"start" : "4430079", "end" : "4430085", "name" : "NarL"},
+{"start" : "4430079", "end" : "4430085", "name" : "NarP"}]}
+],
+"313" :
+[{ "promoter" : "gltBp"
+"config" : [{"start" : "3352416", "end" : "3352430", "name" : "Lrp"},
+{"start" : "3352436", "end" : "3352448", "name" : "IHF"},
+{"start" : "3352440", "end" : "3352452", "name" : "IHF"},
+{"start" : "3352455", "end" : "3352476", "name" : "CRP"}]},
+{ "promoter" : "aspAp"
+"config" : [{"start" : "4366489", "end" : "4366502", "name" : "FNR"},
+{"start" : "4366519", "end" : "4366525", "name" : "NarL"},
+{"start" : "4366528", "end" : "4366534", "name" : "NarL"},
+{"start" : "4366535", "end" : "4366556", "name" : "CRP"}]},
+{ "promoter" : "cydAp1"
+"config" : [{"start" : "770302", "end" : "770316", "name" : "ArcA"},
+{"start" : "770333", "end" : "770346", "name" : "FNR"},
+{"start" : "770385", "end" : "770398", "name" : "FNR"},
+{"start" : "770422", "end" : "770436", "name" : "ArcA"}]},
+{ "promoter" : "glyAp"
+"config" : [{"start" : "2683648", "end" : "2683663", "name" : "PurR"},
+{"start" : "2683710", "end" : "2683724", "name" : "MetR"},
+{"start" : "2683732", "end" : "2683746", "name" : "MetR"},
+{"start" : "2683776", "end" : "2683786", "name" : "NsrR"}]},
+{ "promoter" : "ygjGp"
+"config" : [{"start" : "3217218", "end" : "3217230", "name" : "IHF"},
+{"start" : "3217279", "end" : "3217295", "name" : "NtrC"},
+{"start" : "3217301", "end" : "3217317", "name" : "NtrC"},
+{"start" : "3217352", "end" : "3217366", "name" : "Fis"}]},
+{ "promoter" : "dpsp"
+"config" : [{"start" : "848192", "end" : "848206", "name" : "Fis"},
+{"start" : "848209", "end" : "848225", "name" : "OxyR"},
+{"start" : "848231", "end" : "848247", "name" : "OxyR"},
+{"start" : "848265", "end" : "848277", "name" : "IHF"}]},
+{ "promoter" : "ptsGp2"
+"config" : [{"start" : "1156803", "end" : "1156825", "name" : "DgsA"},
+{"start" : "1156837", "end" : "1156851", "name" : "Fis"},
+{"start" : "1156863", "end" : "1156877", "name" : "Fis"},
+{"start" : "1156884", "end" : "1156905", "name" : "CRP"}]},
+{ "promoter" : "chbBp"
+"config" : [{"start" : "1819739", "end" : "1819761", "name" : "NagC"},
+{"start" : "1819779", "end" : "1819797", "name" : "ChbR"},
+{"start" : "1819802", "end" : "1819820", "name" : "ChbR"},
+{"start" : "1819823", "end" : "1819844", "name" : "CRP"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342501", "end" : "2342515", "name" : "Fis"},
+{"start" : "2342523", "end" : "2342542", "name" : "ArgP"},
+{"start" : "2342549", "end" : "2342568", "name" : "ArgP"},
+{"start" : "2342571", "end" : "2342585", "name" : "Fis"}]},
+{ "promoter" : "yiaKp"
+"config" : [{"start" : "3740581", "end" : "3740602", "name" : "CRP"},
+{"start" : "3740639", "end" : "3740651", "name" : "IHF"},
+{"start" : "3740641", "end" : "3740653", "name" : "IHF"},
+{"start" : "3740686", "end" : "3740706", "name" : "YiaJ"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244594", "end" : "4244612", "name" : "Fis"},
+{"start" : "4244616", "end" : "4244637", "name" : "CRP"},
+{"start" : "4244648", "end" : "4244669", "name" : "CRP"},
+{"start" : "4244680", "end" : "4244689", "name" : "MalT"}]},
+{ "promoter" : "fadLp"
+"config" : [{"start" : "2459182", "end" : "2459196", "name" : "ArcA"},
+{"start" : "2459202", "end" : "2459218", "name" : "FadR"},
+{"start" : "2459227", "end" : "2459243", "name" : "FadR"},
+{"start" : "2459272", "end" : "2459293", "name" : "CRP"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244461", "end" : "4244478", "name" : "CreB"},
+{"start" : "4244524", "end" : "4244533", "name" : "MalT"},
+{"start" : "4244534", "end" : "4244543", "name" : "MalT"},
+{"start" : "4244553", "end" : "4244574", "name" : "CRP"}]}
+],
+"110" :
+[{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310760", "end" : "2310774", "name" : "Lrp"},
+{"start" : "2310781", "end" : "2310795", "name" : "Lrp"},
+{"start" : "2310783", "end" : "2310794", "name" : "Lrp"},
+{"start" : "2310844", "end" : "2310858", "name" : "Lrp"}]}
+],
+"231" :
+[{ "promoter" : "kbaZp"
+"config" : [{"start" : "3276803", "end" : "3276822", "name" : "AgaR"},
+{"start" : "3276817", "end" : "3276838", "name" : "CRP"},
+{"start" : "3276847", "end" : "3276866", "name" : "AgaR"},
+{"start" : "3276881", "end" : "3276900", "name" : "AgaR"}]},
+{ "promoter" : "rrsBp1"
+"config" : [{"start" : "4164240", "end" : "4164254", "name" : "Fis"},
+{"start" : "4164281", "end" : "4164295", "name" : "Fis"},
+{"start" : "4164300", "end" : "4164314", "name" : "H-NS"},
+{"start" : "4164312", "end" : "4164326", "name" : "Fis"}]},
+{ "promoter" : "leuOp2"
+"config" : [{"start" : "84014", "end" : "84034", "name" : "LeuO"},
+{"start" : "84040", "end" : "84060", "name" : "LeuO"},
+{"start" : "84085", "end" : "84099", "name" : "H-NS"},
+{"start" : "84099", "end" : "84119", "name" : "LeuO"}]},
+{ "promoter" : "dcuBp"
+"config" : [{"start" : "4346766", "end" : "4346772", "name" : "NarL"},
+{"start" : "4346783", "end" : "4346789", "name" : "NarL"},
+{"start" : "4346826", "end" : "4346839", "name" : "FNR"},
+{"start" : "4346829", "end" : "4346835", "name" : "NarL"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347729", "end" : "347734", "name" : "AscG"},
+{"start" : "347739", "end" : "347744", "name" : "AscG"},
+{"start" : "347745", "end" : "347768", "name" : "PrpR"},
+{"start" : "347751", "end" : "347756", "name" : "AscG"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "940016", "end" : "940022", "name" : "NarL"},
+{"start" : "940036", "end" : "940042", "name" : "NarL"},
+{"start" : "940044", "end" : "940062", "name" : "Fis"},
+{"start" : "940057", "end" : "940063", "name" : "NarL"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953939", "end" : "953945", "name" : "NarL"},
+{"start" : "953948", "end" : "953954", "name" : "NarL"},
+{"start" : "953960", "end" : "953974", "name" : "ArcA"},
+{"start" : "953966", "end" : "953972", "name" : "NarL"}]},
+{ "promoter" : "putPp4"
+"config" : [{"start" : "1078316", "end" : "1078337", "name" : "CRP"},
+{"start" : "1078334", "end" : "1078339", "name" : "PutA"},
+{"start" : "1078346", "end" : "1078367", "name" : "CRP"},
+{"start" : "1078378", "end" : "1078399", "name" : "CRP"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102558", "end" : "1102572", "name" : "CpxR"},
+{"start" : "1102582", "end" : "1102595", "name" : "CpxR"},
+{"start" : "1102599", "end" : "1102620", "name" : "CRP"},
+{"start" : "1102603", "end" : "1102617", "name" : "CpxR"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2311185", "end" : "2311199", "name" : "Lrp"},
+{"start" : "2311196", "end" : "2311210", "name" : "CpxR"},
+{"start" : "2311221", "end" : "2311235", "name" : "Lrp"},
+{"start" : "2311221", "end" : "2311232", "name" : "Lrp"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342486", "end" : "2342505", "name" : "ArgP"},
+{"start" : "2342501", "end" : "2342515", "name" : "Fis"},
+{"start" : "2342523", "end" : "2342542", "name" : "ArgP"},
+{"start" : "2342549", "end" : "2342568", "name" : "ArgP"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342523", "end" : "2342542", "name" : "ArgP"},
+{"start" : "2342549", "end" : "2342568", "name" : "ArgP"},
+{"start" : "2342571", "end" : "2342585", "name" : "Fis"},
+{"start" : "2342577", "end" : "2342596", "name" : "ArgP"}]},
+{ "promoter" : "glcCp"
+"config" : [{"start" : "3126101", "end" : "3126115", "name" : "Fis"},
+{"start" : "3126131", "end" : "3126145", "name" : "Fis"},
+{"start" : "3126146", "end" : "3126162", "name" : "PdhR"},
+{"start" : "3126155", "end" : "3126169", "name" : "Fis"}]},
+{ "promoter" : "ugpBp1"
+"config" : [{"start" : "3590422", "end" : "3590440", "name" : "PhoB"},
+{"start" : "3590444", "end" : "3590462", "name" : "PhoB"},
+{"start" : "3590465", "end" : "3590486", "name" : "CRP"},
+{"start" : "3590466", "end" : "3590484", "name" : "PhoB"}]},
+{ "promoter" : "rrsBp1"
+"config" : [{"start" : "4164300", "end" : "4164314", "name" : "H-NS"},
+{"start" : "4164312", "end" : "4164326", "name" : "Fis"},
+{"start" : "4164333", "end" : "4164347", "name" : "H-NS"},
+{"start" : "4164357", "end" : "4164371", "name" : "H-NS"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244582", "end" : "4244603", "name" : "CRP"},
+{"start" : "4244594", "end" : "4244612", "name" : "Fis"},
+{"start" : "4244616", "end" : "4244637", "name" : "CRP"},
+{"start" : "4244648", "end" : "4244669", "name" : "CRP"}]},
+{ "promoter" : "galEp2"
+"config" : [{"start" : "791245", "end" : "791260", "name" : "GalS"},
+{"start" : "791251", "end" : "791266", "name" : "GalR"},
+{"start" : "791282", "end" : "791315", "name" : "HU"},
+{"start" : "791287", "end" : "791320", "name" : "HU"}]},
+{ "promoter" : "dpsp"
+"config" : [{"start" : "848180", "end" : "848201", "name" : "MntR"},
+{"start" : "848192", "end" : "848206", "name" : "Fis"},
+{"start" : "848209", "end" : "848225", "name" : "OxyR"},
+{"start" : "848231", "end" : "848247", "name" : "OxyR"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156837", "end" : "1156851", "name" : "Fis"},
+{"start" : "1156863", "end" : "1156877", "name" : "Fis"},
+{"start" : "1156884", "end" : "1156905", "name" : "CRP"},
+{"start" : "1156896", "end" : "1156915", "name" : "SoxS"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277072", "end" : "1277078", "name" : "NarL"},
+{"start" : "1277085", "end" : "1277091", "name" : "NarL"},
+{"start" : "1277100", "end" : "1277113", "name" : "FNR"},
+{"start" : "1277103", "end" : "1277121", "name" : "Fis"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350504", "end" : "2350525", "name" : "CRP"},
+{"start" : "2350505", "end" : "2350524", "name" : "GlpR"},
+{"start" : "2350530", "end" : "2350544", "name" : "Fis"},
+{"start" : "2350537", "end" : "2350551", "name" : "Fis"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213250", "end" : "4213267", "name" : "Cra"},
+{"start" : "4213260", "end" : "4213272", "name" : "IHF"},
+{"start" : "4213281", "end" : "4213287", "name" : "IclR"},
+{"start" : "4213291", "end" : "4213297", "name" : "IclR"}]},
+{ "promoter" : "nanCp"
+"config" : [{"start" : "4537951", "end" : "4537956", "name" : "NanR"},
+{"start" : "4537960", "end" : "4537965", "name" : "NanR"},
+{"start" : "4538002", "end" : "4538023", "name" : "CRP"},
+{"start" : "4538005", "end" : "4538027", "name" : "NagC"}]},
+{ "promoter" : "deoCp2"
+"config" : [{"start" : "4615223", "end" : "4615238", "name" : "CytR"},
+{"start" : "4615231", "end" : "4615249", "name" : "CytR"},
+{"start" : "4615250", "end" : "4615271", "name" : "CRP"},
+{"start" : "4615253", "end" : "4615279", "name" : "ModE"}]},
+{ "promoter" : "hnsp"
+"config" : [{"start" : "1292348", "end" : "1292362", "name" : "Fis"},
+{"start" : "1292356", "end" : "1292370", "name" : "H-NS"},
+{"start" : "1292417", "end" : "1292431", "name" : "Fis"},
+{"start" : "1292456", "end" : "1292470", "name" : "Fis"}]},
+{ "promoter" : "aldBp"
+"config" : [{"start" : "3754599", "end" : "3754613", "name" : "Fis"},
+{"start" : "3754608", "end" : "3754629", "name" : "CRP"},
+{"start" : "3754664", "end" : "3754678", "name" : "Fis"},
+{"start" : "3754686", "end" : "3754700", "name" : "Fis"}]},
+{ "promoter" : "marRp"
+"config" : [{"start" : "1617047", "end" : "1617064", "name" : "SoxS"},
+{"start" : "1617054", "end" : "1617075", "name" : "CRP"},
+{"start" : "1617088", "end" : "1617109", "name" : "MarR"},
+{"start" : "1617122", "end" : "1617143", "name" : "MarR"}]},
+{ "promoter" : "fadLp"
+"config" : [{"start" : "2459202", "end" : "2459218", "name" : "FadR"},
+{"start" : "2459227", "end" : "2459243", "name" : "FadR"},
+{"start" : "2459272", "end" : "2459293", "name" : "CRP"},
+{"start" : "2459286", "end" : "2459305", "name" : "OmpR"}]}
+],
+"312" :
+[{ "promoter" : "sufAp"
+"config" : [{"start" : "1762505", "end" : "1762515", "name" : "NsrR"},
+{"start" : "1762534", "end" : "1762559", "name" : "IscR"},
+{"start" : "1762575", "end" : "1762600", "name" : "IscR"},
+{"start" : "1762581", "end" : "1762593", "name" : "IHF"}]},
+{ "promoter" : "hmpAp"
+"config" : [{"start" : "2683732", "end" : "2683746", "name" : "MetR"},
+{"start" : "2683776", "end" : "2683786", "name" : "NsrR"},
+{"start" : "2683809", "end" : "2683831", "name" : "NsrR"},
+{"start" : "2683815", "end" : "2683833", "name" : "Fur"}]},
+{ "promoter" : "tdcAp"
+"config" : [{"start" : "3265212", "end" : "3265224", "name" : "IHF"},
+{"start" : "3265214", "end" : "3265227", "name" : "FNR"},
+{"start" : "3265257", "end" : "3265270", "name" : "FNR"},
+{"start" : "3265285", "end" : "3265299", "name" : "TdcA"}]},
+{ "promoter" : "xylFp"
+"config" : [{"start" : "3729008", "end" : "3729026", "name" : "Fis"},
+{"start" : "3729022", "end" : "3729039", "name" : "XylR"},
+{"start" : "3729043", "end" : "3729060", "name" : "XylR"},
+{"start" : "3729104", "end" : "3729122", "name" : "Fis"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791251", "end" : "791266", "name" : "GalR"},
+{"start" : "791282", "end" : "791315", "name" : "HU"},
+{"start" : "791287", "end" : "791320", "name" : "HU"},
+{"start" : "791299", "end" : "791313", "name" : "H-NS"}]},
+{ "promoter" : "osmYp"
+"config" : [{"start" : "4609165", "end" : "4609177", "name" : "IHF"},
+{"start" : "4609166", "end" : "4609187", "name" : "CRP"},
+{"start" : "4609177", "end" : "4609198", "name" : "CRP"},
+{"start" : "4609238", "end" : "4609256", "name" : "Fis"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131438", "end" : "131452", "name" : "Fis"},
+{"start" : "131455", "end" : "131469", "name" : "ArcA"},
+{"start" : "131464", "end" : "131478", "name" : "ArcA"},
+{"start" : "131471", "end" : "131492", "name" : "CRP"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102513", "end" : "1102530", "name" : "Cra"},
+{"start" : "1102532", "end" : "1102545", "name" : "CsgD"},
+{"start" : "1102552", "end" : "1102565", "name" : "CsgD"},
+{"start" : "1102558", "end" : "1102572", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102552", "end" : "1102565", "name" : "CsgD"},
+{"start" : "1102558", "end" : "1102572", "name" : "CpxR"},
+{"start" : "1102582", "end" : "1102595", "name" : "CpxR"},
+{"start" : "1102599", "end" : "1102620", "name" : "CRP"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229632", "end" : "1229643", "name" : "SlyA"},
+{"start" : "1229664", "end" : "1229678", "name" : "Fis"},
+{"start" : "1229674", "end" : "1229688", "name" : "Fis"},
+{"start" : "1229688", "end" : "1229702", "name" : "H-NS"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408148", "end" : "3408160", "name" : "IHF"},
+{"start" : "3408160", "end" : "3408174", "name" : "Fis"},
+{"start" : "3408178", "end" : "3408192", "name" : "Fis"},
+{"start" : "3408194", "end" : "3408215", "name" : "CRP"}]},
+{ "promoter" : "rhaTp"
+"config" : [{"start" : "4098672", "end" : "4098693", "name" : "CRP"},
+{"start" : "4098708", "end" : "4098720", "name" : "IHF"},
+{"start" : "4098728", "end" : "4098740", "name" : "IHF"},
+{"start" : "4098729", "end" : "4098746", "name" : "SoxS"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213347", "end" : "4213359", "name" : "IHF"},
+{"start" : "4213369", "end" : "4213375", "name" : "IclR"},
+{"start" : "4213380", "end" : "4213394", "name" : "IclR"},
+{"start" : "4213384", "end" : "4213405", "name" : "CRP"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102746", "end" : "1102760", "name" : "CpxR"},
+{"start" : "1102755", "end" : "1102772", "name" : "Cra"},
+{"start" : "1102786", "end" : "1102803", "name" : "Cra"},
+{"start" : "1102820", "end" : "1102834", "name" : "CpxR"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244534", "end" : "4244543", "name" : "MalT"},
+{"start" : "4244553", "end" : "4244574", "name" : "CRP"},
+{"start" : "4244582", "end" : "4244603", "name" : "CRP"},
+{"start" : "4244594", "end" : "4244612", "name" : "Fis"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236718", "end" : "1236732", "name" : "Lrp"},
+{"start" : "1236741", "end" : "1236762", "name" : "CRP"},
+{"start" : "1236743", "end" : "1236764", "name" : "CRP"},
+{"start" : "1236750", "end" : "1236764", "name" : "Lrp"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "940006", "end" : "940020", "name" : "Fis"},
+{"start" : "940016", "end" : "940022", "name" : "NarL"},
+{"start" : "940036", "end" : "940042", "name" : "NarL"},
+{"start" : "940044", "end" : "940062", "name" : "Fis"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277069", "end" : "1277082", "name" : "FNR"},
+{"start" : "1277072", "end" : "1277078", "name" : "NarL"},
+{"start" : "1277085", "end" : "1277091", "name" : "NarL"},
+{"start" : "1277100", "end" : "1277113", "name" : "FNR"}]},
+{ "promoter" : "cddp"
+"config" : [{"start" : "2229738", "end" : "2229759", "name" : "CRP"},
+{"start" : "2229751", "end" : "2229766", "name" : "CytR"},
+{"start" : "2229769", "end" : "2229785", "name" : "CytR"},
+{"start" : "2229788", "end" : "2229809", "name" : "CRP"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350505", "end" : "2350524", "name" : "GlpR"},
+{"start" : "2350530", "end" : "2350544", "name" : "Fis"},
+{"start" : "2350537", "end" : "2350551", "name" : "Fis"},
+{"start" : "2350545", "end" : "2350564", "name" : "GlpR"}]},
+{ "promoter" : "asnCp"
+"config" : [{"start" : "3925054", "end" : "3925068", "name" : "Nac"},
+{"start" : "3925070", "end" : "3925082", "name" : "AsnC"},
+{"start" : "3925102", "end" : "3925114", "name" : "AsnC"},
+{"start" : "3925111", "end" : "3925125", "name" : "Nac"}]}
+],
+"111" :
+[{ "promoter" : "nhaAp1"
+"config" : [{"start" : "17384", "end" : "17400", "name" : "NhaR"},
+{"start" : "17406", "end" : "17422", "name" : "NhaR"},
+{"start" : "17416", "end" : "17432", "name" : "NhaR"},
+{"start" : "17447", "end" : "17463", "name" : "NhaR"}]},
+{ "promoter" : "pdhRp"
+"config" : [{"start" : "121913", "end" : "121934", "name" : "CRP"},
+{"start" : "121941", "end" : "121962", "name" : "CRP"},
+{"start" : "121953", "end" : "121974", "name" : "CRP"},
+{"start" : "121961", "end" : "121982", "name" : "CRP"}]},
+{ "promoter" : "pdhRp"
+"config" : [{"start" : "121941", "end" : "121962", "name" : "CRP"},
+{"start" : "121953", "end" : "121974", "name" : "CRP"},
+{"start" : "121961", "end" : "121982", "name" : "CRP"},
+{"start" : "121973", "end" : "121994", "name" : "CRP"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131342", "end" : "131356", "name" : "ArcA"},
+{"start" : "131369", "end" : "131383", "name" : "ArcA"},
+{"start" : "131373", "end" : "131387", "name" : "ArcA"},
+{"start" : "131393", "end" : "131407", "name" : "ArcA"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131369", "end" : "131383", "name" : "ArcA"},
+{"start" : "131373", "end" : "131387", "name" : "ArcA"},
+{"start" : "131393", "end" : "131407", "name" : "ArcA"},
+{"start" : "131399", "end" : "131413", "name" : "ArcA"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365555", "end" : "365569", "name" : "H-NS"},
+{"start" : "365565", "end" : "365579", "name" : "H-NS"},
+{"start" : "365591", "end" : "365605", "name" : "H-NS"},
+{"start" : "365614", "end" : "365628", "name" : "H-NS"}]},
+{ "promoter" : "fepAp"
+"config" : [{"start" : "611873", "end" : "611891", "name" : "Fur"},
+{"start" : "611880", "end" : "611898", "name" : "Fur"},
+{"start" : "611886", "end" : "611904", "name" : "Fur"},
+{"start" : "611892", "end" : "611910", "name" : "Fur"}]},
+{ "promoter" : "fepAp"
+"config" : [{"start" : "611880", "end" : "611898", "name" : "Fur"},
+{"start" : "611886", "end" : "611904", "name" : "Fur"},
+{"start" : "611892", "end" : "611910", "name" : "Fur"},
+{"start" : "611899", "end" : "611917", "name" : "Fur"}]},
+{ "promoter" : "fepDp1"
+"config" : [{"start" : "621422", "end" : "621440", "name" : "Fur"},
+{"start" : "621428", "end" : "621446", "name" : "Fur"},
+{"start" : "621434", "end" : "621452", "name" : "Fur"},
+{"start" : "621440", "end" : "621458", "name" : "Fur"}]},
+{ "promoter" : "fepBp"
+"config" : [{"start" : "623942", "end" : "623960", "name" : "Fur"},
+{"start" : "623945", "end" : "623963", "name" : "Fur"},
+{"start" : "623948", "end" : "623966", "name" : "Fur"},
+{"start" : "623954", "end" : "623972", "name" : "Fur"}]},
+{ "promoter" : "entCp"
+"config" : [{"start" : "624057", "end" : "624075", "name" : "Fur"},
+{"start" : "624060", "end" : "624078", "name" : "Fur"},
+{"start" : "624063", "end" : "624081", "name" : "Fur"},
+{"start" : "624069", "end" : "624087", "name" : "Fur"}]},
+{ "promoter" : "entCp"
+"config" : [{"start" : "624060", "end" : "624078", "name" : "Fur"},
+{"start" : "624063", "end" : "624081", "name" : "Fur"},
+{"start" : "624069", "end" : "624087", "name" : "Fur"},
+{"start" : "624075", "end" : "624093", "name" : "Fur"}]},
+{ "promoter" : "entCp"
+"config" : [{"start" : "624063", "end" : "624081", "name" : "Fur"},
+{"start" : "624069", "end" : "624087", "name" : "Fur"},
+{"start" : "624075", "end" : "624093", "name" : "Fur"},
+{"start" : "624102", "end" : "624120", "name" : "Fur"}]},
+{ "promoter" : "fiup"
+"config" : [{"start" : "840851", "end" : "840869", "name" : "Fur"},
+{"start" : "840860", "end" : "840878", "name" : "Fur"},
+{"start" : "840861", "end" : "840879", "name" : "Fur"},
+{"start" : "840868", "end" : "840886", "name" : "Fur"}]},
+{ "promoter" : "glnHp2"
+"config" : [{"start" : "847341", "end" : "847357", "name" : "NtrC"},
+{"start" : "847371", "end" : "847387", "name" : "NtrC"},
+{"start" : "847384", "end" : "847400", "name" : "NtrC"},
+{"start" : "847397", "end" : "847413", "name" : "NtrC"}]},
+{ "promoter" : "torRp"
+"config" : [{"start" : "1057196", "end" : "1057205", "name" : "TorR"},
+{"start" : "1057206", "end" : "1057215", "name" : "TorR"},
+{"start" : "1057225", "end" : "1057234", "name" : "TorR"},
+{"start" : "1057249", "end" : "1057258", "name" : "TorR"}]},
+{ "promoter" : "csgBp"
+"config" : [{"start" : "1102611", "end" : "1102625", "name" : "CpxR"},
+{"start" : "1102612", "end" : "1102626", "name" : "CpxR"},
+{"start" : "1102634", "end" : "1102647", "name" : "CpxR"},
+{"start" : "1102656", "end" : "1102669", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102612", "end" : "1102626", "name" : "CpxR"},
+{"start" : "1102634", "end" : "1102647", "name" : "CpxR"},
+{"start" : "1102656", "end" : "1102669", "name" : "CpxR"},
+{"start" : "1102660", "end" : "1102674", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102634", "end" : "1102647", "name" : "CpxR"},
+{"start" : "1102656", "end" : "1102669", "name" : "CpxR"},
+{"start" : "1102660", "end" : "1102674", "name" : "CpxR"},
+{"start" : "1102669", "end" : "1102682", "name" : "CpxR"}]},
+{ "promoter" : "csgBp"
+"config" : [{"start" : "1102995", "end" : "1103008", "name" : "CsgD"},
+{"start" : "1103018", "end" : "1103031", "name" : "CsgD"},
+{"start" : "1103039", "end" : "1103049", "name" : "CsgD"},
+{"start" : "1103048", "end" : "1103061", "name" : "CsgD"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165259", "end" : "1165273", "name" : "ArcA"},
+{"start" : "1165264", "end" : "1165278", "name" : "ArcA"},
+{"start" : "1165273", "end" : "1165287", "name" : "ArcA"},
+{"start" : "1165275", "end" : "1165289", "name" : "ArcA"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229594", "end" : "1229605", "name" : "SlyA"},
+{"start" : "1229608", "end" : "1229619", "name" : "SlyA"},
+{"start" : "1229623", "end" : "1229634", "name" : "SlyA"},
+{"start" : "1229632", "end" : "1229643", "name" : "SlyA"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1276938", "end" : "1276944", "name" : "NarL"},
+{"start" : "1276958", "end" : "1276964", "name" : "NarL"},
+{"start" : "1276975", "end" : "1276981", "name" : "NarL"},
+{"start" : "1276992", "end" : "1276998", "name" : "NarL"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1276958", "end" : "1276964", "name" : "NarL"},
+{"start" : "1276975", "end" : "1276981", "name" : "NarL"},
+{"start" : "1276992", "end" : "1276998", "name" : "NarL"},
+{"start" : "1276998", "end" : "1277004", "name" : "NarL"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278926", "end" : "1278932", "name" : "NarL"},
+{"start" : "1278938", "end" : "1278944", "name" : "NarL"},
+{"start" : "1278948", "end" : "1278954", "name" : "NarL"},
+{"start" : "1278956", "end" : "1278962", "name" : "NarL"}]},
+{ "promoter" : "tonBp"
+"config" : [{"start" : "1309044", "end" : "1309062", "name" : "Fur"},
+{"start" : "1309050", "end" : "1309068", "name" : "Fur"},
+{"start" : "1309054", "end" : "1309072", "name" : "Fur"},
+{"start" : "1309094", "end" : "1309112", "name" : "Fur"}]},
+{ "promoter" : "relBp"
+"config" : [{"start" : "1643895", "end" : "1643905", "name" : "RelB"},
+{"start" : "1643909", "end" : "1643920", "name" : "RelB"},
+{"start" : "1643921", "end" : "1643932", "name" : "RelB"},
+{"start" : "1643935", "end" : "1643946", "name" : "RelB"}]},
+{ "promoter" : "ruvAp2"
+"config" : [{"start" : "1944050", "end" : "1944069", "name" : "LexA"},
+{"start" : "1944051", "end" : "1944070", "name" : "LexA"},
+{"start" : "1944102", "end" : "1944121", "name" : "LexA"},
+{"start" : "1944103", "end" : "1944122", "name" : "LexA"}]},
+{ "promoter" : "folEp"
+"config" : [{"start" : "2241818", "end" : "2241825", "name" : "MetJ"},
+{"start" : "2241826", "end" : "2241833", "name" : "MetJ"},
+{"start" : "2241834", "end" : "2241841", "name" : "MetJ"},
+{"start" : "2241842", "end" : "2241849", "name" : "MetJ"}]},
+{ "promoter" : "cirAp2"
+"config" : [{"start" : "2244959", "end" : "2244977", "name" : "Fur"},
+{"start" : "2244965", "end" : "2244983", "name" : "Fur"},
+{"start" : "2244971", "end" : "2244989", "name" : "Fur"},
+{"start" : "2244977", "end" : "2244995", "name" : "Fur"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802795", "end" : "2802809", "name" : "H-NS"},
+{"start" : "2802814", "end" : "2802828", "name" : "H-NS"},
+{"start" : "2802841", "end" : "2802855", "name" : "H-NS"},
+{"start" : "2802853", "end" : "2802867", "name" : "H-NS"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802814", "end" : "2802828", "name" : "H-NS"},
+{"start" : "2802841", "end" : "2802855", "name" : "H-NS"},
+{"start" : "2802853", "end" : "2802867", "name" : "H-NS"},
+{"start" : "2802869", "end" : "2802883", "name" : "H-NS"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802841", "end" : "2802855", "name" : "H-NS"},
+{"start" : "2802853", "end" : "2802867", "name" : "H-NS"},
+{"start" : "2802869", "end" : "2802883", "name" : "H-NS"},
+{"start" : "2802899", "end" : "2802913", "name" : "H-NS"}]},
+{ "promoter" : "mqsRp"
+"config" : [{"start" : "3166592", "end" : "3166612", "name" : "MqsA"},
+{"start" : "3166595", "end" : "3166609", "name" : "MqsA"},
+{"start" : "3166625", "end" : "3166645", "name" : "MqsA"},
+{"start" : "3166627", "end" : "3166641", "name" : "MqsA"}]},
+{ "promoter" : "crpp2"
+"config" : [{"start" : "3484015", "end" : "3484029", "name" : "Fis"},
+{"start" : "3484016", "end" : "3484030", "name" : "Fis"},
+{"start" : "3484035", "end" : "3484049", "name" : "Fis"},
+{"start" : "3484036", "end" : "3484050", "name" : "Fis"}]},
+{ "promoter" : "malPp"
+"config" : [{"start" : "3550565", "end" : "3550574", "name" : "MalT"},
+{"start" : "3550588", "end" : "3550597", "name" : "MalT"},
+{"start" : "3550601", "end" : "3550610", "name" : "MalT"},
+{"start" : "3550623", "end" : "3550632", "name" : "MalT"}]},
+{ "promoter" : "rrsAp1"
+"config" : [{"start" : "4033122", "end" : "4033136", "name" : "Fis"},
+{"start" : "4033144", "end" : "4033158", "name" : "Fis"},
+{"start" : "4033164", "end" : "4033178", "name" : "Fis"},
+{"start" : "4033184", "end" : "4033198", "name" : "Fis"}]},
+{ "promoter" : "rhaBp"
+"config" : [{"start" : "4095577", "end" : "4095598", "name" : "CRP"},
+{"start" : "4095607", "end" : "4095628", "name" : "CRP"},
+{"start" : "4095612", "end" : "4095633", "name" : "CRP"},
+{"start" : "4095631", "end" : "4095652", "name" : "CRP"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098754", "end" : "4098768", "name" : "ArcA"},
+{"start" : "4098755", "end" : "4098769", "name" : "ArcA"},
+{"start" : "4098765", "end" : "4098779", "name" : "ArcA"},
+{"start" : "4098766", "end" : "4098780", "name" : "ArcA"}]},
+{ "promoter" : "metBp"
+"config" : [{"start" : "4126599", "end" : "4126606", "name" : "MetJ"},
+{"start" : "4126607", "end" : "4126614", "name" : "MetJ"},
+{"start" : "4126609", "end" : "4126616", "name" : "MetJ"},
+{"start" : "4126615", "end" : "4126622", "name" : "MetJ"}]},
+{ "promoter" : "metBp"
+"config" : [{"start" : "4126607", "end" : "4126614", "name" : "MetJ"},
+{"start" : "4126609", "end" : "4126616", "name" : "MetJ"},
+{"start" : "4126615", "end" : "4126622", "name" : "MetJ"},
+{"start" : "4126617", "end" : "4126624", "name" : "MetJ"}]},
+{ "promoter" : "metBp"
+"config" : [{"start" : "4126609", "end" : "4126616", "name" : "MetJ"},
+{"start" : "4126615", "end" : "4126622", "name" : "MetJ"},
+{"start" : "4126617", "end" : "4126624", "name" : "MetJ"},
+{"start" : "4126625", "end" : "4126632", "name" : "MetJ"}]},
+{ "promoter" : "metFp"
+"config" : [{"start" : "4130557", "end" : "4130564", "name" : "MetJ"},
+{"start" : "4130566", "end" : "4130573", "name" : "MetJ"},
+{"start" : "4130569", "end" : "4130576", "name" : "MetJ"},
+{"start" : "4130572", "end" : "4130579", "name" : "MetJ"}]},
+{ "promoter" : "metFp"
+"config" : [{"start" : "4130566", "end" : "4130573", "name" : "MetJ"},
+{"start" : "4130569", "end" : "4130576", "name" : "MetJ"},
+{"start" : "4130572", "end" : "4130579", "name" : "MetJ"},
+{"start" : "4130574", "end" : "4130581", "name" : "MetJ"}]},
+{ "promoter" : "metFp"
+"config" : [{"start" : "4130569", "end" : "4130576", "name" : "MetJ"},
+{"start" : "4130572", "end" : "4130579", "name" : "MetJ"},
+{"start" : "4130574", "end" : "4130581", "name" : "MetJ"},
+{"start" : "4130582", "end" : "4130589", "name" : "MetJ"}]},
+{ "promoter" : "metFp"
+"config" : [{"start" : "4130572", "end" : "4130579", "name" : "MetJ"},
+{"start" : "4130574", "end" : "4130581", "name" : "MetJ"},
+{"start" : "4130582", "end" : "4130589", "name" : "MetJ"},
+{"start" : "4130585", "end" : "4130592", "name" : "MetJ"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213281", "end" : "4213287", "name" : "IclR"},
+{"start" : "4213291", "end" : "4213297", "name" : "IclR"},
+{"start" : "4213300", "end" : "4213306", "name" : "IclR"},
+{"start" : "4213318", "end" : "4213324", "name" : "IclR"}]},
+{ "promoter" : "dcuBp"
+"config" : [{"start" : "4346742", "end" : "4346748", "name" : "NarL"},
+{"start" : "4346761", "end" : "4346767", "name" : "NarL"},
+{"start" : "4346766", "end" : "4346772", "name" : "NarL"},
+{"start" : "4346783", "end" : "4346789", "name" : "NarL"}]},
+{ "promoter" : "frdAp"
+"config" : [{"start" : "4380419", "end" : "4380425", "name" : "NarL"},
+{"start" : "4380427", "end" : "4380433", "name" : "NarL"},
+{"start" : "4380436", "end" : "4380442", "name" : "NarL"},
+{"start" : "4380444", "end" : "4380450", "name" : "NarL"}]},
+{ "promoter" : "frdAp"
+"config" : [{"start" : "4380427", "end" : "4380433", "name" : "NarL"},
+{"start" : "4380436", "end" : "4380442", "name" : "NarL"},
+{"start" : "4380444", "end" : "4380450", "name" : "NarL"},
+{"start" : "4380458", "end" : "4380464", "name" : "NarL"}]},
+{ "promoter" : "fecIp"
+"config" : [{"start" : "4516300", "end" : "4516318", "name" : "Fur"},
+{"start" : "4516303", "end" : "4516321", "name" : "Fur"},
+{"start" : "4516306", "end" : "4516324", "name" : "Fur"},
+{"start" : "4516310", "end" : "4516328", "name" : "Fur"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236475", "end" : "1236489", "name" : "Lrp"},
+{"start" : "1236500", "end" : "1236514", "name" : "Lrp"},
+{"start" : "1236548", "end" : "1236562", "name" : "Lrp"},
+{"start" : "1236579", "end" : "1236593", "name" : "Lrp"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328868", "end" : "1328882", "name" : "Fis"},
+{"start" : "1328903", "end" : "1328917", "name" : "Fis"},
+{"start" : "1328935", "end" : "1328949", "name" : "Fis"},
+{"start" : "1328967", "end" : "1328981", "name" : "Fis"}]},
+{ "promoter" : "cspIp"
+"config" : [{"start" : "1636816", "end" : "1636830", "name" : "Fis"},
+{"start" : "1636849", "end" : "1636863", "name" : "Fis"},
+{"start" : "1636912", "end" : "1636926", "name" : "Fis"},
+{"start" : "1636917", "end" : "1636931", "name" : "Fis"}]},
+{ "promoter" : "araFp"
+"config" : [{"start" : "1984324", "end" : "1984340", "name" : "AraC"},
+{"start" : "1984345", "end" : "1984361", "name" : "AraC"},
+{"start" : "1984399", "end" : "1984415", "name" : "AraC"},
+{"start" : "1984420", "end" : "1984436", "name" : "AraC"}]},
+{ "promoter" : "ttdAp"
+"config" : [{"start" : "3204280", "end" : "3204286", "name" : "Dan"},
+{"start" : "3204309", "end" : "3204315", "name" : "Dan"},
+{"start" : "3204351", "end" : "3204357", "name" : "Dan"},
+{"start" : "3204369", "end" : "3204375", "name" : "Dan"}]},
+{ "promoter" : "agaSp"
+"config" : [{"start" : "3279807", "end" : "3279826", "name" : "AgaR"},
+{"start" : "3279849", "end" : "3279868", "name" : "AgaR"},
+{"start" : "3279880", "end" : "3279899", "name" : "AgaR"},
+{"start" : "3279923", "end" : "3279942", "name" : "AgaR"}]},
+{ "promoter" : "gltBp"
+"config" : [{"start" : "3352278", "end" : "3352292", "name" : "Lrp"},
+{"start" : "3352309", "end" : "3352323", "name" : "Lrp"},
+{"start" : "3352372", "end" : "3352386", "name" : "Lrp"},
+{"start" : "3352416", "end" : "3352430", "name" : "Lrp"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236548", "end" : "1236562", "name" : "Lrp"},
+{"start" : "1236579", "end" : "1236593", "name" : "Lrp"},
+{"start" : "1236605", "end" : "1236619", "name" : "Lrp"},
+{"start" : "1236635", "end" : "1236649", "name" : "Lrp"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328741", "end" : "1328755", "name" : "Fis"},
+{"start" : "1328767", "end" : "1328781", "name" : "Fis"},
+{"start" : "1328798", "end" : "1328812", "name" : "Fis"},
+{"start" : "1328819", "end" : "1328833", "name" : "Fis"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328767", "end" : "1328781", "name" : "Fis"},
+{"start" : "1328798", "end" : "1328812", "name" : "Fis"},
+{"start" : "1328819", "end" : "1328833", "name" : "Fis"},
+{"start" : "1328840", "end" : "1328854", "name" : "Fis"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328798", "end" : "1328812", "name" : "Fis"},
+{"start" : "1328819", "end" : "1328833", "name" : "Fis"},
+{"start" : "1328840", "end" : "1328854", "name" : "Fis"},
+{"start" : "1328868", "end" : "1328882", "name" : "Fis"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328819", "end" : "1328833", "name" : "Fis"},
+{"start" : "1328840", "end" : "1328854", "name" : "Fis"},
+{"start" : "1328868", "end" : "1328882", "name" : "Fis"},
+{"start" : "1328903", "end" : "1328917", "name" : "Fis"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328935", "end" : "1328949", "name" : "Fis"},
+{"start" : "1328967", "end" : "1328981", "name" : "Fis"},
+{"start" : "1328987", "end" : "1329001", "name" : "Fis"},
+{"start" : "1329016", "end" : "1329030", "name" : "Fis"}]},
+{ "promoter" : "hipBp"
+"config" : [{"start" : "1590487", "end" : "1590506", "name" : "HipB"},
+{"start" : "1590515", "end" : "1590534", "name" : "HipB"},
+{"start" : "1590554", "end" : "1590573", "name" : "HipB"},
+{"start" : "1590582", "end" : "1590601", "name" : "HipB"}]},
+{ "promoter" : "cspIp"
+"config" : [{"start" : "1636781", "end" : "1636795", "name" : "Fis"},
+{"start" : "1636789", "end" : "1636803", "name" : "Fis"},
+{"start" : "1636816", "end" : "1636830", "name" : "Fis"},
+{"start" : "1636849", "end" : "1636863", "name" : "Fis"}]},
+{ "promoter" : "astCp2"
+"config" : [{"start" : "1830107", "end" : "1830124", "name" : "ArgR"},
+{"start" : "1830138", "end" : "1830155", "name" : "ArgR"},
+{"start" : "1830159", "end" : "1830176", "name" : "ArgR"},
+{"start" : "1830181", "end" : "1830198", "name" : "ArgR"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802737", "end" : "2802751", "name" : "H-NS"},
+{"start" : "2802776", "end" : "2802790", "name" : "H-NS"},
+{"start" : "2802795", "end" : "2802809", "name" : "H-NS"},
+{"start" : "2802814", "end" : "2802828", "name" : "H-NS"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802776", "end" : "2802790", "name" : "H-NS"},
+{"start" : "2802795", "end" : "2802809", "name" : "H-NS"},
+{"start" : "2802814", "end" : "2802828", "name" : "H-NS"},
+{"start" : "2802841", "end" : "2802855", "name" : "H-NS"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802853", "end" : "2802867", "name" : "H-NS"},
+{"start" : "2802869", "end" : "2802883", "name" : "H-NS"},
+{"start" : "2802899", "end" : "2802913", "name" : "H-NS"},
+{"start" : "2802925", "end" : "2802939", "name" : "H-NS"}]},
+{ "promoter" : "proVp3"
+"config" : [{"start" : "2802869", "end" : "2802883", "name" : "H-NS"},
+{"start" : "2802899", "end" : "2802913", "name" : "H-NS"},
+{"start" : "2802925", "end" : "2802939", "name" : "H-NS"},
+{"start" : "2802939", "end" : "2802953", "name" : "H-NS"}]},
+{ "promoter" : "rrsDp1"
+"config" : [{"start" : "3427133", "end" : "3427147", "name" : "Fis"},
+{"start" : "3427153", "end" : "3427167", "name" : "Fis"},
+{"start" : "3427188", "end" : "3427202", "name" : "Fis"},
+{"start" : "3427206", "end" : "3427220", "name" : "Fis"}]},
+{ "promoter" : "rrsDp1"
+"config" : [{"start" : "3427153", "end" : "3427167", "name" : "Fis"},
+{"start" : "3427188", "end" : "3427202", "name" : "Fis"},
+{"start" : "3427206", "end" : "3427220", "name" : "Fis"},
+{"start" : "3427236", "end" : "3427250", "name" : "Fis"}]},
+{ "promoter" : "glnAp1"
+"config" : [{"start" : "4056190", "end" : "4056206", "name" : "NtrC"},
+{"start" : "4056211", "end" : "4056227", "name" : "NtrC"},
+{"start" : "4056230", "end" : "4056246", "name" : "NtrC"},
+{"start" : "4056262", "end" : "4056278", "name" : "NtrC"}]},
+{ "promoter" : "rrsEp"
+"config" : [{"start" : "4205709", "end" : "4205723", "name" : "Fis"},
+{"start" : "4205736", "end" : "4205750", "name" : "Fis"},
+{"start" : "4205762", "end" : "4205776", "name" : "Fis"},
+{"start" : "4205778", "end" : "4205792", "name" : "Fis"}]},
+{ "promoter" : "rrsEp"
+"config" : [{"start" : "4205736", "end" : "4205750", "name" : "Fis"},
+{"start" : "4205762", "end" : "4205776", "name" : "Fis"},
+{"start" : "4205778", "end" : "4205792", "name" : "Fis"},
+{"start" : "4205807", "end" : "4205821", "name" : "Fis"}]},
+{ "promoter" : "ilvIHp1"
+"config" : [{"start" : "85453", "end" : "85467", "name" : "Lrp"},
+{"start" : "85488", "end" : "85502", "name" : "Lrp"},
+{"start" : "85517", "end" : "85531", "name" : "Lrp"},
+{"start" : "85537", "end" : "85551", "name" : "Lrp"}]},
+{ "promoter" : "rrsHp1"
+"config" : [{"start" : "223297", "end" : "223311", "name" : "Fis"},
+{"start" : "223344", "end" : "223358", "name" : "Fis"},
+{"start" : "223387", "end" : "223401", "name" : "Fis"},
+{"start" : "223407", "end" : "223421", "name" : "Fis"}]},
+{ "promoter" : "lrpp"
+"config" : [{"start" : "931488", "end" : "931502", "name" : "Lrp"},
+{"start" : "931551", "end" : "931565", "name" : "Lrp"},
+{"start" : "931574", "end" : "931590", "name" : "Lrp"},
+{"start" : "931592", "end" : "931606", "name" : "Lrp"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236500", "end" : "1236514", "name" : "Lrp"},
+{"start" : "1236548", "end" : "1236562", "name" : "Lrp"},
+{"start" : "1236579", "end" : "1236593", "name" : "Lrp"},
+{"start" : "1236605", "end" : "1236619", "name" : "Lrp"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236579", "end" : "1236593", "name" : "Lrp"},
+{"start" : "1236605", "end" : "1236619", "name" : "Lrp"},
+{"start" : "1236635", "end" : "1236649", "name" : "Lrp"},
+{"start" : "1236673", "end" : "1236687", "name" : "Lrp"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328840", "end" : "1328854", "name" : "Fis"},
+{"start" : "1328868", "end" : "1328882", "name" : "Fis"},
+{"start" : "1328903", "end" : "1328917", "name" : "Fis"},
+{"start" : "1328935", "end" : "1328949", "name" : "Fis"}]},
+{ "promoter" : "topAp1"
+"config" : [{"start" : "1328903", "end" : "1328917", "name" : "Fis"},
+{"start" : "1328935", "end" : "1328949", "name" : "Fis"},
+{"start" : "1328967", "end" : "1328981", "name" : "Fis"},
+{"start" : "1328987", "end" : "1329001", "name" : "Fis"}]},
+{ "promoter" : "cspIp"
+"config" : [{"start" : "1636789", "end" : "1636803", "name" : "Fis"},
+{"start" : "1636816", "end" : "1636830", "name" : "Fis"},
+{"start" : "1636849", "end" : "1636863", "name" : "Fis"},
+{"start" : "1636912", "end" : "1636926", "name" : "Fis"}]},
+{ "promoter" : "ttdAp"
+"config" : [{"start" : "3204309", "end" : "3204315", "name" : "Dan"},
+{"start" : "3204351", "end" : "3204357", "name" : "Dan"},
+{"start" : "3204369", "end" : "3204375", "name" : "Dan"},
+{"start" : "3204384", "end" : "3204390", "name" : "Dan"}]}
+],
+"131" :
+[{ "promoter" : "dsbGp"
+"config" : [{"start" : "638070", "end" : "638086", "name" : "OxyR"},
+{"start" : "638092", "end" : "638108", "name" : "OxyR"},
+{"start" : "638157", "end" : "638164", "name" : "MetJ"},
+{"start" : "638167", "end" : "638174", "name" : "MetJ"}]},
+{ "promoter" : "atoDp"
+"config" : [{"start" : "2321286", "end" : "2321305", "name" : "AtoC"},
+{"start" : "2321305", "end" : "2321324", "name" : "AtoC"},
+{"start" : "2321371", "end" : "2321383", "name" : "IHF"},
+{"start" : "2321396", "end" : "2321408", "name" : "IHF"}]},
+{ "promoter" : "glyAp"
+"config" : [{"start" : "2683710", "end" : "2683724", "name" : "MetR"},
+{"start" : "2683732", "end" : "2683746", "name" : "MetR"},
+{"start" : "2683776", "end" : "2683786", "name" : "NsrR"},
+{"start" : "2683809", "end" : "2683831", "name" : "NsrR"}]},
+{ "promoter" : "aroLp"
+"config" : [{"start" : "405506", "end" : "405523", "name" : "TyrR"},
+{"start" : "405525", "end" : "405542", "name" : "TyrR"},
+{"start" : "405543", "end" : "405560", "name" : "TrpR"},
+{"start" : "405551", "end" : "405568", "name" : "TrpR"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229623", "end" : "1229634", "name" : "SlyA"},
+{"start" : "1229632", "end" : "1229643", "name" : "SlyA"},
+{"start" : "1229664", "end" : "1229678", "name" : "Fis"},
+{"start" : "1229674", "end" : "1229688", "name" : "Fis"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310874", "end" : "2310888", "name" : "Lrp"},
+{"start" : "2310875", "end" : "2310889", "name" : "Lrp"},
+{"start" : "2310890", "end" : "2310909", "name" : "OmpR"},
+{"start" : "2310910", "end" : "2310929", "name" : "OmpR"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244524", "end" : "4244533", "name" : "MalT"},
+{"start" : "4244534", "end" : "4244543", "name" : "MalT"},
+{"start" : "4244553", "end" : "4244574", "name" : "CRP"},
+{"start" : "4244582", "end" : "4244603", "name" : "CRP"}]},
+{ "promoter" : "fhuFp"
+"config" : [{"start" : "4603708", "end" : "4603724", "name" : "OxyR"},
+{"start" : "4603730", "end" : "4603746", "name" : "OxyR"},
+{"start" : "4603764", "end" : "4603782", "name" : "Fur"},
+{"start" : "4603770", "end" : "4603788", "name" : "Fur"}]},
+{ "promoter" : "mtrp2"
+"config" : [{"start" : "3303885", "end" : "3303902", "name" : "TrpR"},
+{"start" : "3303893", "end" : "3303910", "name" : "TrpR"},
+{"start" : "3303950", "end" : "3303967", "name" : "TyrR"},
+{"start" : "3303980", "end" : "3303997", "name" : "TyrR"}]},
+{ "promoter" : "gltBp"
+"config" : [{"start" : "3352372", "end" : "3352386", "name" : "Lrp"},
+{"start" : "3352416", "end" : "3352430", "name" : "Lrp"},
+{"start" : "3352436", "end" : "3352448", "name" : "IHF"},
+{"start" : "3352440", "end" : "3352452", "name" : "IHF"}]},
+{ "promoter" : "proPp2"
+"config" : [{"start" : "4328297", "end" : "4328318", "name" : "CRP"},
+{"start" : "4328298", "end" : "4328319", "name" : "CRP"},
+{"start" : "4328342", "end" : "4328356", "name" : "Fis"},
+{"start" : "4328382", "end" : "4328396", "name" : "Fis"}]},
+{ "promoter" : "rhaBp"
+"config" : [{"start" : "4095527", "end" : "4095543", "name" : "RhaS"},
+{"start" : "4095560", "end" : "4095576", "name" : "RhaS"},
+{"start" : "4095577", "end" : "4095598", "name" : "CRP"},
+{"start" : "4095607", "end" : "4095628", "name" : "CRP"}]},
+{ "promoter" : "katGp"
+"config" : [{"start" : "4131716", "end" : "4131729", "name" : "FNR"},
+{"start" : "4131732", "end" : "4131745", "name" : "FNR"},
+{"start" : "4131761", "end" : "4131777", "name" : "OxyR"},
+{"start" : "4131783", "end" : "4131799", "name" : "OxyR"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244616", "end" : "4244637", "name" : "CRP"},
+{"start" : "4244648", "end" : "4244669", "name" : "CRP"},
+{"start" : "4244680", "end" : "4244689", "name" : "MalT"},
+{"start" : "4244690", "end" : "4244699", "name" : "MalT"}]}
+],
+"220" :
+[{ "promoter" : "gntKp"
+"config" : [{"start" : "3575646", "end" : "3575661", "name" : "IdnR"},
+{"start" : "3575658", "end" : "3575677", "name" : "GntR"},
+{"start" : "3575659", "end" : "3575674", "name" : "IdnR"},
+{"start" : "3575726", "end" : "3575747", "name" : "CRP"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953746", "end" : "953767", "name" : "CRP"},
+{"start" : "953750", "end" : "953763", "name" : "FNR"},
+{"start" : "953750", "end" : "953756", "name" : "NarL"},
+{"start" : "953814", "end" : "953820", "name" : "NarL"}]}
+],
+"221" :
+[{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102660", "end" : "1102674", "name" : "CpxR"},
+{"start" : "1102669", "end" : "1102682", "name" : "CpxR"},
+{"start" : "1102679", "end" : "1102692", "name" : "CsgD"},
+{"start" : "1102680", "end" : "1102713", "name" : "MlrA"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102701", "end" : "1102715", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102740", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102755", "name" : "IHF"},
+{"start" : "1102727", "end" : "1102748", "name" : "CRP"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229740", "end" : "1229761", "name" : "CRP"},
+{"start" : "1229744", "end" : "1229757", "name" : "FNR"},
+{"start" : "1229745", "end" : "1229759", "name" : "Fis"},
+{"start" : "1229792", "end" : "1229806", "name" : "Fis"}]},
+{ "promoter" : "hmpAp"
+"config" : [{"start" : "2683776", "end" : "2683786", "name" : "NsrR"},
+{"start" : "2683809", "end" : "2683831", "name" : "NsrR"},
+{"start" : "2683815", "end" : "2683833", "name" : "Fur"},
+{"start" : "2683817", "end" : "2683830", "name" : "FNR"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830344", "end" : "2830356", "name" : "NorR"},
+{"start" : "2830368", "end" : "2830380", "name" : "NorR"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarL"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarP"}]},
+{ "promoter" : "rpoHp5"
+"config" : [{"start" : "3598910", "end" : "3598931", "name" : "CRP"},
+{"start" : "3598913", "end" : "3598921", "name" : "DnaA"},
+{"start" : "3598919", "end" : "3598934", "name" : "CytR"},
+{"start" : "3598936", "end" : "3598954", "name" : "CytR"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654862", "end" : "3654876", "name" : "Lrp"},
+{"start" : "3654871", "end" : "3654885", "name" : "Lrp"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadW"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadX"}]},
+{ "promoter" : "glnAp2"
+"config" : [{"start" : "4056177", "end" : "4056198", "name" : "CRP"},
+{"start" : "4056178", "end" : "4056192", "name" : "Fis"},
+{"start" : "4056190", "end" : "4056206", "name" : "NtrC"},
+{"start" : "4056211", "end" : "4056227", "name" : "NtrC"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098708", "end" : "4098720", "name" : "IHF"},
+{"start" : "4098728", "end" : "4098740", "name" : "IHF"},
+{"start" : "4098729", "end" : "4098746", "name" : "SoxS"},
+{"start" : "4098731", "end" : "4098749", "name" : "Fur"}]},
+{ "promoter" : "idnkp"
+"config" : [{"start" : "4492507", "end" : "4492526", "name" : "GntR"},
+{"start" : "4492527", "end" : "4492546", "name" : "GntR"},
+{"start" : "4492529", "end" : "4492544", "name" : "IdnR"},
+{"start" : "4492539", "end" : "4492560", "name" : "CRP"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102679", "end" : "1102692", "name" : "CsgD"},
+{"start" : "1102680", "end" : "1102713", "name" : "MlrA"},
+{"start" : "1102689", "end" : "1102704", "name" : "CpxR"},
+{"start" : "1102701", "end" : "1102715", "name" : "CpxR"}]},
+{ "promoter" : "osmYp"
+"config" : [{"start" : "4609157", "end" : "4609175", "name" : "Fis"},
+{"start" : "4609165", "end" : "4609177", "name" : "IHF"},
+{"start" : "4609166", "end" : "4609187", "name" : "CRP"},
+{"start" : "4609177", "end" : "4609198", "name" : "CRP"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131455", "end" : "131469", "name" : "ArcA"},
+{"start" : "131464", "end" : "131478", "name" : "ArcA"},
+{"start" : "131471", "end" : "131492", "name" : "CRP"},
+{"start" : "131482", "end" : "131496", "name" : "Fis"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "939998", "end" : "940011", "name" : "FNR"},
+{"start" : "940006", "end" : "940020", "name" : "Fis"},
+{"start" : "940016", "end" : "940022", "name" : "NarL"},
+{"start" : "940036", "end" : "940042", "name" : "NarL"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350530", "end" : "2350544", "name" : "Fis"},
+{"start" : "2350537", "end" : "2350551", "name" : "Fis"},
+{"start" : "2350545", "end" : "2350564", "name" : "GlpR"},
+{"start" : "2350554", "end" : "2350575", "name" : "CRP"}]},
+{ "promoter" : "norRp"
+"config" : [{"start" : "2830304", "end" : "2830314", "name" : "NsrR"},
+{"start" : "2830314", "end" : "2830327", "name" : "FNR"},
+{"start" : "2830323", "end" : "2830335", "name" : "NorR"},
+{"start" : "2830344", "end" : "2830356", "name" : "NorR"}]},
+{ "promoter" : "rhaSp"
+"config" : [{"start" : "4095612", "end" : "4095633", "name" : "CRP"},
+{"start" : "4095631", "end" : "4095652", "name" : "CRP"},
+{"start" : "4095652", "end" : "4095668", "name" : "RhaS"},
+{"start" : "4095653", "end" : "4095669", "name" : "RhaR"}]},
+{ "promoter" : "rhaSp"
+"config" : [{"start" : "4095631", "end" : "4095652", "name" : "CRP"},
+{"start" : "4095652", "end" : "4095668", "name" : "RhaS"},
+{"start" : "4095653", "end" : "4095669", "name" : "RhaR"},
+{"start" : "4095686", "end" : "4095702", "name" : "RhaR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102727", "end" : "1102748", "name" : "CRP"},
+{"start" : "1102727", "end" : "1102740", "name" : "CsgD"},
+{"start" : "1102739", "end" : "1102751", "name" : "CpxR"},
+{"start" : "1102746", "end" : "1102760", "name" : "CpxR"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654858", "end" : "3654877", "name" : "GadX"},
+{"start" : "3654861", "end" : "3654870", "name" : "TorR"},
+{"start" : "3654862", "end" : "3654876", "name" : "Lrp"},
+{"start" : "3654871", "end" : "3654885", "name" : "Lrp"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347711", "end" : "347716", "name" : "AscG"},
+{"start" : "347711", "end" : "347734", "name" : "PrpR"},
+{"start" : "347722", "end" : "347727", "name" : "AscG"},
+{"start" : "347729", "end" : "347734", "name" : "AscG"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102608", "end" : "1102622", "name" : "CpxR"},
+{"start" : "1102610", "end" : "1102626", "name" : "RstA"},
+{"start" : "1102611", "end" : "1102625", "name" : "CpxR"},
+{"start" : "1102612", "end" : "1102626", "name" : "CpxR"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986608", "end" : "1986626", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "H-NS"},
+{"start" : "1986620", "end" : "1986638", "name" : "Fur"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986614", "end" : "1986632", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "H-NS"},
+{"start" : "1986620", "end" : "1986638", "name" : "Fur"},
+{"start" : "1986626", "end" : "1986644", "name" : "Fur"}]},
+{ "promoter" : "crpp2"
+"config" : [{"start" : "3483997", "end" : "3484011", "name" : "Fis"},
+{"start" : "3483998", "end" : "3484012", "name" : "Fis"},
+{"start" : "3484005", "end" : "3484026", "name" : "CRP"},
+{"start" : "3484015", "end" : "3484029", "name" : "Fis"}]},
+{ "promoter" : "crpp1"
+"config" : [{"start" : "3483998", "end" : "3484012", "name" : "Fis"},
+{"start" : "3484005", "end" : "3484026", "name" : "CRP"},
+{"start" : "3484015", "end" : "3484029", "name" : "Fis"},
+{"start" : "3484016", "end" : "3484030", "name" : "Fis"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365546", "end" : "365567", "name" : "CRP"},
+{"start" : "365547", "end" : "365567", "name" : "LacI"},
+{"start" : "365555", "end" : "365569", "name" : "H-NS"},
+{"start" : "365565", "end" : "365579", "name" : "H-NS"}]},
+{ "promoter" : "rpoHp4"
+"config" : [{"start" : "3598903", "end" : "3598924", "name" : "CRP"},
+{"start" : "3598910", "end" : "3598931", "name" : "CRP"},
+{"start" : "3598913", "end" : "3598921", "name" : "DnaA"},
+{"start" : "3598919", "end" : "3598934", "name" : "CytR"}]},
+{ "promoter" : "glnAp2"
+"config" : [{"start" : "4056175", "end" : "4056196", "name" : "CRP"},
+{"start" : "4056177", "end" : "4056198", "name" : "CRP"},
+{"start" : "4056178", "end" : "4056192", "name" : "Fis"},
+{"start" : "4056190", "end" : "4056206", "name" : "NtrC"}]},
+{ "promoter" : "rhaTp"
+"config" : [{"start" : "4098738", "end" : "4098752", "name" : "ArcA"},
+{"start" : "4098738", "end" : "4098751", "name" : "FNR"},
+{"start" : "4098740", "end" : "4098758", "name" : "Fur"},
+{"start" : "4098743", "end" : "4098761", "name" : "Fur"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098740", "end" : "4098758", "name" : "Fur"},
+{"start" : "4098743", "end" : "4098761", "name" : "Fur"},
+{"start" : "4098752", "end" : "4098764", "name" : "IHF"},
+{"start" : "4098754", "end" : "4098768", "name" : "ArcA"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098743", "end" : "4098761", "name" : "Fur"},
+{"start" : "4098752", "end" : "4098764", "name" : "IHF"},
+{"start" : "4098754", "end" : "4098768", "name" : "ArcA"},
+{"start" : "4098755", "end" : "4098769", "name" : "ArcA"}]},
+{ "promoter" : "fixAp"
+"config" : [{"start" : "42181", "end" : "42196", "name" : "CaiF"},
+{"start" : "42188", "end" : "42209", "name" : "CRP"},
+{"start" : "42200", "end" : "42215", "name" : "CaiF"},
+{"start" : "42238", "end" : "42253", "name" : "CaiF"}]},
+{ "promoter" : "fixAp"
+"config" : [{"start" : "42200", "end" : "42215", "name" : "CaiF"},
+{"start" : "42238", "end" : "42253", "name" : "CaiF"},
+{"start" : "42245", "end" : "42266", "name" : "CRP"},
+{"start" : "42257", "end" : "42272", "name" : "CaiF"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365591", "end" : "365605", "name" : "H-NS"},
+{"start" : "365614", "end" : "365628", "name" : "H-NS"},
+{"start" : "365618", "end" : "365639", "name" : "CRP"},
+{"start" : "365627", "end" : "365641", "name" : "H-NS"}]},
+{ "promoter" : "tsxp2"
+"config" : [{"start" : "431334", "end" : "431359", "name" : "CytR"},
+{"start" : "431345", "end" : "431366", "name" : "CRP"},
+{"start" : "431364", "end" : "431381", "name" : "CytR"},
+{"start" : "431374", "end" : "431393", "name" : "CytR"}]},
+{ "promoter" : "dpiBp"
+"config" : [{"start" : "651272", "end" : "651294", "name" : "DpiA"},
+{"start" : "651289", "end" : "651305", "name" : "DcuR"},
+{"start" : "651299", "end" : "651321", "name" : "DpiA"},
+{"start" : "651341", "end" : "651363", "name" : "DpiA"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791315", "end" : "791329", "name" : "H-NS"},
+{"start" : "791333", "end" : "791347", "name" : "H-NS"},
+{"start" : "791335", "end" : "791356", "name" : "CRP"},
+{"start" : "791344", "end" : "791358", "name" : "H-NS"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278948", "end" : "1278954", "name" : "NarL"},
+{"start" : "1278956", "end" : "1278962", "name" : "NarL"},
+{"start" : "1278957", "end" : "1278971", "name" : "Fis"},
+{"start" : "1278970", "end" : "1278976", "name" : "NarL"}]},
+{ "promoter" : "ogtp"
+"config" : [{"start" : "1398355", "end" : "1398361", "name" : "NarL"},
+{"start" : "1398379", "end" : "1398385", "name" : "NarL"},
+{"start" : "1398383", "end" : "1398397", "name" : "Fis"},
+{"start" : "1398388", "end" : "1398394", "name" : "NarL"}]},
+{ "promoter" : "aldAp"
+"config" : [{"start" : "1486202", "end" : "1486216", "name" : "ArcA"},
+{"start" : "1486202", "end" : "1486210", "name" : "DnaA"},
+{"start" : "1486208", "end" : "1486222", "name" : "ArcA"},
+{"start" : "1486219", "end" : "1486233", "name" : "ArcA"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2311125", "end" : "2311139", "name" : "Lrp"},
+{"start" : "2311134", "end" : "2311157", "name" : "AcrR"},
+{"start" : "2311156", "end" : "2311170", "name" : "Lrp"},
+{"start" : "2311185", "end" : "2311199", "name" : "Lrp"}]},
+{ "promoter" : "argOp"
+"config" : [{"start" : "3066895", "end" : "3066910", "name" : "Lrp"},
+{"start" : "3066902", "end" : "3066921", "name" : "ArgP"},
+{"start" : "3066916", "end" : "3066931", "name" : "Lrp"},
+{"start" : "3066940", "end" : "3066955", "name" : "Lrp"}]},
+{ "promoter" : "glpFp"
+"config" : [{"start" : "4116192", "end" : "4116211", "name" : "GlpR"},
+{"start" : "4116211", "end" : "4116232", "name" : "CRP"},
+{"start" : "4116212", "end" : "4116231", "name" : "GlpR"},
+{"start" : "4116233", "end" : "4116252", "name" : "GlpR"}]},
+{ "promoter" : "glpFp"
+"config" : [{"start" : "4116212", "end" : "4116231", "name" : "GlpR"},
+{"start" : "4116233", "end" : "4116252", "name" : "GlpR"},
+{"start" : "4116234", "end" : "4116255", "name" : "CRP"},
+{"start" : "4116254", "end" : "4116273", "name" : "GlpR"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213369", "end" : "4213375", "name" : "IclR"},
+{"start" : "4213380", "end" : "4213394", "name" : "IclR"},
+{"start" : "4213384", "end" : "4213405", "name" : "CRP"},
+{"start" : "4213396", "end" : "4213402", "name" : "IclR"}]},
+{ "promoter" : "melRp"
+"config" : [{"start" : "4339781", "end" : "4339798", "name" : "MelR"},
+{"start" : "4339801", "end" : "4339818", "name" : "MelR"},
+{"start" : "4339818", "end" : "4339839", "name" : "CRP"},
+{"start" : "4339839", "end" : "4339856", "name" : "MelR"}]},
+{ "promoter" : "melRp"
+"config" : [{"start" : "4339801", "end" : "4339818", "name" : "MelR"},
+{"start" : "4339818", "end" : "4339839", "name" : "CRP"},
+{"start" : "4339839", "end" : "4339856", "name" : "MelR"},
+{"start" : "4339859", "end" : "4339876", "name" : "MelR"}]},
+{ "promoter" : "fhuFp"
+"config" : [{"start" : "4603770", "end" : "4603788", "name" : "Fur"},
+{"start" : "4603787", "end" : "4603805", "name" : "Fur"},
+{"start" : "4603792", "end" : "4603808", "name" : "OxyR"},
+{"start" : "4603793", "end" : "4603811", "name" : "Fur"}]}
+],
+"222" :
+[{ "promoter" : "ompFp"
+"config" : [{"start" : "986356", "end" : "986375", "name" : "OmpR"},
+{"start" : "986357", "end" : "986378", "name" : "CRP"},
+{"start" : "986371", "end" : "986383", "name" : "IHF"},
+{"start" : "986376", "end" : "986391", "name" : "CpxR"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986371", "end" : "986383", "name" : "IHF"},
+{"start" : "986376", "end" : "986391", "name" : "CpxR"},
+{"start" : "986376", "end" : "986395", "name" : "OmpR"},
+{"start" : "986385", "end" : "986399", "name" : "Lrp"}]},
+{ "promoter" : "acnAp2"
+"config" : [{"start" : "1333744", "end" : "1333763", "name" : "SoxS"},
+{"start" : "1333754", "end" : "1333775", "name" : "CRP"},
+{"start" : "1333758", "end" : "1333771", "name" : "FNR"},
+{"start" : "1333764", "end" : "1333778", "name" : "ArcA"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654825", "end" : "3654839", "name" : "Lrp"},
+{"start" : "3654837", "end" : "3654846", "name" : "TorR"},
+{"start" : "3654838", "end" : "3654854", "name" : "PhoP"},
+{"start" : "3654843", "end" : "3654863", "name" : "MarA"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665678", "end" : "3665697", "name" : "GadX"},
+{"start" : "3665682", "end" : "3665703", "name" : "CRP"},
+{"start" : "3665683", "end" : "3665702", "name" : "GadE"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadW"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665683", "end" : "3665702", "name" : "GadE"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadW"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadX"},
+{"start" : "3665715", "end" : "3665733", "name" : "Fis"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347745", "end" : "347768", "name" : "PrpR"},
+{"start" : "347751", "end" : "347756", "name" : "AscG"},
+{"start" : "347753", "end" : "347774", "name" : "CRP"},
+{"start" : "347760", "end" : "347777", "name" : "Cra"}]},
+{ "promoter" : "glcCp"
+"config" : [{"start" : "3126199", "end" : "3126220", "name" : "CRP"},
+{"start" : "3126199", "end" : "3126211", "name" : "IHF"},
+{"start" : "3126202", "end" : "3126216", "name" : "ArcA"},
+{"start" : "3126215", "end" : "3126232", "name" : "Cra"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365614", "end" : "365628", "name" : "H-NS"},
+{"start" : "365618", "end" : "365639", "name" : "CRP"},
+{"start" : "365627", "end" : "365641", "name" : "H-NS"},
+{"start" : "365639", "end" : "365659", "name" : "LacI"}]},
+{ "promoter" : "grxAp"
+"config" : [{"start" : "890035", "end" : "890051", "name" : "OxyR"},
+{"start" : "890050", "end" : "890067", "name" : "SoxS"},
+{"start" : "890057", "end" : "890073", "name" : "OxyR"},
+{"start" : "890065", "end" : "890084", "name" : "MarA"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986376", "end" : "986391", "name" : "CpxR"},
+{"start" : "986376", "end" : "986395", "name" : "OmpR"},
+{"start" : "986385", "end" : "986399", "name" : "Lrp"},
+{"start" : "986396", "end" : "986415", "name" : "OmpR"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986376", "end" : "986395", "name" : "OmpR"},
+{"start" : "986385", "end" : "986399", "name" : "Lrp"},
+{"start" : "986396", "end" : "986415", "name" : "OmpR"},
+{"start" : "986397", "end" : "986418", "name" : "CRP"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229728", "end" : "1229739", "name" : "SlyA"},
+{"start" : "1229738", "end" : "1229752", "name" : "H-NS"},
+{"start" : "1229739", "end" : "1229750", "name" : "SlyA"},
+{"start" : "1229740", "end" : "1229761", "name" : "CRP"}]},
+{ "promoter" : "ybjCp"
+"config" : [{"start" : "890050", "end" : "890067", "name" : "SoxS"},
+{"start" : "890057", "end" : "890073", "name" : "OxyR"},
+{"start" : "890065", "end" : "890084", "name" : "MarA"},
+{"start" : "890065", "end" : "890084", "name" : "Rob"}]},
+{ "promoter" : "grxAp"
+"config" : [{"start" : "890057", "end" : "890073", "name" : "OxyR"},
+{"start" : "890065", "end" : "890084", "name" : "MarA"},
+{"start" : "890065", "end" : "890084", "name" : "Rob"},
+{"start" : "890065", "end" : "890084", "name" : "SoxS"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986357", "end" : "986378", "name" : "CRP"},
+{"start" : "986371", "end" : "986383", "name" : "IHF"},
+{"start" : "986376", "end" : "986391", "name" : "CpxR"},
+{"start" : "986376", "end" : "986395", "name" : "OmpR"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986385", "end" : "986399", "name" : "Lrp"},
+{"start" : "986396", "end" : "986415", "name" : "OmpR"},
+{"start" : "986397", "end" : "986418", "name" : "CRP"},
+{"start" : "986399", "end" : "986415", "name" : "RstA"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986396", "end" : "986415", "name" : "OmpR"},
+{"start" : "986397", "end" : "986418", "name" : "CRP"},
+{"start" : "986399", "end" : "986415", "name" : "RstA"},
+{"start" : "986401", "end" : "986415", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102599", "end" : "1102620", "name" : "CRP"},
+{"start" : "1102603", "end" : "1102617", "name" : "CpxR"},
+{"start" : "1102604", "end" : "1102663", "name" : "IHF"},
+{"start" : "1102607", "end" : "1102626", "name" : "OmpR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102604", "end" : "1102663", "name" : "IHF"},
+{"start" : "1102607", "end" : "1102626", "name" : "OmpR"},
+{"start" : "1102608", "end" : "1102622", "name" : "CpxR"},
+{"start" : "1102610", "end" : "1102626", "name" : "RstA"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102726", "end" : "1102740", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102755", "name" : "IHF"},
+{"start" : "1102727", "end" : "1102748", "name" : "CRP"},
+{"start" : "1102727", "end" : "1102740", "name" : "CsgD"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102726", "end" : "1102755", "name" : "IHF"},
+{"start" : "1102727", "end" : "1102748", "name" : "CRP"},
+{"start" : "1102727", "end" : "1102740", "name" : "CsgD"},
+{"start" : "1102739", "end" : "1102751", "name" : "CpxR"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156884", "end" : "1156905", "name" : "CRP"},
+{"start" : "1156896", "end" : "1156915", "name" : "SoxS"},
+{"start" : "1156897", "end" : "1156911", "name" : "ArcA"},
+{"start" : "1156902", "end" : "1156916", "name" : "Fis"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229738", "end" : "1229752", "name" : "H-NS"},
+{"start" : "1229739", "end" : "1229750", "name" : "SlyA"},
+{"start" : "1229740", "end" : "1229761", "name" : "CRP"},
+{"start" : "1229744", "end" : "1229757", "name" : "FNR"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229739", "end" : "1229750", "name" : "SlyA"},
+{"start" : "1229740", "end" : "1229761", "name" : "CRP"},
+{"start" : "1229744", "end" : "1229757", "name" : "FNR"},
+{"start" : "1229745", "end" : "1229759", "name" : "Fis"}]},
+{ "promoter" : "acnAp2"
+"config" : [{"start" : "1333744", "end" : "1333763", "name" : "MarA"},
+{"start" : "1333744", "end" : "1333763", "name" : "Rob"},
+{"start" : "1333744", "end" : "1333763", "name" : "SoxS"},
+{"start" : "1333754", "end" : "1333775", "name" : "CRP"}]},
+{ "promoter" : "acnAp2"
+"config" : [{"start" : "1333744", "end" : "1333763", "name" : "Rob"},
+{"start" : "1333744", "end" : "1333763", "name" : "SoxS"},
+{"start" : "1333754", "end" : "1333775", "name" : "CRP"},
+{"start" : "1333758", "end" : "1333771", "name" : "FNR"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570148", "end" : "1570169", "name" : "CRP"},
+{"start" : "1570148", "end" : "1570162", "name" : "Fis"},
+{"start" : "1570149", "end" : "1570168", "name" : "GadE"},
+{"start" : "1570155", "end" : "1570168", "name" : "RcsB"}]},
+{ "promoter" : "marRp"
+"config" : [{"start" : "1617036", "end" : "1617053", "name" : "Cra"},
+{"start" : "1617045", "end" : "1617065", "name" : "MarA"},
+{"start" : "1617046", "end" : "1617065", "name" : "Rob"},
+{"start" : "1617047", "end" : "1617064", "name" : "SoxS"}]},
+{ "promoter" : "marRp"
+"config" : [{"start" : "1617045", "end" : "1617065", "name" : "MarA"},
+{"start" : "1617046", "end" : "1617065", "name" : "Rob"},
+{"start" : "1617047", "end" : "1617064", "name" : "SoxS"},
+{"start" : "1617054", "end" : "1617075", "name" : "CRP"}]},
+{ "promoter" : "yeaRp"
+"config" : [{"start" : "1878039", "end" : "1878061", "name" : "NsrR"},
+{"start" : "1878042", "end" : "1878056", "name" : "Fis"},
+{"start" : "1878054", "end" : "1878060", "name" : "NarL"},
+{"start" : "1878054", "end" : "1878060", "name" : "NarP"}]},
+{ "promoter" : "zwfp"
+"config" : [{"start" : "1934427", "end" : "1934444", "name" : "Cra"},
+{"start" : "1934443", "end" : "1934460", "name" : "SoxS"},
+{"start" : "1934444", "end" : "1934464", "name" : "MarA"},
+{"start" : "1934444", "end" : "1934463", "name" : "Rob"}]},
+{ "promoter" : "ompCp2"
+"config" : [{"start" : "2311053", "end" : "2311067", "name" : "Lrp"},
+{"start" : "2311056", "end" : "2311076", "name" : "MarA"},
+{"start" : "2311056", "end" : "2311075", "name" : "Rob"},
+{"start" : "2311059", "end" : "2311076", "name" : "SoxS"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654843", "end" : "3654863", "name" : "MarA"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadW"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadX"},
+{"start" : "3654861", "end" : "3654870", "name" : "TorR"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654858", "end" : "3654877", "name" : "GadW"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadX"},
+{"start" : "3654861", "end" : "3654870", "name" : "TorR"},
+{"start" : "3654862", "end" : "3654876", "name" : "Lrp"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654922", "end" : "3654941", "name" : "GadE"},
+{"start" : "3654923", "end" : "3654937", "name" : "Lrp"},
+{"start" : "3654925", "end" : "3654939", "name" : "H-NS"},
+{"start" : "3654931", "end" : "3654950", "name" : "GadW"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654923", "end" : "3654937", "name" : "Lrp"},
+{"start" : "3654925", "end" : "3654939", "name" : "H-NS"},
+{"start" : "3654931", "end" : "3654950", "name" : "GadW"},
+{"start" : "3654931", "end" : "3654950", "name" : "GadX"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665678", "end" : "3665697", "name" : "GadW"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadX"},
+{"start" : "3665682", "end" : "3665703", "name" : "CRP"},
+{"start" : "3665683", "end" : "3665702", "name" : "GadE"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665682", "end" : "3665703", "name" : "CRP"},
+{"start" : "3665683", "end" : "3665702", "name" : "GadE"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadW"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadX"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098728", "end" : "4098740", "name" : "IHF"},
+{"start" : "4098729", "end" : "4098746", "name" : "SoxS"},
+{"start" : "4098731", "end" : "4098749", "name" : "Fur"},
+{"start" : "4098731", "end" : "4098751", "name" : "MarA"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098729", "end" : "4098746", "name" : "SoxS"},
+{"start" : "4098731", "end" : "4098749", "name" : "Fur"},
+{"start" : "4098731", "end" : "4098751", "name" : "MarA"},
+{"start" : "4098732", "end" : "4098751", "name" : "Rob"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098731", "end" : "4098749", "name" : "Fur"},
+{"start" : "4098731", "end" : "4098751", "name" : "MarA"},
+{"start" : "4098732", "end" : "4098751", "name" : "Rob"},
+{"start" : "4098737", "end" : "4098751", "name" : "ArcA"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098731", "end" : "4098751", "name" : "MarA"},
+{"start" : "4098732", "end" : "4098751", "name" : "Rob"},
+{"start" : "4098737", "end" : "4098751", "name" : "ArcA"},
+{"start" : "4098737", "end" : "4098755", "name" : "Fur"}]},
+{ "promoter" : "uxuAp"
+"config" : [{"start" : "4549473", "end" : "4549494", "name" : "CRP"},
+{"start" : "4549479", "end" : "4549496", "name" : "ExuR"},
+{"start" : "4549479", "end" : "4549495", "name" : "OxyR"},
+{"start" : "4549479", "end" : "4549496", "name" : "UxuR"}]},
+{ "promoter" : "cyoAp"
+"config" : [{"start" : "451046", "end" : "451062", "name" : "PdhR"},
+{"start" : "451058", "end" : "451079", "name" : "CRP"},
+{"start" : "451063", "end" : "451076", "name" : "FNR"},
+{"start" : "451070", "end" : "451084", "name" : "ArcA"}]},
+{ "promoter" : "cyoAp"
+"config" : [{"start" : "451058", "end" : "451079", "name" : "CRP"},
+{"start" : "451063", "end" : "451076", "name" : "FNR"},
+{"start" : "451070", "end" : "451084", "name" : "ArcA"},
+{"start" : "451081", "end" : "451099", "name" : "Fur"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791335", "end" : "791356", "name" : "CRP"},
+{"start" : "791344", "end" : "791358", "name" : "H-NS"},
+{"start" : "791357", "end" : "791372", "name" : "GalR"},
+{"start" : "791357", "end" : "791372", "name" : "GalS"}]},
+{ "promoter" : "marRp"
+"config" : [{"start" : "1617029", "end" : "1617043", "name" : "Fis"},
+{"start" : "1617036", "end" : "1617053", "name" : "Cra"},
+{"start" : "1617045", "end" : "1617065", "name" : "MarA"},
+{"start" : "1617046", "end" : "1617065", "name" : "Rob"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350537", "end" : "2350551", "name" : "Fis"},
+{"start" : "2350545", "end" : "2350564", "name" : "GlpR"},
+{"start" : "2350554", "end" : "2350575", "name" : "CRP"},
+{"start" : "2350558", "end" : "2350571", "name" : "FNR"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654837", "end" : "3654846", "name" : "TorR"},
+{"start" : "3654838", "end" : "3654854", "name" : "PhoP"},
+{"start" : "3654843", "end" : "3654863", "name" : "MarA"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadW"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654838", "end" : "3654854", "name" : "PhoP"},
+{"start" : "3654843", "end" : "3654863", "name" : "MarA"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadW"},
+{"start" : "3654858", "end" : "3654877", "name" : "GadX"}]},
+{ "promoter" : "lpdAp"
+"config" : [{"start" : "127681", "end" : "127695", "name" : "Fis"},
+{"start" : "127683", "end" : "127697", "name" : "ArcA"},
+{"start" : "127688", "end" : "127709", "name" : "CRP"},
+{"start" : "127692", "end" : "127706", "name" : "ArcA"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102607", "end" : "1102626", "name" : "OmpR"},
+{"start" : "1102608", "end" : "1102622", "name" : "CpxR"},
+{"start" : "1102610", "end" : "1102626", "name" : "RstA"},
+{"start" : "1102611", "end" : "1102625", "name" : "CpxR"}]},
+{ "promoter" : "aldAp"
+"config" : [{"start" : "1486197", "end" : "1486210", "name" : "FNR"},
+{"start" : "1486202", "end" : "1486216", "name" : "ArcA"},
+{"start" : "1486202", "end" : "1486210", "name" : "DnaA"},
+{"start" : "1486208", "end" : "1486222", "name" : "ArcA"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098732", "end" : "4098751", "name" : "Rob"},
+{"start" : "4098737", "end" : "4098751", "name" : "ArcA"},
+{"start" : "4098737", "end" : "4098755", "name" : "Fur"},
+{"start" : "4098738", "end" : "4098752", "name" : "ArcA"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098737", "end" : "4098751", "name" : "ArcA"},
+{"start" : "4098737", "end" : "4098755", "name" : "Fur"},
+{"start" : "4098738", "end" : "4098752", "name" : "ArcA"},
+{"start" : "4098738", "end" : "4098751", "name" : "FNR"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791333", "end" : "791347", "name" : "H-NS"},
+{"start" : "791335", "end" : "791356", "name" : "CRP"},
+{"start" : "791344", "end" : "791358", "name" : "H-NS"},
+{"start" : "791357", "end" : "791372", "name" : "GalR"}]},
+{ "promoter" : "xylAp"
+"config" : [{"start" : "3728863", "end" : "3728880", "name" : "XylR"},
+{"start" : "3728870", "end" : "3728886", "name" : "AraC"},
+{"start" : "3728884", "end" : "3728901", "name" : "XylR"},
+{"start" : "3728901", "end" : "3728922", "name" : "CRP"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365537", "end" : "365551", "name" : "H-NS"},
+{"start" : "365546", "end" : "365567", "name" : "CRP"},
+{"start" : "365547", "end" : "365567", "name" : "LacI"},
+{"start" : "365555", "end" : "365569", "name" : "H-NS"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102603", "end" : "1102617", "name" : "CpxR"},
+{"start" : "1102604", "end" : "1102663", "name" : "IHF"},
+{"start" : "1102607", "end" : "1102626", "name" : "OmpR"},
+{"start" : "1102608", "end" : "1102622", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102669", "end" : "1102682", "name" : "CpxR"},
+{"start" : "1102679", "end" : "1102692", "name" : "CsgD"},
+{"start" : "1102680", "end" : "1102713", "name" : "MlrA"},
+{"start" : "1102689", "end" : "1102704", "name" : "CpxR"}]},
+{ "promoter" : "glcDp"
+"config" : [{"start" : "3126195", "end" : "3126209", "name" : "ArcA"},
+{"start" : "3126199", "end" : "3126220", "name" : "CRP"},
+{"start" : "3126199", "end" : "3126211", "name" : "IHF"},
+{"start" : "3126202", "end" : "3126216", "name" : "ArcA"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665631", "end" : "3665650", "name" : "GadX"},
+{"start" : "3665639", "end" : "3665657", "name" : "Fis"},
+{"start" : "3665642", "end" : "3665655", "name" : "RcsB"},
+{"start" : "3665652", "end" : "3665671", "name" : "GadX"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665715", "end" : "3665733", "name" : "Fis"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadW"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadX"},
+{"start" : "3665739", "end" : "3665757", "name" : "Fis"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098737", "end" : "4098755", "name" : "Fur"},
+{"start" : "4098738", "end" : "4098752", "name" : "ArcA"},
+{"start" : "4098738", "end" : "4098751", "name" : "FNR"},
+{"start" : "4098740", "end" : "4098758", "name" : "Fur"}]},
+{ "promoter" : "gntPp"
+"config" : [{"start" : "4549367", "end" : "4549388", "name" : "CRP"},
+{"start" : "4549373", "end" : "4549390", "name" : "ExuR"},
+{"start" : "4549373", "end" : "4549390", "name" : "UxuR"},
+{"start" : "4549388", "end" : "4549409", "name" : "CRP"}]},
+{ "promoter" : "osmYp"
+"config" : [{"start" : "4609153", "end" : "4609174", "name" : "CRP"},
+{"start" : "4609157", "end" : "4609175", "name" : "Fis"},
+{"start" : "4609165", "end" : "4609177", "name" : "IHF"},
+{"start" : "4609166", "end" : "4609187", "name" : "CRP"}]},
+{ "promoter" : "gntKp"
+"config" : [{"start" : "3575645", "end" : "3575664", "name" : "GntR"},
+{"start" : "3575646", "end" : "3575661", "name" : "IdnR"},
+{"start" : "3575658", "end" : "3575677", "name" : "GntR"},
+{"start" : "3575659", "end" : "3575674", "name" : "IdnR"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156963", "end" : "1156977", "name" : "Fis"},
+{"start" : "1156972", "end" : "1156994", "name" : "DgsA"},
+{"start" : "1156983", "end" : "1156997", "name" : "ArcA"},
+{"start" : "1156984", "end" : "1156998", "name" : "Fis"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570185", "end" : "1570204", "name" : "GadW"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadX"},
+{"start" : "1570194", "end" : "1570208", "name" : "Fis"},
+{"start" : "1570206", "end" : "1570225", "name" : "GadW"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570185", "end" : "1570204", "name" : "GadX"},
+{"start" : "1570194", "end" : "1570208", "name" : "Fis"},
+{"start" : "1570206", "end" : "1570225", "name" : "GadW"},
+{"start" : "1570206", "end" : "1570225", "name" : "GadX"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665699", "end" : "3665717", "name" : "GadW"},
+{"start" : "3665699", "end" : "3665717", "name" : "GadX"},
+{"start" : "3665715", "end" : "3665733", "name" : "Fis"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadW"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665699", "end" : "3665717", "name" : "GadX"},
+{"start" : "3665715", "end" : "3665733", "name" : "Fis"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadW"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadX"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665721", "end" : "3665740", "name" : "GadW"},
+{"start" : "3665721", "end" : "3665740", "name" : "GadX"},
+{"start" : "3665739", "end" : "3665757", "name" : "Fis"},
+{"start" : "3665742", "end" : "3665761", "name" : "GadW"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665721", "end" : "3665740", "name" : "GadX"},
+{"start" : "3665739", "end" : "3665757", "name" : "Fis"},
+{"start" : "3665742", "end" : "3665761", "name" : "GadW"},
+{"start" : "3665742", "end" : "3665761", "name" : "GadX"}]},
+{ "promoter" : "idnkp"
+"config" : [{"start" : "4492527", "end" : "4492546", "name" : "GntR"},
+{"start" : "4492529", "end" : "4492544", "name" : "IdnR"},
+{"start" : "4492539", "end" : "4492560", "name" : "CRP"},
+{"start" : "4492557", "end" : "4492576", "name" : "GntR"}]},
+{ "promoter" : "argOp"
+"config" : [{"start" : "3066882", "end" : "3066901", "name" : "ArgP"},
+{"start" : "3066895", "end" : "3066910", "name" : "Lrp"},
+{"start" : "3066902", "end" : "3066921", "name" : "ArgP"},
+{"start" : "3066916", "end" : "3066931", "name" : "Lrp"}]},
+{ "promoter" : "xylAp"
+"config" : [{"start" : "3728847", "end" : "3728863", "name" : "AraC"},
+{"start" : "3728863", "end" : "3728880", "name" : "XylR"},
+{"start" : "3728870", "end" : "3728886", "name" : "AraC"},
+{"start" : "3728884", "end" : "3728901", "name" : "XylR"}]}
+],
+"322" :
+[{ "promoter" : "gadBp"
+"config" : [{"start" : "1570053", "end" : "1570067", "name" : "Fis"},
+{"start" : "1570104", "end" : "1570123", "name" : "GadX"},
+{"start" : "1570116", "end" : "1570130", "name" : "Fis"},
+{"start" : "1570126", "end" : "1570145", "name" : "GadX"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986397", "end" : "986418", "name" : "CRP"},
+{"start" : "986399", "end" : "986415", "name" : "RstA"},
+{"start" : "986401", "end" : "986415", "name" : "CpxR"},
+{"start" : "986417", "end" : "986429", "name" : "IHF"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285620", "end" : "4285642", "name" : "NsrR"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarL"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarP"},
+{"start" : "4285633", "end" : "4285645", "name" : "IHF"}]},
+{ "promoter" : "caiTp"
+"config" : [{"start" : "42121", "end" : "42135", "name" : "ArcA"},
+{"start" : "42121", "end" : "42134", "name" : "FNR"},
+{"start" : "42131", "end" : "42145", "name" : "ArcA"},
+{"start" : "42181", "end" : "42196", "name" : "CaiF"}]},
+{ "promoter" : "dpiBp"
+"config" : [{"start" : "651245", "end" : "651258", "name" : "FNR"},
+{"start" : "651272", "end" : "651294", "name" : "DpiA"},
+{"start" : "651289", "end" : "651305", "name" : "DcuR"},
+{"start" : "651299", "end" : "651321", "name" : "DpiA"}]},
+{ "promoter" : "dpsp"
+"config" : [{"start" : "848166", "end" : "848175", "name" : "H-NS"},
+{"start" : "848176", "end" : "848190", "name" : "Fis"},
+{"start" : "848180", "end" : "848201", "name" : "MntR"},
+{"start" : "848192", "end" : "848206", "name" : "Fis"}]},
+{ "promoter" : "dpsp"
+"config" : [{"start" : "848176", "end" : "848190", "name" : "Fis"},
+{"start" : "848180", "end" : "848201", "name" : "MntR"},
+{"start" : "848192", "end" : "848206", "name" : "Fis"},
+{"start" : "848209", "end" : "848225", "name" : "OxyR"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277085", "end" : "1277091", "name" : "NarL"},
+{"start" : "1277100", "end" : "1277113", "name" : "FNR"},
+{"start" : "1277103", "end" : "1277121", "name" : "Fis"},
+{"start" : "1277107", "end" : "1277120", "name" : "FNR"}]},
+{ "promoter" : "narXp"
+"config" : [{"start" : "1277100", "end" : "1277113", "name" : "FNR"},
+{"start" : "1277103", "end" : "1277121", "name" : "Fis"},
+{"start" : "1277107", "end" : "1277120", "name" : "FNR"},
+{"start" : "1277128", "end" : "1277154", "name" : "ModE"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278956", "end" : "1278962", "name" : "NarL"},
+{"start" : "1278957", "end" : "1278971", "name" : "Fis"},
+{"start" : "1278970", "end" : "1278976", "name" : "NarL"},
+{"start" : "1278982", "end" : "1278995", "name" : "FNR"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570104", "end" : "1570123", "name" : "GadX"},
+{"start" : "1570116", "end" : "1570130", "name" : "Fis"},
+{"start" : "1570126", "end" : "1570145", "name" : "GadX"},
+{"start" : "1570148", "end" : "1570169", "name" : "CRP"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714620", "end" : "2714634", "name" : "ArcA"},
+{"start" : "2714632", "end" : "2714645", "name" : "FNR"},
+{"start" : "2714637", "end" : "2714651", "name" : "ArcA"},
+{"start" : "2714655", "end" : "2714669", "name" : "Fis"}]},
+{ "promoter" : "micFp"
+"config" : [{"start" : "2311059", "end" : "2311076", "name" : "SoxS"},
+{"start" : "2311125", "end" : "2311139", "name" : "Lrp"},
+{"start" : "2311134", "end" : "2311157", "name" : "AcrR"},
+{"start" : "2311156", "end" : "2311170", "name" : "Lrp"}]},
+{ "promoter" : "carAp1"
+"config" : [{"start" : "29359", "end" : "29374", "name" : "RutR"},
+{"start" : "29365", "end" : "29391", "name" : "PepA"},
+{"start" : "29386", "end" : "29404", "name" : "Fis"},
+{"start" : "29415", "end" : "29430", "name" : "PurR"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "940057", "end" : "940063", "name" : "NarL"},
+{"start" : "940073", "end" : "940085", "name" : "IHF"},
+{"start" : "940083", "end" : "940109", "name" : "ModE"},
+{"start" : "940097", "end" : "940111", "name" : "Fis"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156938", "end" : "1156959", "name" : "CRP"},
+{"start" : "1156963", "end" : "1156977", "name" : "Fis"},
+{"start" : "1156972", "end" : "1156994", "name" : "DgsA"},
+{"start" : "1156983", "end" : "1156997", "name" : "ArcA"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285621", "end" : "4285627", "name" : "NarP"},
+{"start" : "4285633", "end" : "4285645", "name" : "IHF"},
+{"start" : "4285641", "end" : "4285647", "name" : "NarL"},
+{"start" : "4285646", "end" : "4285659", "name" : "FNR"}]},
+{ "promoter" : "acrAp"
+"config" : [{"start" : "484883", "end" : "484899", "name" : "PhoP"},
+{"start" : "484928", "end" : "484948", "name" : "MprA"},
+{"start" : "484933", "end" : "484956", "name" : "AcrR"},
+{"start" : "484933", "end" : "484956", "name" : "EnvR"}]},
+{ "promoter" : "acrAp"
+"config" : [{"start" : "484928", "end" : "484948", "name" : "MprA"},
+{"start" : "484933", "end" : "484956", "name" : "AcrR"},
+{"start" : "484933", "end" : "484956", "name" : "EnvR"},
+{"start" : "484984", "end" : "485004", "name" : "MarA"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156863", "end" : "1156877", "name" : "Fis"},
+{"start" : "1156884", "end" : "1156905", "name" : "CRP"},
+{"start" : "1156896", "end" : "1156915", "name" : "SoxS"},
+{"start" : "1156897", "end" : "1156911", "name" : "ArcA"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165136", "end" : "1165150", "name" : "Fis"},
+{"start" : "1165151", "end" : "1165165", "name" : "ArcA"},
+{"start" : "1165151", "end" : "1165163", "name" : "IHF"},
+{"start" : "1165158", "end" : "1165171", "name" : "FNR"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165151", "end" : "1165165", "name" : "ArcA"},
+{"start" : "1165151", "end" : "1165163", "name" : "IHF"},
+{"start" : "1165158", "end" : "1165171", "name" : "FNR"},
+{"start" : "1165172", "end" : "1165188", "name" : "PdhR"}]},
+{ "promoter" : "aldAp"
+"config" : [{"start" : "1486144", "end" : "1486165", "name" : "CRP"},
+{"start" : "1486197", "end" : "1486210", "name" : "FNR"},
+{"start" : "1486202", "end" : "1486216", "name" : "ArcA"},
+{"start" : "1486202", "end" : "1486210", "name" : "DnaA"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570126", "end" : "1570145", "name" : "GadX"},
+{"start" : "1570148", "end" : "1570169", "name" : "CRP"},
+{"start" : "1570148", "end" : "1570162", "name" : "Fis"},
+{"start" : "1570149", "end" : "1570168", "name" : "GadE"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570148", "end" : "1570162", "name" : "Fis"},
+{"start" : "1570149", "end" : "1570168", "name" : "GadE"},
+{"start" : "1570155", "end" : "1570168", "name" : "RcsB"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadW"}]},
+{ "promoter" : "gadBp"
+"config" : [{"start" : "1570155", "end" : "1570168", "name" : "RcsB"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadW"},
+{"start" : "1570185", "end" : "1570204", "name" : "GadX"},
+{"start" : "1570194", "end" : "1570208", "name" : "Fis"}]},
+{ "promoter" : "marRp"
+"config" : [{"start" : "1617046", "end" : "1617065", "name" : "Rob"},
+{"start" : "1617047", "end" : "1617064", "name" : "SoxS"},
+{"start" : "1617054", "end" : "1617075", "name" : "CRP"},
+{"start" : "1617088", "end" : "1617109", "name" : "MarR"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2311028", "end" : "2311040", "name" : "IHF"},
+{"start" : "2311053", "end" : "2311067", "name" : "Lrp"},
+{"start" : "2311056", "end" : "2311076", "name" : "MarA"},
+{"start" : "2311056", "end" : "2311075", "name" : "Rob"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350579", "end" : "2350593", "name" : "Fis"},
+{"start" : "2350594", "end" : "2350615", "name" : "CRP"},
+{"start" : "2350596", "end" : "2350615", "name" : "GlpR"},
+{"start" : "2350598", "end" : "2350611", "name" : "FNR"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350594", "end" : "2350615", "name" : "CRP"},
+{"start" : "2350596", "end" : "2350615", "name" : "GlpR"},
+{"start" : "2350598", "end" : "2350611", "name" : "FNR"},
+{"start" : "2350632", "end" : "2350646", "name" : "Fis"}]},
+{ "promoter" : "glcCp"
+"config" : [{"start" : "3126155", "end" : "3126169", "name" : "Fis"},
+{"start" : "3126195", "end" : "3126209", "name" : "ArcA"},
+{"start" : "3126199", "end" : "3126220", "name" : "CRP"},
+{"start" : "3126199", "end" : "3126211", "name" : "IHF"}]},
+{ "promoter" : "tolCp2"
+"config" : [{"start" : "3175980", "end" : "3175996", "name" : "PhoP"},
+{"start" : "3176034", "end" : "3176053", "name" : "MarA"},
+{"start" : "3176034", "end" : "3176053", "name" : "Rob"},
+{"start" : "3176034", "end" : "3176053", "name" : "SoxS"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654925", "end" : "3654939", "name" : "H-NS"},
+{"start" : "3654931", "end" : "3654950", "name" : "GadW"},
+{"start" : "3654931", "end" : "3654950", "name" : "GadX"},
+{"start" : "3654966", "end" : "3654980", "name" : "Lrp"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665613", "end" : "3665626", "name" : "FNR"},
+{"start" : "3665631", "end" : "3665650", "name" : "GadX"},
+{"start" : "3665639", "end" : "3665657", "name" : "Fis"},
+{"start" : "3665642", "end" : "3665655", "name" : "RcsB"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665639", "end" : "3665657", "name" : "Fis"},
+{"start" : "3665642", "end" : "3665655", "name" : "RcsB"},
+{"start" : "3665652", "end" : "3665671", "name" : "GadX"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadW"}]},
+{ "promoter" : "cyoAp"
+"config" : [{"start" : "451063", "end" : "451076", "name" : "FNR"},
+{"start" : "451070", "end" : "451084", "name" : "ArcA"},
+{"start" : "451081", "end" : "451099", "name" : "Fur"},
+{"start" : "451137", "end" : "451154", "name" : "Cra"}]},
+{ "promoter" : "glcDp"
+"config" : [{"start" : "3126199", "end" : "3126211", "name" : "IHF"},
+{"start" : "3126202", "end" : "3126216", "name" : "ArcA"},
+{"start" : "3126215", "end" : "3126232", "name" : "Cra"},
+{"start" : "3126267", "end" : "3126281", "name" : "GlcC"}]},
+{ "promoter" : "caiTp"
+"config" : [{"start" : "42131", "end" : "42145", "name" : "ArcA"},
+{"start" : "42181", "end" : "42196", "name" : "CaiF"},
+{"start" : "42188", "end" : "42209", "name" : "CRP"},
+{"start" : "42200", "end" : "42215", "name" : "CaiF"}]},
+{ "promoter" : "micFp"
+"config" : [{"start" : "2311056", "end" : "2311076", "name" : "MarA"},
+{"start" : "2311056", "end" : "2311075", "name" : "Rob"},
+{"start" : "2311059", "end" : "2311076", "name" : "SoxS"},
+{"start" : "2311125", "end" : "2311139", "name" : "Lrp"}]},
+{ "promoter" : "hmpAp"
+"config" : [{"start" : "2683809", "end" : "2683831", "name" : "NsrR"},
+{"start" : "2683815", "end" : "2683833", "name" : "Fur"},
+{"start" : "2683817", "end" : "2683830", "name" : "FNR"},
+{"start" : "2683833", "end" : "2683843", "name" : "NsrR"}]},
+{ "promoter" : "caiTp"
+"config" : [{"start" : "42072", "end" : "42085", "name" : "FNR"},
+{"start" : "42121", "end" : "42135", "name" : "ArcA"},
+{"start" : "42121", "end" : "42134", "name" : "FNR"},
+{"start" : "42131", "end" : "42145", "name" : "ArcA"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229688", "end" : "1229702", "name" : "H-NS"},
+{"start" : "1229728", "end" : "1229739", "name" : "SlyA"},
+{"start" : "1229738", "end" : "1229752", "name" : "H-NS"},
+{"start" : "1229739", "end" : "1229750", "name" : "SlyA"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714579", "end" : "2714592", "name" : "FNR"},
+{"start" : "2714620", "end" : "2714634", "name" : "ArcA"},
+{"start" : "2714632", "end" : "2714645", "name" : "FNR"},
+{"start" : "2714637", "end" : "2714651", "name" : "ArcA"}]},
+{ "promoter" : "fhuFp"
+"config" : [{"start" : "4603787", "end" : "4603805", "name" : "Fur"},
+{"start" : "4603792", "end" : "4603808", "name" : "OxyR"},
+{"start" : "4603793", "end" : "4603811", "name" : "Fur"},
+{"start" : "4603814", "end" : "4603830", "name" : "OxyR"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347739", "end" : "347744", "name" : "AscG"},
+{"start" : "347745", "end" : "347768", "name" : "PrpR"},
+{"start" : "347751", "end" : "347756", "name" : "AscG"},
+{"start" : "347753", "end" : "347774", "name" : "CRP"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102582", "end" : "1102595", "name" : "CpxR"},
+{"start" : "1102599", "end" : "1102620", "name" : "CRP"},
+{"start" : "1102603", "end" : "1102617", "name" : "CpxR"},
+{"start" : "1102604", "end" : "1102663", "name" : "IHF"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156896", "end" : "1156915", "name" : "SoxS"},
+{"start" : "1156897", "end" : "1156911", "name" : "ArcA"},
+{"start" : "1156902", "end" : "1156916", "name" : "Fis"},
+{"start" : "1156934", "end" : "1156948", "name" : "ArcA"}]},
+{ "promoter" : "fdnGp"
+"config" : [{"start" : "1545292", "end" : "1545305", "name" : "FNR"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarL"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarP"},
+{"start" : "1545316", "end" : "1545322", "name" : "NarL"}]},
+{ "promoter" : "yeaRp"
+"config" : [{"start" : "1878042", "end" : "1878056", "name" : "Fis"},
+{"start" : "1878054", "end" : "1878060", "name" : "NarL"},
+{"start" : "1878054", "end" : "1878060", "name" : "NarP"},
+{"start" : "1878063", "end" : "1878069", "name" : "NarL"}]},
+{ "promoter" : "yeaRp"
+"config" : [{"start" : "1878054", "end" : "1878060", "name" : "NarP"},
+{"start" : "1878063", "end" : "1878069", "name" : "NarL"},
+{"start" : "1878063", "end" : "1878069", "name" : "NarP"},
+{"start" : "1878066", "end" : "1878080", "name" : "Fis"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830368", "end" : "2830380", "name" : "NorR"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarL"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarP"},
+{"start" : "2830389", "end" : "2830395", "name" : "NarL"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654904", "end" : "3654918", "name" : "Lrp"},
+{"start" : "3654922", "end" : "3654941", "name" : "GadE"},
+{"start" : "3654923", "end" : "3654937", "name" : "Lrp"},
+{"start" : "3654925", "end" : "3654939", "name" : "H-NS"}]},
+{ "promoter" : "gadWp2"
+"config" : [{"start" : "3662824", "end" : "3662840", "name" : "PhoP"},
+{"start" : "3662827", "end" : "3662846", "name" : "GadW"},
+{"start" : "3662827", "end" : "3662846", "name" : "GadX"},
+{"start" : "3662848", "end" : "3662867", "name" : "GadW"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665652", "end" : "3665671", "name" : "GadX"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadW"},
+{"start" : "3665678", "end" : "3665697", "name" : "GadX"},
+{"start" : "3665682", "end" : "3665703", "name" : "CRP"}]},
+{ "promoter" : "uxuAp"
+"config" : [{"start" : "4549479", "end" : "4549496", "name" : "ExuR"},
+{"start" : "4549479", "end" : "4549495", "name" : "OxyR"},
+{"start" : "4549479", "end" : "4549496", "name" : "UxuR"},
+{"start" : "4549501", "end" : "4549517", "name" : "OxyR"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953733", "end" : "953739", "name" : "NarL"},
+{"start" : "953746", "end" : "953767", "name" : "CRP"},
+{"start" : "953750", "end" : "953763", "name" : "FNR"},
+{"start" : "953750", "end" : "953756", "name" : "NarL"}]},
+{ "promoter" : "fdnGp"
+"config" : [{"start" : "1545284", "end" : "1545290", "name" : "NarP"},
+{"start" : "1545292", "end" : "1545305", "name" : "FNR"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarL"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarP"}]},
+{ "promoter" : "manXp"
+"config" : [{"start" : "1899854", "end" : "1899875", "name" : "CRP"},
+{"start" : "1899866", "end" : "1899888", "name" : "NagC"},
+{"start" : "1899867", "end" : "1899889", "name" : "DgsA"},
+{"start" : "1899906", "end" : "1899927", "name" : "CRP"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350545", "end" : "2350564", "name" : "GlpR"},
+{"start" : "2350554", "end" : "2350575", "name" : "CRP"},
+{"start" : "2350558", "end" : "2350571", "name" : "FNR"},
+{"start" : "2350577", "end" : "2350596", "name" : "GlpR"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654871", "end" : "3654885", "name" : "Lrp"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadW"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadX"},
+{"start" : "3654904", "end" : "3654918", "name" : "Lrp"}]},
+{ "promoter" : "gadAp"
+"config" : [{"start" : "3665739", "end" : "3665757", "name" : "Fis"},
+{"start" : "3665742", "end" : "3665761", "name" : "GadW"},
+{"start" : "3665742", "end" : "3665761", "name" : "GadX"},
+{"start" : "3665768", "end" : "3665786", "name" : "Fis"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285612", "end" : "4285618", "name" : "NarP"},
+{"start" : "4285620", "end" : "4285642", "name" : "NsrR"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarL"},
+{"start" : "4285621", "end" : "4285627", "name" : "NarP"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285633", "end" : "4285645", "name" : "IHF"},
+{"start" : "4285641", "end" : "4285647", "name" : "NarL"},
+{"start" : "4285646", "end" : "4285659", "name" : "FNR"},
+{"start" : "4285669", "end" : "4285675", "name" : "NarL"}]}
+],
+"323" :
+[{ "promoter" : "treBp"
+"config" : [{"start" : "4464211", "end" : "4464232", "name" : "CRP"},
+{"start" : "4464273", "end" : "4464289", "name" : "TreR"},
+{"start" : "4464283", "end" : "4464304", "name" : "CRP"},
+{"start" : "4464306", "end" : "4464322", "name" : "TreR"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342447", "end" : "2342461", "name" : "Fis"},
+{"start" : "2342486", "end" : "2342505", "name" : "ArgP"},
+{"start" : "2342501", "end" : "2342515", "name" : "Fis"},
+{"start" : "2342523", "end" : "2342542", "name" : "ArgP"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086026", "end" : "3086041", "name" : "GalS"},
+{"start" : "3086062", "end" : "3086077", "name" : "GalR"},
+{"start" : "3086062", "end" : "3086077", "name" : "GalS"},
+{"start" : "3086091", "end" : "3086106", "name" : "GalR"}]},
+{ "promoter" : "hcpp"
+"config" : [{"start" : "913134", "end" : "913147", "name" : "FNR"},
+{"start" : "913165", "end" : "913171", "name" : "NarL"},
+{"start" : "913165", "end" : "913171", "name" : "NarP"},
+{"start" : "913174", "end" : "913180", "name" : "NarL"}]},
+{ "promoter" : "dmsAp1"
+"config" : [{"start" : "940036", "end" : "940042", "name" : "NarL"},
+{"start" : "940044", "end" : "940062", "name" : "Fis"},
+{"start" : "940057", "end" : "940063", "name" : "NarL"},
+{"start" : "940073", "end" : "940085", "name" : "IHF"}]},
+{ "promoter" : "hyaAp"
+"config" : [{"start" : "1031179", "end" : "1031193", "name" : "Fis"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarL"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarP"},
+{"start" : "1031210", "end" : "1031216", "name" : "NarL"}]},
+{ "promoter" : "napFp1"
+"config" : [{"start" : "2301633", "end" : "2301639", "name" : "NarP"},
+{"start" : "2301642", "end" : "2301648", "name" : "NarL"},
+{"start" : "2301642", "end" : "2301648", "name" : "NarP"},
+{"start" : "2301654", "end" : "2301667", "name" : "FNR"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830380", "end" : "2830386", "name" : "NarP"},
+{"start" : "2830389", "end" : "2830395", "name" : "NarL"},
+{"start" : "2830389", "end" : "2830395", "name" : "NarP"},
+{"start" : "2830407", "end" : "2830419", "name" : "IHF"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086162", "end" : "3086177", "name" : "GalS"},
+{"start" : "3086208", "end" : "3086223", "name" : "GalR"},
+{"start" : "3086208", "end" : "3086223", "name" : "GalS"},
+{"start" : "3086224", "end" : "3086245", "name" : "CRP"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491888", "end" : "3491900", "name" : "IHF"},
+{"start" : "3491905", "end" : "3491919", "name" : "Fis"},
+{"start" : "3491915", "end" : "3491927", "name" : "IHF"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarL"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491915", "end" : "3491927", "name" : "IHF"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarL"},
+{"start" : "3491932", "end" : "3491938", "name" : "NarP"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarL"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491932", "end" : "3491938", "name" : "NarP"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarL"},
+{"start" : "3491941", "end" : "3491947", "name" : "NarP"},
+{"start" : "3491957", "end" : "3491978", "name" : "CRP"}]},
+{ "promoter" : "acsp2"
+"config" : [{"start" : "4285526", "end" : "4285547", "name" : "CRP"},
+{"start" : "4285561", "end" : "4285573", "name" : "IHF"},
+{"start" : "4285568", "end" : "4285578", "name" : "NsrR"},
+{"start" : "4285588", "end" : "4285600", "name" : "IHF"}]},
+{ "promoter" : "ytfEp"
+"config" : [{"start" : "4430033", "end" : "4430055", "name" : "NsrR"},
+{"start" : "4430070", "end" : "4430076", "name" : "NarL"},
+{"start" : "4430070", "end" : "4430076", "name" : "NarP"},
+{"start" : "4430079", "end" : "4430085", "name" : "NarL"}]},
+{ "promoter" : "dpiBp"
+"config" : [{"start" : "651223", "end" : "651229", "name" : "NarL"},
+{"start" : "651241", "end" : "651262", "name" : "CRP"},
+{"start" : "651245", "end" : "651258", "name" : "FNR"},
+{"start" : "651272", "end" : "651294", "name" : "DpiA"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165215", "end" : "1165225", "name" : "NsrR"},
+{"start" : "1165234", "end" : "1165246", "name" : "IHF"},
+{"start" : "1165243", "end" : "1165257", "name" : "ArcA"},
+{"start" : "1165258", "end" : "1165272", "name" : "Fis"}]},
+{ "promoter" : "hyfAp"
+"config" : [{"start" : "2599022", "end" : "2599043", "name" : "CRP"},
+{"start" : "2599055", "end" : "2599072", "name" : "HyfR"},
+{"start" : "2599056", "end" : "2599069", "name" : "FhlA"},
+{"start" : "2599081", "end" : "2599094", "name" : "FNR"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491941", "end" : "3491947", "name" : "NarP"},
+{"start" : "3491957", "end" : "3491978", "name" : "CRP"},
+{"start" : "3491961", "end" : "3491974", "name" : "FNR"},
+{"start" : "3491985", "end" : "3492002", "name" : "Cra"}]},
+{ "promoter" : "acsp2"
+"config" : [{"start" : "4285588", "end" : "4285600", "name" : "IHF"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarL"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarP"},
+{"start" : "4285620", "end" : "4285642", "name" : "NsrR"}]},
+{ "promoter" : "deoCp2"
+"config" : [{"start" : "4615231", "end" : "4615249", "name" : "CytR"},
+{"start" : "4615250", "end" : "4615271", "name" : "CRP"},
+{"start" : "4615253", "end" : "4615279", "name" : "ModE"},
+{"start" : "4615285", "end" : "4615300", "name" : "DeoR"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350558", "end" : "2350571", "name" : "FNR"},
+{"start" : "2350577", "end" : "2350596", "name" : "GlpR"},
+{"start" : "2350579", "end" : "2350593", "name" : "Fis"},
+{"start" : "2350594", "end" : "2350615", "name" : "CRP"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310942", "end" : "2310952", "name" : "CpxR"},
+{"start" : "2310978", "end" : "2310995", "name" : "SoxS"},
+{"start" : "2310979", "end" : "2310993", "name" : "CpxR"},
+{"start" : "2311028", "end" : "2311040", "name" : "IHF"}]},
+{ "promoter" : "glcCp"
+"config" : [{"start" : "3126131", "end" : "3126145", "name" : "Fis"},
+{"start" : "3126146", "end" : "3126162", "name" : "PdhR"},
+{"start" : "3126155", "end" : "3126169", "name" : "Fis"},
+{"start" : "3126195", "end" : "3126209", "name" : "ArcA"}]},
+{ "promoter" : "dcuBp"
+"config" : [{"start" : "4346783", "end" : "4346789", "name" : "NarL"},
+{"start" : "4346826", "end" : "4346839", "name" : "FNR"},
+{"start" : "4346829", "end" : "4346835", "name" : "NarL"},
+{"start" : "4346883", "end" : "4346904", "name" : "CRP"}]},
+{ "promoter" : "ompFp"
+"config" : [{"start" : "986401", "end" : "986415", "name" : "CpxR"},
+{"start" : "986417", "end" : "986429", "name" : "IHF"},
+{"start" : "986426", "end" : "986447", "name" : "CRP"},
+{"start" : "986485", "end" : "986497", "name" : "IHF"}]},
+{ "promoter" : "manXp"
+"config" : [{"start" : "1899906", "end" : "1899927", "name" : "CRP"},
+{"start" : "1899933", "end" : "1899955", "name" : "DgsA"},
+{"start" : "1899949", "end" : "1899971", "name" : "NagC"},
+{"start" : "1899989", "end" : "1900004", "name" : "Cra"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714548", "end" : "2714562", "name" : "Fis"},
+{"start" : "2714575", "end" : "2714596", "name" : "CRP"},
+{"start" : "2714579", "end" : "2714592", "name" : "FNR"},
+{"start" : "2714620", "end" : "2714634", "name" : "ArcA"}]},
+{ "promoter" : "putPp1"
+"config" : [{"start" : "1078307", "end" : "1078312", "name" : "PutA"},
+{"start" : "1078316", "end" : "1078337", "name" : "CRP"},
+{"start" : "1078334", "end" : "1078339", "name" : "PutA"},
+{"start" : "1078346", "end" : "1078367", "name" : "CRP"}]},
+{ "promoter" : "ydhYp"
+"config" : [{"start" : "1752649", "end" : "1752655", "name" : "NarP"},
+{"start" : "1752658", "end" : "1752664", "name" : "NarL"},
+{"start" : "1752658", "end" : "1752664", "name" : "NarP"},
+{"start" : "1752679", "end" : "1752685", "name" : "NarL"}]},
+{ "promoter" : "fliFp1"
+"config" : [{"start" : "2011078", "end" : "2011091", "name" : "CsgD"},
+{"start" : "2011092", "end" : "2011109", "name" : "FlhDC"},
+{"start" : "2011093", "end" : "2011106", "name" : "CsgD"},
+{"start" : "2011121", "end" : "2011137", "name" : "FlhDC"}]},
+{ "promoter" : "rrsBp1"
+"config" : [{"start" : "4164281", "end" : "4164295", "name" : "Fis"},
+{"start" : "4164300", "end" : "4164314", "name" : "H-NS"},
+{"start" : "4164312", "end" : "4164326", "name" : "Fis"},
+{"start" : "4164333", "end" : "4164347", "name" : "H-NS"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953814", "end" : "953820", "name" : "NarL"},
+{"start" : "953822", "end" : "953834", "name" : "IHF"},
+{"start" : "953823", "end" : "953837", "name" : "ArcA"},
+{"start" : "953865", "end" : "953871", "name" : "NarL"}]},
+{ "promoter" : "ptsGp1"
+"config" : [{"start" : "1156902", "end" : "1156916", "name" : "Fis"},
+{"start" : "1156934", "end" : "1156948", "name" : "ArcA"},
+{"start" : "1156938", "end" : "1156959", "name" : "CRP"},
+{"start" : "1156963", "end" : "1156977", "name" : "Fis"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350482", "end" : "2350496", "name" : "Fis"},
+{"start" : "2350504", "end" : "2350525", "name" : "CRP"},
+{"start" : "2350505", "end" : "2350524", "name" : "GlpR"},
+{"start" : "2350530", "end" : "2350544", "name" : "Fis"}]}
+],
+"321" :
+[{ "promoter" : "agaRp"
+"config" : [{"start" : "3276735", "end" : "3276754", "name" : "AgaR"},
+{"start" : "3276803", "end" : "3276822", "name" : "AgaR"},
+{"start" : "3276817", "end" : "3276838", "name" : "CRP"},
+{"start" : "3276847", "end" : "3276866", "name" : "AgaR"}]},
+{ "promoter" : "leuOp2"
+"config" : [{"start" : "84040", "end" : "84060", "name" : "LeuO"},
+{"start" : "84085", "end" : "84099", "name" : "H-NS"},
+{"start" : "84099", "end" : "84119", "name" : "LeuO"},
+{"start" : "84122", "end" : "84142", "name" : "LeuO"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236635", "end" : "1236649", "name" : "Lrp"},
+{"start" : "1236673", "end" : "1236687", "name" : "Lrp"},
+{"start" : "1236678", "end" : "1236699", "name" : "CRP"},
+{"start" : "1236718", "end" : "1236732", "name" : "Lrp"}]},
+{ "promoter" : "hnsp"
+"config" : [{"start" : "1292245", "end" : "1292259", "name" : "Fis"},
+{"start" : "1292287", "end" : "1292301", "name" : "H-NS"},
+{"start" : "1292292", "end" : "1292306", "name" : "Fis"},
+{"start" : "1292348", "end" : "1292362", "name" : "Fis"}]},
+{ "promoter" : "gdhAp1"
+"config" : [{"start" : "1840244", "end" : "1840258", "name" : "Nac"},
+{"start" : "1840289", "end" : "1840310", "name" : "CRP"},
+{"start" : "1840300", "end" : "1840314", "name" : "Nac"},
+{"start" : "1840349", "end" : "1840363", "name" : "Nac"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2311156", "end" : "2311170", "name" : "Lrp"},
+{"start" : "2311185", "end" : "2311199", "name" : "Lrp"},
+{"start" : "2311196", "end" : "2311210", "name" : "CpxR"},
+{"start" : "2311221", "end" : "2311235", "name" : "Lrp"}]},
+{ "promoter" : "asnAp"
+"config" : [{"start" : "3925070", "end" : "3925082", "name" : "AsnC"},
+{"start" : "3925102", "end" : "3925114", "name" : "AsnC"},
+{"start" : "3925111", "end" : "3925125", "name" : "Nac"},
+{"start" : "3925133", "end" : "3925145", "name" : "AsnC"}]},
+{ "promoter" : "hnsp"
+"config" : [{"start" : "1292292", "end" : "1292306", "name" : "Fis"},
+{"start" : "1292348", "end" : "1292362", "name" : "Fis"},
+{"start" : "1292356", "end" : "1292370", "name" : "H-NS"},
+{"start" : "1292417", "end" : "1292431", "name" : "Fis"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278899", "end" : "1278911", "name" : "IHF"},
+{"start" : "1278920", "end" : "1278934", "name" : "Fis"},
+{"start" : "1278926", "end" : "1278932", "name" : "NarL"},
+{"start" : "1278938", "end" : "1278944", "name" : "NarL"}]},
+{ "promoter" : "fdnGp"
+"config" : [{"start" : "1545269", "end" : "1545275", "name" : "NarL"},
+{"start" : "1545284", "end" : "1545290", "name" : "NarL"},
+{"start" : "1545284", "end" : "1545290", "name" : "NarP"},
+{"start" : "1545292", "end" : "1545305", "name" : "FNR"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310910", "end" : "2310929", "name" : "OmpR"},
+{"start" : "2310931", "end" : "2310950", "name" : "OmpR"},
+{"start" : "2310942", "end" : "2310952", "name" : "CpxR"},
+{"start" : "2310978", "end" : "2310995", "name" : "SoxS"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342577", "end" : "2342596", "name" : "ArgP"},
+{"start" : "2342604", "end" : "2342623", "name" : "ArgP"},
+{"start" : "2342614", "end" : "2342628", "name" : "Fis"},
+{"start" : "2342630", "end" : "2342651", "name" : "CRP"}]},
+{ "promoter" : "ppiAp2"
+"config" : [{"start" : "3490449", "end" : "3490470", "name" : "CRP"},
+{"start" : "3490472", "end" : "3490482", "name" : "NsrR"},
+{"start" : "3490474", "end" : "3490489", "name" : "CytR"},
+{"start" : "3490492", "end" : "3490508", "name" : "CytR"}]},
+{ "promoter" : "rpoHp4"
+"config" : [{"start" : "3598919", "end" : "3598934", "name" : "CytR"},
+{"start" : "3598936", "end" : "3598954", "name" : "CytR"},
+{"start" : "3598937", "end" : "3598945", "name" : "DnaA"},
+{"start" : "3598956", "end" : "3598977", "name" : "CRP"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165243", "end" : "1165257", "name" : "ArcA"},
+{"start" : "1165258", "end" : "1165272", "name" : "Fis"},
+{"start" : "1165259", "end" : "1165273", "name" : "ArcA"},
+{"start" : "1165264", "end" : "1165278", "name" : "ArcA"}]},
+{ "promoter" : "ompRp1"
+"config" : [{"start" : "3534716", "end" : "3534728", "name" : "IHF"},
+{"start" : "3534760", "end" : "3534772", "name" : "IHF"},
+{"start" : "3534771", "end" : "3534792", "name" : "CRP"},
+{"start" : "3534825", "end" : "3534837", "name" : "IHF"}]},
+{ "promoter" : "aldBp"
+"config" : [{"start" : "3754580", "end" : "3754594", "name" : "Fis"},
+{"start" : "3754599", "end" : "3754613", "name" : "Fis"},
+{"start" : "3754608", "end" : "3754629", "name" : "CRP"},
+{"start" : "3754664", "end" : "3754678", "name" : "Fis"}]},
+{ "promoter" : "fepAp"
+"config" : [{"start" : "611892", "end" : "611910", "name" : "Fur"},
+{"start" : "611899", "end" : "611917", "name" : "Fur"},
+{"start" : "611902", "end" : "611916", "name" : "H-NS"},
+{"start" : "611922", "end" : "611943", "name" : "CRP"}]},
+{ "promoter" : "sdhCp"
+"config" : [{"start" : "754087", "end" : "754108", "name" : "CRP"},
+{"start" : "754138", "end" : "754156", "name" : "Fur"},
+{"start" : "754142", "end" : "754156", "name" : "ArcA"},
+{"start" : "754147", "end" : "754161", "name" : "ArcA"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953948", "end" : "953954", "name" : "NarL"},
+{"start" : "953960", "end" : "953974", "name" : "ArcA"},
+{"start" : "953966", "end" : "953972", "name" : "NarL"},
+{"start" : "953983", "end" : "953989", "name" : "NarL"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342549", "end" : "2342568", "name" : "ArgP"},
+{"start" : "2342571", "end" : "2342585", "name" : "Fis"},
+{"start" : "2342577", "end" : "2342596", "name" : "ArgP"},
+{"start" : "2342604", "end" : "2342623", "name" : "ArgP"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408118", "end" : "3408132", "name" : "Fis"},
+{"start" : "3408148", "end" : "3408160", "name" : "IHF"},
+{"start" : "3408160", "end" : "3408174", "name" : "Fis"},
+{"start" : "3408178", "end" : "3408192", "name" : "Fis"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244553", "end" : "4244574", "name" : "CRP"},
+{"start" : "4244582", "end" : "4244603", "name" : "CRP"},
+{"start" : "4244594", "end" : "4244612", "name" : "Fis"},
+{"start" : "4244616", "end" : "4244637", "name" : "CRP"}]},
+{ "promoter" : "hlyEp"
+"config" : [{"start" : "1229664", "end" : "1229678", "name" : "Fis"},
+{"start" : "1229674", "end" : "1229688", "name" : "Fis"},
+{"start" : "1229688", "end" : "1229702", "name" : "H-NS"},
+{"start" : "1229728", "end" : "1229739", "name" : "SlyA"}]},
+{ "promoter" : "fadLp"
+"config" : [{"start" : "2459227", "end" : "2459243", "name" : "FadR"},
+{"start" : "2459272", "end" : "2459293", "name" : "CRP"},
+{"start" : "2459286", "end" : "2459305", "name" : "OmpR"},
+{"start" : "2459336", "end" : "2459355", "name" : "OmpR"}]},
+{ "promoter" : "tdcAp"
+"config" : [{"start" : "3265148", "end" : "3265169", "name" : "CRP"},
+{"start" : "3265212", "end" : "3265224", "name" : "IHF"},
+{"start" : "3265214", "end" : "3265227", "name" : "FNR"},
+{"start" : "3265257", "end" : "3265270", "name" : "FNR"}]},
+{ "promoter" : "bglGp"
+"config" : [{"start" : "3904740", "end" : "3904754", "name" : "Fis"},
+{"start" : "3904765", "end" : "3904779", "name" : "Fis"},
+{"start" : "3904771", "end" : "3904792", "name" : "CRP"},
+{"start" : "3904811", "end" : "3904824", "name" : "RcsB"}]}
+],
+"212" :
+[{ "promoter" : "sodAp"
+"config" : [{"start" : "4098738", "end" : "4098751", "name" : "FNR"},
+{"start" : "4098740", "end" : "4098758", "name" : "Fur"},
+{"start" : "4098743", "end" : "4098761", "name" : "Fur"},
+{"start" : "4098752", "end" : "4098764", "name" : "IHF"}]},
+{ "promoter" : "glnAp1"
+"config" : [{"start" : "4056167", "end" : "4056183", "name" : "NtrC"},
+{"start" : "4056175", "end" : "4056196", "name" : "CRP"},
+{"start" : "4056177", "end" : "4056198", "name" : "CRP"},
+{"start" : "4056178", "end" : "4056192", "name" : "Fis"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102727", "end" : "1102740", "name" : "CsgD"},
+{"start" : "1102739", "end" : "1102751", "name" : "CpxR"},
+{"start" : "1102746", "end" : "1102760", "name" : "CpxR"},
+{"start" : "1102755", "end" : "1102772", "name" : "Cra"}]},
+{ "promoter" : "micFp"
+"config" : [{"start" : "2311134", "end" : "2311157", "name" : "AcrR"},
+{"start" : "2311156", "end" : "2311170", "name" : "Lrp"},
+{"start" : "2311185", "end" : "2311199", "name" : "Lrp"},
+{"start" : "2311196", "end" : "2311210", "name" : "CpxR"}]},
+{ "promoter" : "nanAp"
+"config" : [{"start" : "3371651", "end" : "3371656", "name" : "NanR"},
+{"start" : "3371656", "end" : "3371674", "name" : "Fis"},
+{"start" : "3371685", "end" : "3371703", "name" : "Fis"},
+{"start" : "3371692", "end" : "3371713", "name" : "CRP"}]},
+{ "promoter" : "tsgAp"
+"config" : [{"start" : "3490472", "end" : "3490482", "name" : "NsrR"},
+{"start" : "3490474", "end" : "3490489", "name" : "CytR"},
+{"start" : "3490492", "end" : "3490508", "name" : "CytR"},
+{"start" : "3490502", "end" : "3490523", "name" : "CRP"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654861", "end" : "3654870", "name" : "TorR"},
+{"start" : "3654862", "end" : "3654876", "name" : "Lrp"},
+{"start" : "3654871", "end" : "3654885", "name" : "Lrp"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadW"}]},
+{ "promoter" : "idnkp"
+"config" : [{"start" : "4492489", "end" : "4492510", "name" : "CRP"},
+{"start" : "4492507", "end" : "4492526", "name" : "GntR"},
+{"start" : "4492527", "end" : "4492546", "name" : "GntR"},
+{"start" : "4492529", "end" : "4492544", "name" : "IdnR"}]},
+{ "promoter" : "hnsp"
+"config" : [{"start" : "1292287", "end" : "1292301", "name" : "H-NS"},
+{"start" : "1292292", "end" : "1292306", "name" : "Fis"},
+{"start" : "1292348", "end" : "1292362", "name" : "Fis"},
+{"start" : "1292356", "end" : "1292370", "name" : "H-NS"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986595", "end" : "1986614", "name" : "H-NS"},
+{"start" : "1986608", "end" : "1986626", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "H-NS"}]},
+{ "promoter" : "tsxp2"
+"config" : [{"start" : "431345", "end" : "431366", "name" : "CRP"},
+{"start" : "431364", "end" : "431381", "name" : "CytR"},
+{"start" : "431374", "end" : "431393", "name" : "CytR"},
+{"start" : "431379", "end" : "431400", "name" : "CRP"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277062", "end" : "1277068", "name" : "NarL"},
+{"start" : "1277068", "end" : "1277081", "name" : "FNR"},
+{"start" : "1277069", "end" : "1277082", "name" : "FNR"},
+{"start" : "1277072", "end" : "1277078", "name" : "NarL"}]},
+{ "promoter" : "fixAp"
+"config" : [{"start" : "42188", "end" : "42209", "name" : "CRP"},
+{"start" : "42200", "end" : "42215", "name" : "CaiF"},
+{"start" : "42238", "end" : "42253", "name" : "CaiF"},
+{"start" : "42245", "end" : "42266", "name" : "CRP"}]},
+{ "promoter" : "dpiBp2"
+"config" : [{"start" : "651289", "end" : "651305", "name" : "DcuR"},
+{"start" : "651299", "end" : "651321", "name" : "DpiA"},
+{"start" : "651341", "end" : "651363", "name" : "DpiA"},
+{"start" : "651350", "end" : "651366", "name" : "DcuR"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342571", "end" : "2342585", "name" : "Fis"},
+{"start" : "2342577", "end" : "2342596", "name" : "ArgP"},
+{"start" : "2342604", "end" : "2342623", "name" : "ArgP"},
+{"start" : "2342614", "end" : "2342628", "name" : "Fis"}]},
+{ "promoter" : "rpoHp4"
+"config" : [{"start" : "3598913", "end" : "3598921", "name" : "DnaA"},
+{"start" : "3598919", "end" : "3598934", "name" : "CytR"},
+{"start" : "3598936", "end" : "3598954", "name" : "CytR"},
+{"start" : "3598937", "end" : "3598945", "name" : "DnaA"}]},
+{ "promoter" : "rhaSp"
+"config" : [{"start" : "4095652", "end" : "4095668", "name" : "RhaS"},
+{"start" : "4095653", "end" : "4095669", "name" : "RhaR"},
+{"start" : "4095686", "end" : "4095702", "name" : "RhaR"},
+{"start" : "4095686", "end" : "4095702", "name" : "RhaS"}]},
+{ "promoter" : "glpFp"
+"config" : [{"start" : "4116211", "end" : "4116232", "name" : "CRP"},
+{"start" : "4116212", "end" : "4116231", "name" : "GlpR"},
+{"start" : "4116233", "end" : "4116252", "name" : "GlpR"},
+{"start" : "4116234", "end" : "4116255", "name" : "CRP"}]}
+],
+"332" :
+[{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236673", "end" : "1236687", "name" : "Lrp"},
+{"start" : "1236678", "end" : "1236699", "name" : "CRP"},
+{"start" : "1236718", "end" : "1236732", "name" : "Lrp"},
+{"start" : "1236741", "end" : "1236762", "name" : "CRP"}]},
+{ "promoter" : "manXp"
+"config" : [{"start" : "1899867", "end" : "1899889", "name" : "DgsA"},
+{"start" : "1899906", "end" : "1899927", "name" : "CRP"},
+{"start" : "1899933", "end" : "1899955", "name" : "DgsA"},
+{"start" : "1899949", "end" : "1899971", "name" : "NagC"}]},
+{ "promoter" : "nagBp"
+"config" : [{"start" : "702927", "end" : "702949", "name" : "NagC"},
+{"start" : "702991", "end" : "703012", "name" : "CRP"},
+{"start" : "703021", "end" : "703043", "name" : "NagC"},
+{"start" : "703025", "end" : "703046", "name" : "CRP"}]},
+{ "promoter" : "hnsp"
+"config" : [{"start" : "1292214", "end" : "1292228", "name" : "H-NS"},
+{"start" : "1292245", "end" : "1292259", "name" : "Fis"},
+{"start" : "1292287", "end" : "1292301", "name" : "H-NS"},
+{"start" : "1292292", "end" : "1292306", "name" : "Fis"}]},
+{ "promoter" : "malXp"
+"config" : [{"start" : "1697225", "end" : "1697246", "name" : "CRP"},
+{"start" : "1697234", "end" : "1697251", "name" : "MalI"},
+{"start" : "1697285", "end" : "1697306", "name" : "CRP"},
+{"start" : "1697312", "end" : "1697329", "name" : "MalI"}]},
+{ "promoter" : "carAp1"
+"config" : [{"start" : "29415", "end" : "29430", "name" : "PurR"},
+{"start" : "29439", "end" : "29457", "name" : "Fis"},
+{"start" : "29459", "end" : "29485", "name" : "PepA"},
+{"start" : "29461", "end" : "29479", "name" : "Fis"}]},
+{ "promoter" : "fdnGp"
+"config" : [{"start" : "1545293", "end" : "1545299", "name" : "NarL"},
+{"start" : "1545293", "end" : "1545299", "name" : "NarP"},
+{"start" : "1545316", "end" : "1545322", "name" : "NarL"},
+{"start" : "1545347", "end" : "1545360", "name" : "FNR"}]},
+{ "promoter" : "ydhYp"
+"config" : [{"start" : "1752658", "end" : "1752664", "name" : "NarL"},
+{"start" : "1752658", "end" : "1752664", "name" : "NarP"},
+{"start" : "1752679", "end" : "1752685", "name" : "NarL"},
+{"start" : "1752702", "end" : "1752715", "name" : "FNR"}]},
+{ "promoter" : "ydhYp"
+"config" : [{"start" : "1752658", "end" : "1752664", "name" : "NarP"},
+{"start" : "1752679", "end" : "1752685", "name" : "NarL"},
+{"start" : "1752702", "end" : "1752715", "name" : "FNR"},
+{"start" : "1752705", "end" : "1752711", "name" : "NarL"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408090", "end" : "3408111", "name" : "CRP"},
+{"start" : "3408118", "end" : "3408132", "name" : "Fis"},
+{"start" : "3408148", "end" : "3408160", "name" : "IHF"},
+{"start" : "3408160", "end" : "3408174", "name" : "Fis"}]},
+{ "promoter" : "hdeDp"
+"config" : [{"start" : "3654879", "end" : "3654898", "name" : "GadX"},
+{"start" : "3654904", "end" : "3654918", "name" : "Lrp"},
+{"start" : "3654922", "end" : "3654941", "name" : "GadE"},
+{"start" : "3654923", "end" : "3654937", "name" : "Lrp"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285561", "end" : "4285573", "name" : "IHF"},
+{"start" : "4285568", "end" : "4285578", "name" : "NsrR"},
+{"start" : "4285588", "end" : "4285600", "name" : "IHF"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarL"}]},
+{ "promoter" : "glcDp"
+"config" : [{"start" : "3126202", "end" : "3126216", "name" : "ArcA"},
+{"start" : "3126215", "end" : "3126232", "name" : "Cra"},
+{"start" : "3126267", "end" : "3126281", "name" : "GlcC"},
+{"start" : "3126292", "end" : "3126306", "name" : "Fis"}]},
+{ "promoter" : "gltAp1"
+"config" : [{"start" : "754054", "end" : "754066", "name" : "IHF"},
+{"start" : "754087", "end" : "754108", "name" : "CRP"},
+{"start" : "754138", "end" : "754156", "name" : "Fur"},
+{"start" : "754142", "end" : "754156", "name" : "ArcA"}]},
+{ "promoter" : "fadDp"
+"config" : [{"start" : "1887831", "end" : "1887845", "name" : "ArcA"},
+{"start" : "1887843", "end" : "1887859", "name" : "FadR"},
+{"start" : "1887880", "end" : "1887901", "name" : "CRP"},
+{"start" : "1887929", "end" : "1887945", "name" : "FadR"}]},
+{ "promoter" : "napFp1"
+"config" : [{"start" : "2301642", "end" : "2301648", "name" : "NarL"},
+{"start" : "2301642", "end" : "2301648", "name" : "NarP"},
+{"start" : "2301654", "end" : "2301667", "name" : "FNR"},
+{"start" : "2301698", "end" : "2301723", "name" : "IscR"}]},
+{ "promoter" : "napFp1"
+"config" : [{"start" : "2301642", "end" : "2301648", "name" : "NarP"},
+{"start" : "2301654", "end" : "2301667", "name" : "FNR"},
+{"start" : "2301698", "end" : "2301723", "name" : "IscR"},
+{"start" : "2301716", "end" : "2301742", "name" : "ModE"}]},
+{ "promoter" : "micFp"
+"config" : [{"start" : "2310978", "end" : "2310995", "name" : "SoxS"},
+{"start" : "2310979", "end" : "2310993", "name" : "CpxR"},
+{"start" : "2311028", "end" : "2311040", "name" : "IHF"},
+{"start" : "2311053", "end" : "2311067", "name" : "Lrp"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310979", "end" : "2310993", "name" : "CpxR"},
+{"start" : "2311028", "end" : "2311040", "name" : "IHF"},
+{"start" : "2311053", "end" : "2311067", "name" : "Lrp"},
+{"start" : "2311056", "end" : "2311076", "name" : "MarA"}]},
+{ "promoter" : "glpTQp"
+"config" : [{"start" : "2350433", "end" : "2350445", "name" : "IHF"},
+{"start" : "2350482", "end" : "2350496", "name" : "Fis"},
+{"start" : "2350504", "end" : "2350525", "name" : "CRP"},
+{"start" : "2350505", "end" : "2350524", "name" : "GlpR"}]},
+{ "promoter" : "aerp"
+"config" : [{"start" : "3217181", "end" : "3217202", "name" : "CRP"},
+{"start" : "3217185", "end" : "3217198", "name" : "FNR"},
+{"start" : "3217218", "end" : "3217230", "name" : "IHF"},
+{"start" : "3217279", "end" : "3217295", "name" : "NtrC"}]},
+{ "promoter" : "ppiAp1"
+"config" : [{"start" : "3490397", "end" : "3490411", "name" : "CpxR"},
+{"start" : "3490449", "end" : "3490470", "name" : "CRP"},
+{"start" : "3490472", "end" : "3490482", "name" : "NsrR"},
+{"start" : "3490474", "end" : "3490489", "name" : "CytR"}]},
+{ "promoter" : "metHp"
+"config" : [{"start" : "4221673", "end" : "4221691", "name" : "Fur"},
+{"start" : "4221675", "end" : "4221689", "name" : "IclR"},
+{"start" : "4221721", "end" : "4221737", "name" : "FadR"},
+{"start" : "4221742", "end" : "4221756", "name" : "MetR"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953715", "end" : "953729", "name" : "ArcA"},
+{"start" : "953733", "end" : "953739", "name" : "NarL"},
+{"start" : "953746", "end" : "953767", "name" : "CRP"},
+{"start" : "953750", "end" : "953763", "name" : "FNR"}]},
+{ "promoter" : "hyaAp"
+"config" : [{"start" : "1031152", "end" : "1031177", "name" : "IscR"},
+{"start" : "1031179", "end" : "1031193", "name" : "Fis"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarL"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarP"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165114", "end" : "1165127", "name" : "FNR"},
+{"start" : "1165136", "end" : "1165150", "name" : "Fis"},
+{"start" : "1165151", "end" : "1165165", "name" : "ArcA"},
+{"start" : "1165151", "end" : "1165163", "name" : "IHF"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714521", "end" : "2714537", "name" : "PdhR"},
+{"start" : "2714548", "end" : "2714562", "name" : "Fis"},
+{"start" : "2714575", "end" : "2714596", "name" : "CRP"},
+{"start" : "2714579", "end" : "2714592", "name" : "FNR"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714632", "end" : "2714645", "name" : "FNR"},
+{"start" : "2714637", "end" : "2714651", "name" : "ArcA"},
+{"start" : "2714655", "end" : "2714669", "name" : "Fis"},
+{"start" : "2714672", "end" : "2714686", "name" : "CpxR"}]},
+{ "promoter" : "galPp"
+"config" : [{"start" : "3086208", "end" : "3086223", "name" : "GalR"},
+{"start" : "3086208", "end" : "3086223", "name" : "GalS"},
+{"start" : "3086224", "end" : "3086245", "name" : "CRP"},
+{"start" : "3086267", "end" : "3086289", "name" : "NagC"}]},
+{ "promoter" : "hdeAp"
+"config" : [{"start" : "3654879", "end" : "3654898", "name" : "GadW"},
+{"start" : "3654879", "end" : "3654898", "name" : "GadX"},
+{"start" : "3654904", "end" : "3654918", "name" : "Lrp"},
+{"start" : "3654922", "end" : "3654941", "name" : "GadE"}]},
+{ "promoter" : "bglGp"
+"config" : [{"start" : "3904765", "end" : "3904779", "name" : "Fis"},
+{"start" : "3904771", "end" : "3904792", "name" : "CRP"},
+{"start" : "3904811", "end" : "3904824", "name" : "RcsB"},
+{"start" : "3904828", "end" : "3904848", "name" : "LeuO"}]},
+{ "promoter" : "acsp2"
+"config" : [{"start" : "4285505", "end" : "4285519", "name" : "Fis"},
+{"start" : "4285526", "end" : "4285547", "name" : "CRP"},
+{"start" : "4285561", "end" : "4285573", "name" : "IHF"},
+{"start" : "4285568", "end" : "4285578", "name" : "NsrR"}]},
+{ "promoter" : "nrfAp"
+"config" : [{"start" : "4285568", "end" : "4285578", "name" : "NsrR"},
+{"start" : "4285588", "end" : "4285600", "name" : "IHF"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarL"},
+{"start" : "4285612", "end" : "4285618", "name" : "NarP"}]},
+{ "promoter" : "ansBp2"
+"config" : [{"start" : "3098808", "end" : "3098821", "name" : "FNR"},
+{"start" : "3098832", "end" : "3098846", "name" : "Fis"},
+{"start" : "3098854", "end" : "3098875", "name" : "CRP"},
+{"start" : "3098874", "end" : "3098888", "name" : "Fis"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491957", "end" : "3491978", "name" : "CRP"},
+{"start" : "3491961", "end" : "3491974", "name" : "FNR"},
+{"start" : "3491985", "end" : "3492002", "name" : "Cra"},
+{"start" : "3492024", "end" : "3492038", "name" : "Fis"}]},
+{ "promoter" : "sufAp"
+"config" : [{"start" : "1762443", "end" : "1762453", "name" : "NsrR"},
+{"start" : "1762451", "end" : "1762469", "name" : "Fur"},
+{"start" : "1762472", "end" : "1762497", "name" : "IscR"},
+{"start" : "1762505", "end" : "1762515", "name" : "NsrR"}]},
+{ "promoter" : "adhEp1"
+"config" : [{"start" : "1297635", "end" : "1297649", "name" : "Lrp"},
+{"start" : "1297671", "end" : "1297685", "name" : "Fis"},
+{"start" : "1297695", "end" : "1297707", "name" : "Lrp"},
+{"start" : "1297697", "end" : "1297711", "name" : "Fis"}]},
+{ "promoter" : "nirBp"
+"config" : [{"start" : "3491860", "end" : "3491874", "name" : "Fis"},
+{"start" : "3491888", "end" : "3491900", "name" : "IHF"},
+{"start" : "3491905", "end" : "3491919", "name" : "Fis"},
+{"start" : "3491915", "end" : "3491927", "name" : "IHF"}]},
+{ "promoter" : "asnCp"
+"config" : [{"start" : "3925032", "end" : "3925046", "name" : "Nac"},
+{"start" : "3925036", "end" : "3925048", "name" : "AsnC"},
+{"start" : "3925054", "end" : "3925068", "name" : "Nac"},
+{"start" : "3925070", "end" : "3925082", "name" : "AsnC"}]},
+{ "promoter" : "acsp2"
+"config" : [{"start" : "4285466", "end" : "4285480", "name" : "Fis"},
+{"start" : "4285473", "end" : "4285494", "name" : "CRP"},
+{"start" : "4285505", "end" : "4285519", "name" : "Fis"},
+{"start" : "4285526", "end" : "4285547", "name" : "CRP"}]},
+{ "promoter" : "carAp1"
+"config" : [{"start" : "29365", "end" : "29391", "name" : "PepA"},
+{"start" : "29386", "end" : "29404", "name" : "Fis"},
+{"start" : "29415", "end" : "29430", "name" : "PurR"},
+{"start" : "29439", "end" : "29457", "name" : "Fis"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165192", "end" : "1165204", "name" : "IHF"},
+{"start" : "1165215", "end" : "1165225", "name" : "NsrR"},
+{"start" : "1165234", "end" : "1165246", "name" : "IHF"},
+{"start" : "1165243", "end" : "1165257", "name" : "ArcA"}]},
+{ "promoter" : "manXp"
+"config" : [{"start" : "1899866", "end" : "1899888", "name" : "NagC"},
+{"start" : "1899867", "end" : "1899889", "name" : "DgsA"},
+{"start" : "1899906", "end" : "1899927", "name" : "CRP"},
+{"start" : "1899933", "end" : "1899955", "name" : "DgsA"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165151", "end" : "1165163", "name" : "IHF"},
+{"start" : "1165158", "end" : "1165171", "name" : "FNR"},
+{"start" : "1165172", "end" : "1165188", "name" : "PdhR"},
+{"start" : "1165192", "end" : "1165204", "name" : "IHF"}]}
+],
+"333" :
+[{ "promoter" : "hnsp"
+"config" : [{"start" : "1292184", "end" : "1292198", "name" : "Fis"},
+{"start" : "1292214", "end" : "1292228", "name" : "H-NS"},
+{"start" : "1292245", "end" : "1292259", "name" : "Fis"},
+{"start" : "1292287", "end" : "1292301", "name" : "H-NS"}]},
+{ "promoter" : "adhEp1"
+"config" : [{"start" : "1297593", "end" : "1297608", "name" : "Cra"},
+{"start" : "1297635", "end" : "1297649", "name" : "Lrp"},
+{"start" : "1297671", "end" : "1297685", "name" : "Fis"},
+{"start" : "1297695", "end" : "1297707", "name" : "Lrp"}]},
+{ "promoter" : "adhEp2"
+"config" : [{"start" : "1297568", "end" : "1297581", "name" : "FNR"},
+{"start" : "1297593", "end" : "1297608", "name" : "Cra"},
+{"start" : "1297635", "end" : "1297649", "name" : "Lrp"},
+{"start" : "1297671", "end" : "1297685", "name" : "Fis"}]},
+{ "promoter" : "glpABCp"
+"config" : [{"start" : "2350418", "end" : "2350432", "name" : "Fis"},
+{"start" : "2350433", "end" : "2350445", "name" : "IHF"},
+{"start" : "2350482", "end" : "2350496", "name" : "Fis"},
+{"start" : "2350504", "end" : "2350525", "name" : "CRP"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408005", "end" : "3408026", "name" : "CRP"},
+{"start" : "3408040", "end" : "3408054", "name" : "Fis"},
+{"start" : "3408090", "end" : "3408111", "name" : "CRP"},
+{"start" : "3408118", "end" : "3408132", "name" : "Fis"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165172", "end" : "1165188", "name" : "PdhR"},
+{"start" : "1165192", "end" : "1165204", "name" : "IHF"},
+{"start" : "1165215", "end" : "1165225", "name" : "NsrR"},
+{"start" : "1165234", "end" : "1165246", "name" : "IHF"}]},
+{ "promoter" : "yfiDp"
+"config" : [{"start" : "2714637", "end" : "2714651", "name" : "ArcA"},
+{"start" : "2714655", "end" : "2714669", "name" : "Fis"},
+{"start" : "2714672", "end" : "2714686", "name" : "CpxR"},
+{"start" : "2714697", "end" : "2714711", "name" : "Fis"}]},
+{ "promoter" : "hyaAp"
+"config" : [{"start" : "1031133", "end" : "1031147", "name" : "ArcA"},
+{"start" : "1031152", "end" : "1031177", "name" : "IscR"},
+{"start" : "1031179", "end" : "1031193", "name" : "Fis"},
+{"start" : "1031194", "end" : "1031200", "name" : "NarL"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165158", "end" : "1165171", "name" : "FNR"},
+{"start" : "1165172", "end" : "1165188", "name" : "PdhR"},
+{"start" : "1165192", "end" : "1165204", "name" : "IHF"},
+{"start" : "1165215", "end" : "1165225", "name" : "NsrR"}]},
+{ "promoter" : "sdhCp"
+"config" : [{"start" : "754037", "end" : "754051", "name" : "ArcA"},
+{"start" : "754054", "end" : "754066", "name" : "IHF"},
+{"start" : "754087", "end" : "754108", "name" : "CRP"},
+{"start" : "754138", "end" : "754156", "name" : "Fur"}]},
+{ "promoter" : "adhEp1"
+"config" : [{"start" : "1297553", "end" : "1297559", "name" : "NarL"},
+{"start" : "1297568", "end" : "1297581", "name" : "FNR"},
+{"start" : "1297593", "end" : "1297608", "name" : "Cra"},
+{"start" : "1297635", "end" : "1297649", "name" : "Lrp"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408040", "end" : "3408054", "name" : "Fis"},
+{"start" : "3408090", "end" : "3408111", "name" : "CRP"},
+{"start" : "3408118", "end" : "3408132", "name" : "Fis"},
+{"start" : "3408148", "end" : "3408160", "name" : "IHF"}]},
+{ "promoter" : "carAp1"
+"config" : [{"start" : "29386", "end" : "29404", "name" : "Fis"},
+{"start" : "29415", "end" : "29430", "name" : "PurR"},
+{"start" : "29439", "end" : "29457", "name" : "Fis"},
+{"start" : "29459", "end" : "29485", "name" : "PepA"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165085", "end" : "1165099", "name" : "Fis"},
+{"start" : "1165114", "end" : "1165127", "name" : "FNR"},
+{"start" : "1165136", "end" : "1165150", "name" : "Fis"},
+{"start" : "1165151", "end" : "1165165", "name" : "ArcA"}]},
+{ "promoter" : "sufAp"
+"config" : [{"start" : "1762451", "end" : "1762469", "name" : "Fur"},
+{"start" : "1762472", "end" : "1762497", "name" : "IscR"},
+{"start" : "1762505", "end" : "1762515", "name" : "NsrR"},
+{"start" : "1762534", "end" : "1762559", "name" : "IscR"}]},
+{ "promoter" : "acsp2"
+"config" : [{"start" : "4285473", "end" : "4285494", "name" : "CRP"},
+{"start" : "4285505", "end" : "4285519", "name" : "Fis"},
+{"start" : "4285526", "end" : "4285547", "name" : "CRP"},
+{"start" : "4285561", "end" : "4285573", "name" : "IHF"}]},
+{ "promoter" : "flhDp"
+"config" : [{"start" : "1976480", "end" : "1976501", "name" : "CRP"},
+{"start" : "1976505", "end" : "1976517", "name" : "IHF"},
+{"start" : "1976524", "end" : "1976538", "name" : "LrhA"},
+{"start" : "1976555", "end" : "1976574", "name" : "OmpR"}]}
+],
+"331" :
+[{ "promoter" : "hnsp"
+"config" : [{"start" : "1292150", "end" : "1292164", "name" : "Fis"},
+{"start" : "1292184", "end" : "1292198", "name" : "Fis"},
+{"start" : "1292214", "end" : "1292228", "name" : "H-NS"},
+{"start" : "1292245", "end" : "1292259", "name" : "Fis"}]},
+{ "promoter" : "sufAp"
+"config" : [{"start" : "1762472", "end" : "1762497", "name" : "IscR"},
+{"start" : "1762505", "end" : "1762515", "name" : "NsrR"},
+{"start" : "1762534", "end" : "1762559", "name" : "IscR"},
+{"start" : "1762575", "end" : "1762600", "name" : "IscR"}]},
+{ "promoter" : "osmEp"
+"config" : [{"start" : "1820275", "end" : "1820289", "name" : "Fis"},
+{"start" : "1820297", "end" : "1820309", "name" : "IHF"},
+{"start" : "1820331", "end" : "1820345", "name" : "Fis"},
+{"start" : "1820386", "end" : "1820400", "name" : "Fis"}]},
+{ "promoter" : "ssbp3"
+"config" : [{"start" : "4271954", "end" : "4271968", "name" : "ArcA"},
+{"start" : "4271978", "end" : "4271997", "name" : "LexA"},
+{"start" : "4272017", "end" : "4272031", "name" : "ArcA"},
+{"start" : "4272057", "end" : "4272071", "name" : "ArcA"}]},
+{ "promoter" : "araBp"
+"config" : [{"start" : "70110", "end" : "70126", "name" : "AraC"},
+{"start" : "70131", "end" : "70147", "name" : "AraC"},
+{"start" : "70158", "end" : "70179", "name" : "CRP"},
+{"start" : "70184", "end" : "70200", "name" : "AraC"}]},
+{ "promoter" : "araBp"
+"config" : [{"start" : "70131", "end" : "70147", "name" : "AraC"},
+{"start" : "70158", "end" : "70179", "name" : "CRP"},
+{"start" : "70184", "end" : "70200", "name" : "AraC"},
+{"start" : "70205", "end" : "70221", "name" : "AraC"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131399", "end" : "131413", "name" : "ArcA"},
+{"start" : "131438", "end" : "131452", "name" : "Fis"},
+{"start" : "131455", "end" : "131469", "name" : "ArcA"},
+{"start" : "131464", "end" : "131478", "name" : "ArcA"}]},
+{ "promoter" : "betIp"
+"config" : [{"start" : "328584", "end" : "328598", "name" : "ArcA"},
+{"start" : "328605", "end" : "328624", "name" : "BetI"},
+{"start" : "328640", "end" : "328654", "name" : "ArcA"},
+{"start" : "328652", "end" : "328666", "name" : "ArcA"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1276992", "end" : "1276998", "name" : "NarL"},
+{"start" : "1276998", "end" : "1277004", "name" : "NarL"},
+{"start" : "1277019", "end" : "1277031", "name" : "IHF"},
+{"start" : "1277049", "end" : "1277055", "name" : "NarL"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1276998", "end" : "1277004", "name" : "NarL"},
+{"start" : "1277019", "end" : "1277031", "name" : "IHF"},
+{"start" : "1277049", "end" : "1277055", "name" : "NarL"},
+{"start" : "1277054", "end" : "1277060", "name" : "NarL"}]},
+{ "promoter" : "glmYp1"
+"config" : [{"start" : "2689479", "end" : "2689496", "name" : "GlrR"},
+{"start" : "2689525", "end" : "2689537", "name" : "IHF"},
+{"start" : "2689542", "end" : "2689559", "name" : "GlrR"},
+{"start" : "2689575", "end" : "2689592", "name" : "GlrR"}]},
+{ "promoter" : "asnAp"
+"config" : [{"start" : "3925036", "end" : "3925048", "name" : "AsnC"},
+{"start" : "3925054", "end" : "3925068", "name" : "Nac"},
+{"start" : "3925070", "end" : "3925082", "name" : "AsnC"},
+{"start" : "3925102", "end" : "3925114", "name" : "AsnC"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213300", "end" : "4213306", "name" : "IclR"},
+{"start" : "4213318", "end" : "4213324", "name" : "IclR"},
+{"start" : "4213347", "end" : "4213359", "name" : "IHF"},
+{"start" : "4213369", "end" : "4213375", "name" : "IclR"}]},
+{ "promoter" : "aceBp"
+"config" : [{"start" : "4213318", "end" : "4213324", "name" : "IclR"},
+{"start" : "4213347", "end" : "4213359", "name" : "IHF"},
+{"start" : "4213369", "end" : "4213375", "name" : "IclR"},
+{"start" : "4213380", "end" : "4213394", "name" : "IclR"}]},
+{ "promoter" : "casp"
+"config" : [{"start" : "2882285", "end" : "2882305", "name" : "LeuO"},
+{"start" : "2882311", "end" : "2882331", "name" : "LeuO"},
+{"start" : "2882380", "end" : "2882394", "name" : "H-NS"},
+{"start" : "2882411", "end" : "2882431", "name" : "LeuO"}]},
+{ "promoter" : "aerp"
+"config" : [{"start" : "3217185", "end" : "3217198", "name" : "FNR"},
+{"start" : "3217218", "end" : "3217230", "name" : "IHF"},
+{"start" : "3217279", "end" : "3217295", "name" : "NtrC"},
+{"start" : "3217301", "end" : "3217317", "name" : "NtrC"}]},
+{ "promoter" : "malEp"
+"config" : [{"start" : "4244427", "end" : "4244445", "name" : "Fis"},
+{"start" : "4244461", "end" : "4244478", "name" : "CreB"},
+{"start" : "4244524", "end" : "4244533", "name" : "MalT"},
+{"start" : "4244534", "end" : "4244543", "name" : "MalT"}]},
+{ "promoter" : "fepBp"
+"config" : [{"start" : "623948", "end" : "623966", "name" : "Fur"},
+{"start" : "623954", "end" : "623972", "name" : "Fur"},
+{"start" : "624014", "end" : "624035", "name" : "CRP"},
+{"start" : "624057", "end" : "624075", "name" : "Fur"}]},
+{ "promoter" : "fepBp"
+"config" : [{"start" : "623954", "end" : "623972", "name" : "Fur"},
+{"start" : "624014", "end" : "624035", "name" : "CRP"},
+{"start" : "624057", "end" : "624075", "name" : "Fur"},
+{"start" : "624060", "end" : "624078", "name" : "Fur"}]},
+{ "promoter" : "csgBp"
+"config" : [{"start" : "1103039", "end" : "1103049", "name" : "CsgD"},
+{"start" : "1103048", "end" : "1103061", "name" : "CsgD"},
+{"start" : "1103082", "end" : "1103096", "name" : "CpxR"},
+{"start" : "1103122", "end" : "1103139", "name" : "Cra"}]},
+{ "promoter" : "cddp"
+"config" : [{"start" : "2229751", "end" : "2229766", "name" : "CytR"},
+{"start" : "2229769", "end" : "2229785", "name" : "CytR"},
+{"start" : "2229788", "end" : "2229809", "name" : "CRP"},
+{"start" : "2229844", "end" : "2229854", "name" : "NsrR"}]},
+{ "promoter" : "casp"
+"config" : [{"start" : "2882311", "end" : "2882331", "name" : "LeuO"},
+{"start" : "2882380", "end" : "2882394", "name" : "H-NS"},
+{"start" : "2882411", "end" : "2882431", "name" : "LeuO"},
+{"start" : "2882441", "end" : "2882461", "name" : "LeuO"}]},
+{ "promoter" : "yiaJp"
+"config" : [{"start" : "3740639", "end" : "3740651", "name" : "IHF"},
+{"start" : "3740641", "end" : "3740653", "name" : "IHF"},
+{"start" : "3740686", "end" : "3740706", "name" : "YiaJ"},
+{"start" : "3740748", "end" : "3740769", "name" : "CRP"}]},
+{ "promoter" : "frdAp"
+"config" : [{"start" : "4380444", "end" : "4380450", "name" : "NarL"},
+{"start" : "4380458", "end" : "4380464", "name" : "NarL"},
+{"start" : "4380474", "end" : "4380487", "name" : "FNR"},
+{"start" : "4380531", "end" : "4380547", "name" : "DcuR"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131393", "end" : "131407", "name" : "ArcA"},
+{"start" : "131399", "end" : "131413", "name" : "ArcA"},
+{"start" : "131438", "end" : "131452", "name" : "Fis"},
+{"start" : "131455", "end" : "131469", "name" : "ArcA"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236678", "end" : "1236699", "name" : "CRP"},
+{"start" : "1236718", "end" : "1236732", "name" : "Lrp"},
+{"start" : "1236741", "end" : "1236762", "name" : "CRP"},
+{"start" : "1236743", "end" : "1236764", "name" : "CRP"}]},
+{ "promoter" : "dusBp"
+"config" : [{"start" : "3408160", "end" : "3408174", "name" : "Fis"},
+{"start" : "3408178", "end" : "3408192", "name" : "Fis"},
+{"start" : "3408194", "end" : "3408215", "name" : "CRP"},
+{"start" : "3408219", "end" : "3408233", "name" : "Fis"}]},
+{ "promoter" : "aspAp"
+"config" : [{"start" : "4366519", "end" : "4366525", "name" : "NarL"},
+{"start" : "4366528", "end" : "4366534", "name" : "NarL"},
+{"start" : "4366535", "end" : "4366556", "name" : "CRP"},
+{"start" : "4366564", "end" : "4366570", "name" : "NarL"}]},
+{ "promoter" : "gltAp1"
+"config" : [{"start" : "754030", "end" : "754044", "name" : "ArcA"},
+{"start" : "754037", "end" : "754051", "name" : "ArcA"},
+{"start" : "754054", "end" : "754066", "name" : "IHF"},
+{"start" : "754087", "end" : "754108", "name" : "CRP"}]},
+{ "promoter" : "adhEp1"
+"config" : [{"start" : "1297544", "end" : "1297550", "name" : "NarL"},
+{"start" : "1297553", "end" : "1297559", "name" : "NarL"},
+{"start" : "1297568", "end" : "1297581", "name" : "FNR"},
+{"start" : "1297593", "end" : "1297608", "name" : "Cra"}]},
+{ "promoter" : "nuoAp2"
+"config" : [{"start" : "2403252", "end" : "2403264", "name" : "IHF"},
+{"start" : "2403261", "end" : "2403273", "name" : "IHF"},
+{"start" : "2403285", "end" : "2403299", "name" : "ArcA"},
+{"start" : "2403303", "end" : "2403309", "name" : "NarL"}]},
+{ "promoter" : "hycAp"
+"config" : [{"start" : "2848515", "end" : "2848527", "name" : "IHF"},
+{"start" : "2848548", "end" : "2848558", "name" : "NsrR"},
+{"start" : "2848561", "end" : "2848574", "name" : "FhlA"},
+{"start" : "2848575", "end" : "2848587", "name" : "FhlA"}]},
+{ "promoter" : "tdcAp"
+"config" : [{"start" : "3265214", "end" : "3265227", "name" : "FNR"},
+{"start" : "3265257", "end" : "3265270", "name" : "FNR"},
+{"start" : "3265285", "end" : "3265299", "name" : "TdcA"},
+{"start" : "3265304", "end" : "3265315", "name" : "TdcR"}]},
+{ "promoter" : "chbBp"
+"config" : [{"start" : "1819779", "end" : "1819797", "name" : "ChbR"},
+{"start" : "1819802", "end" : "1819820", "name" : "ChbR"},
+{"start" : "1819823", "end" : "1819844", "name" : "CRP"},
+{"start" : "1819851", "end" : "1819873", "name" : "NagC"}]},
+{ "promoter" : "fadLp"
+"config" : [{"start" : "2459157", "end" : "2459176", "name" : "OmpR"},
+{"start" : "2459182", "end" : "2459196", "name" : "ArcA"},
+{"start" : "2459202", "end" : "2459218", "name" : "FadR"},
+{"start" : "2459227", "end" : "2459243", "name" : "FadR"}]},
+{ "promoter" : "mntHp"
+"config" : [{"start" : "2510741", "end" : "2510762", "name" : "MntR"},
+{"start" : "2510779", "end" : "2510796", "name" : "Fur"},
+{"start" : "2510802", "end" : "2510818", "name" : "OxyR"},
+{"start" : "2510824", "end" : "2510840", "name" : "OxyR"}]},
+{ "promoter" : "gltBp"
+"config" : [{"start" : "3352436", "end" : "3352448", "name" : "IHF"},
+{"start" : "3352440", "end" : "3352452", "name" : "IHF"},
+{"start" : "3352455", "end" : "3352476", "name" : "CRP"},
+{"start" : "3352498", "end" : "3352511", "name" : "FNR"}]},
+{ "promoter" : "bglGp"
+"config" : [{"start" : "3904771", "end" : "3904792", "name" : "CRP"},
+{"start" : "3904811", "end" : "3904824", "name" : "RcsB"},
+{"start" : "3904828", "end" : "3904848", "name" : "LeuO"},
+{"start" : "3904859", "end" : "3904879", "name" : "LeuO"}]},
+{ "promoter" : "rhaTp"
+"config" : [{"start" : "4098622", "end" : "4098638", "name" : "RhaS"},
+{"start" : "4098655", "end" : "4098671", "name" : "RhaS"},
+{"start" : "4098672", "end" : "4098693", "name" : "CRP"},
+{"start" : "4098708", "end" : "4098720", "name" : "IHF"}]},
+{ "promoter" : "rhaTp"
+"config" : [{"start" : "4098655", "end" : "4098671", "name" : "RhaS"},
+{"start" : "4098672", "end" : "4098693", "name" : "CRP"},
+{"start" : "4098708", "end" : "4098720", "name" : "IHF"},
+{"start" : "4098728", "end" : "4098740", "name" : "IHF"}]}
+],
+"121" :
+[{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102532", "end" : "1102545", "name" : "CsgD"},
+{"start" : "1102552", "end" : "1102565", "name" : "CsgD"},
+{"start" : "1102558", "end" : "1102572", "name" : "CpxR"},
+{"start" : "1102582", "end" : "1102595", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102739", "end" : "1102751", "name" : "CpxR"},
+{"start" : "1102746", "end" : "1102760", "name" : "CpxR"},
+{"start" : "1102755", "end" : "1102772", "name" : "Cra"},
+{"start" : "1102786", "end" : "1102803", "name" : "Cra"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277054", "end" : "1277060", "name" : "NarL"},
+{"start" : "1277062", "end" : "1277068", "name" : "NarL"},
+{"start" : "1277068", "end" : "1277081", "name" : "FNR"},
+{"start" : "1277069", "end" : "1277082", "name" : "FNR"}]},
+{ "promoter" : "nanAp"
+"config" : [{"start" : "3371642", "end" : "3371647", "name" : "NanR"},
+{"start" : "3371651", "end" : "3371656", "name" : "NanR"},
+{"start" : "3371656", "end" : "3371674", "name" : "Fis"},
+{"start" : "3371685", "end" : "3371703", "name" : "Fis"}]},
+{ "promoter" : "xylFp"
+"config" : [{"start" : "3729001", "end" : "3729019", "name" : "Fis"},
+{"start" : "3729008", "end" : "3729026", "name" : "Fis"},
+{"start" : "3729022", "end" : "3729039", "name" : "XylR"},
+{"start" : "3729043", "end" : "3729060", "name" : "XylR"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236741", "end" : "1236762", "name" : "CRP"},
+{"start" : "1236743", "end" : "1236764", "name" : "CRP"},
+{"start" : "1236750", "end" : "1236764", "name" : "Lrp"},
+{"start" : "1236797", "end" : "1236811", "name" : "Lrp"}]},
+{ "promoter" : "narXp"
+"config" : [{"start" : "1277068", "end" : "1277081", "name" : "FNR"},
+{"start" : "1277069", "end" : "1277082", "name" : "FNR"},
+{"start" : "1277072", "end" : "1277078", "name" : "NarL"},
+{"start" : "1277085", "end" : "1277091", "name" : "NarL"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986570", "end" : "1986579", "name" : "H-NS"},
+{"start" : "1986595", "end" : "1986614", "name" : "H-NS"},
+{"start" : "1986608", "end" : "1986626", "name" : "Fur"},
+{"start" : "1986614", "end" : "1986632", "name" : "Fur"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986626", "end" : "1986644", "name" : "Fur"},
+{"start" : "1986632", "end" : "1986650", "name" : "Fur"},
+{"start" : "1986633", "end" : "1986667", "name" : "H-NS"},
+{"start" : "1986670", "end" : "1986701", "name" : "H-NS"}]},
+{ "promoter" : "cddp"
+"config" : [{"start" : "2229736", "end" : "2229757", "name" : "CRP"},
+{"start" : "2229738", "end" : "2229759", "name" : "CRP"},
+{"start" : "2229751", "end" : "2229766", "name" : "CytR"},
+{"start" : "2229769", "end" : "2229785", "name" : "CytR"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791282", "end" : "791315", "name" : "HU"},
+{"start" : "791287", "end" : "791320", "name" : "HU"},
+{"start" : "791299", "end" : "791313", "name" : "H-NS"},
+{"start" : "791315", "end" : "791329", "name" : "H-NS"}]},
+{ "promoter" : "nupGp"
+"config" : [{"start" : "3103603", "end" : "3103620", "name" : "CytR"},
+{"start" : "3103611", "end" : "3103629", "name" : "CytR"},
+{"start" : "3103620", "end" : "3103641", "name" : "CRP"},
+{"start" : "3103622", "end" : "3103643", "name" : "CRP"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342736", "end" : "2342744", "name" : "DnaA"},
+{"start" : "2342759", "end" : "2342767", "name" : "DnaA"},
+{"start" : "2342762", "end" : "2342777", "name" : "NrdR"},
+{"start" : "2342794", "end" : "2342809", "name" : "NrdR"}]},
+{ "promoter" : "nrdDp"
+"config" : [{"start" : "4460845", "end" : "4460860", "name" : "NrdR"},
+{"start" : "4460876", "end" : "4460891", "name" : "NrdR"},
+{"start" : "4460888", "end" : "4460901", "name" : "FNR"},
+{"start" : "4460919", "end" : "4460932", "name" : "FNR"}]}
+],
+"120" :
+[{ "promoter" : "sufAp"
+"config" : [{"start" : "1762534", "end" : "1762559", "name" : "IscR"},
+{"start" : "1762575", "end" : "1762600", "name" : "IscR"},
+{"start" : "1762581", "end" : "1762593", "name" : "IHF"},
+{"start" : "1762644", "end" : "1762660", "name" : "OxyR"}]}
+],
+"211" :
+[{ "promoter" : "pdhRp"
+"config" : [{"start" : "121953", "end" : "121974", "name" : "CRP"},
+{"start" : "121961", "end" : "121982", "name" : "CRP"},
+{"start" : "121973", "end" : "121994", "name" : "CRP"},
+{"start" : "121977", "end" : "121990", "name" : "FNR"}]},
+{ "promoter" : "prpRp"
+"config" : [{"start" : "347711", "end" : "347734", "name" : "PrpR"},
+{"start" : "347722", "end" : "347727", "name" : "AscG"},
+{"start" : "347729", "end" : "347734", "name" : "AscG"},
+{"start" : "347739", "end" : "347744", "name" : "AscG"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365547", "end" : "365567", "name" : "LacI"},
+{"start" : "365555", "end" : "365569", "name" : "H-NS"},
+{"start" : "365565", "end" : "365579", "name" : "H-NS"},
+{"start" : "365591", "end" : "365605", "name" : "H-NS"}]},
+{ "promoter" : "galEp2"
+"config" : [{"start" : "791287", "end" : "791320", "name" : "HU"},
+{"start" : "791299", "end" : "791313", "name" : "H-NS"},
+{"start" : "791315", "end" : "791329", "name" : "H-NS"},
+{"start" : "791333", "end" : "791347", "name" : "H-NS"}]},
+{ "promoter" : "csgDp2"
+"config" : [{"start" : "1102610", "end" : "1102626", "name" : "RstA"},
+{"start" : "1102611", "end" : "1102625", "name" : "CpxR"},
+{"start" : "1102612", "end" : "1102626", "name" : "CpxR"},
+{"start" : "1102634", "end" : "1102647", "name" : "CpxR"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102680", "end" : "1102713", "name" : "MlrA"},
+{"start" : "1102689", "end" : "1102704", "name" : "CpxR"},
+{"start" : "1102701", "end" : "1102715", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102740", "name" : "CpxR"}]},
+{ "promoter" : "ndhp"
+"config" : [{"start" : "1165258", "end" : "1165272", "name" : "Fis"},
+{"start" : "1165259", "end" : "1165273", "name" : "ArcA"},
+{"start" : "1165264", "end" : "1165278", "name" : "ArcA"},
+{"start" : "1165273", "end" : "1165287", "name" : "ArcA"}]},
+{ "promoter" : "nupGp"
+"config" : [{"start" : "3103590", "end" : "3103603", "name" : "CytR"},
+{"start" : "3103603", "end" : "3103620", "name" : "CytR"},
+{"start" : "3103611", "end" : "3103629", "name" : "CytR"},
+{"start" : "3103620", "end" : "3103641", "name" : "CRP"}]},
+{ "promoter" : "yhfAp"
+"config" : [{"start" : "3484005", "end" : "3484026", "name" : "CRP"},
+{"start" : "3484015", "end" : "3484029", "name" : "Fis"},
+{"start" : "3484016", "end" : "3484030", "name" : "Fis"},
+{"start" : "3484035", "end" : "3484049", "name" : "Fis"}]},
+{ "promoter" : "sodAp"
+"config" : [{"start" : "4098752", "end" : "4098764", "name" : "IHF"},
+{"start" : "4098754", "end" : "4098768", "name" : "ArcA"},
+{"start" : "4098755", "end" : "4098769", "name" : "ArcA"},
+{"start" : "4098765", "end" : "4098779", "name" : "ArcA"}]},
+{ "promoter" : "rhaTp"
+"config" : [{"start" : "4098755", "end" : "4098769", "name" : "ArcA"},
+{"start" : "4098765", "end" : "4098779", "name" : "ArcA"},
+{"start" : "4098766", "end" : "4098780", "name" : "ArcA"},
+{"start" : "4098775", "end" : "4098787", "name" : "IHF"}]},
+{ "promoter" : "acnBp"
+"config" : [{"start" : "131340", "end" : "131354", "name" : "Fis"},
+{"start" : "131342", "end" : "131356", "name" : "ArcA"},
+{"start" : "131369", "end" : "131383", "name" : "ArcA"},
+{"start" : "131373", "end" : "131387", "name" : "ArcA"}]},
+{ "promoter" : "lacZp1"
+"config" : [{"start" : "365565", "end" : "365579", "name" : "H-NS"},
+{"start" : "365591", "end" : "365605", "name" : "H-NS"},
+{"start" : "365614", "end" : "365628", "name" : "H-NS"},
+{"start" : "365618", "end" : "365639", "name" : "CRP"}]},
+{ "promoter" : "hupBp2"
+"config" : [{"start" : "460404", "end" : "460418", "name" : "Fis"},
+{"start" : "460427", "end" : "460441", "name" : "Fis"},
+{"start" : "460459", "end" : "460473", "name" : "Fis"},
+{"start" : "460462", "end" : "460483", "name" : "CRP"}]},
+{ "promoter" : "galEp1"
+"config" : [{"start" : "791299", "end" : "791313", "name" : "H-NS"},
+{"start" : "791315", "end" : "791329", "name" : "H-NS"},
+{"start" : "791333", "end" : "791347", "name" : "H-NS"},
+{"start" : "791335", "end" : "791356", "name" : "CRP"}]},
+{ "promoter" : "lrpp"
+"config" : [{"start" : "931551", "end" : "931565", "name" : "Lrp"},
+{"start" : "931574", "end" : "931590", "name" : "Lrp"},
+{"start" : "931592", "end" : "931606", "name" : "Lrp"},
+{"start" : "931597", "end" : "931607", "name" : "NsrR"}]},
+{ "promoter" : "focAp1"
+"config" : [{"start" : "953960", "end" : "953974", "name" : "ArcA"},
+{"start" : "953966", "end" : "953972", "name" : "NarL"},
+{"start" : "953983", "end" : "953989", "name" : "NarL"},
+{"start" : "953999", "end" : "954005", "name" : "NarL"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102656", "end" : "1102669", "name" : "CpxR"},
+{"start" : "1102660", "end" : "1102674", "name" : "CpxR"},
+{"start" : "1102669", "end" : "1102682", "name" : "CpxR"},
+{"start" : "1102679", "end" : "1102692", "name" : "CsgD"}]},
+{ "promoter" : "csgDp1"
+"config" : [{"start" : "1102689", "end" : "1102704", "name" : "CpxR"},
+{"start" : "1102701", "end" : "1102715", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102740", "name" : "CpxR"},
+{"start" : "1102726", "end" : "1102755", "name" : "IHF"}]},
+{ "promoter" : "narKp1"
+"config" : [{"start" : "1277049", "end" : "1277055", "name" : "NarL"},
+{"start" : "1277054", "end" : "1277060", "name" : "NarL"},
+{"start" : "1277062", "end" : "1277068", "name" : "NarL"},
+{"start" : "1277068", "end" : "1277081", "name" : "FNR"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278920", "end" : "1278934", "name" : "Fis"},
+{"start" : "1278926", "end" : "1278932", "name" : "NarL"},
+{"start" : "1278938", "end" : "1278944", "name" : "NarL"},
+{"start" : "1278948", "end" : "1278954", "name" : "NarL"}]},
+{ "promoter" : "narGp"
+"config" : [{"start" : "1278938", "end" : "1278944", "name" : "NarL"},
+{"start" : "1278948", "end" : "1278954", "name" : "NarL"},
+{"start" : "1278956", "end" : "1278962", "name" : "NarL"},
+{"start" : "1278957", "end" : "1278971", "name" : "Fis"}]},
+{ "promoter" : "ogtp"
+"config" : [{"start" : "1398346", "end" : "1398352", "name" : "NarL"},
+{"start" : "1398355", "end" : "1398361", "name" : "NarL"},
+{"start" : "1398379", "end" : "1398385", "name" : "NarL"},
+{"start" : "1398383", "end" : "1398397", "name" : "Fis"}]},
+{ "promoter" : "ompCp1"
+"config" : [{"start" : "2310890", "end" : "2310909", "name" : "OmpR"},
+{"start" : "2310910", "end" : "2310929", "name" : "OmpR"},
+{"start" : "2310931", "end" : "2310950", "name" : "OmpR"},
+{"start" : "2310942", "end" : "2310952", "name" : "CpxR"}]},
+{ "promoter" : "nrdAp"
+"config" : [{"start" : "2342725", "end" : "2342733", "name" : "DnaA"},
+{"start" : "2342736", "end" : "2342744", "name" : "DnaA"},
+{"start" : "2342759", "end" : "2342767", "name" : "DnaA"},
+{"start" : "2342762", "end" : "2342777", "name" : "NrdR"}]},
+{ "promoter" : "guaBp"
+"config" : [{"start" : "2632094", "end" : "2632108", "name" : "Fis"},
+{"start" : "2632115", "end" : "2632129", "name" : "Fis"},
+{"start" : "2632133", "end" : "2632147", "name" : "Fis"},
+{"start" : "2632146", "end" : "2632161", "name" : "PurR"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830314", "end" : "2830327", "name" : "FNR"},
+{"start" : "2830323", "end" : "2830335", "name" : "NorR"},
+{"start" : "2830344", "end" : "2830356", "name" : "NorR"},
+{"start" : "2830368", "end" : "2830380", "name" : "NorR"}]},
+{ "promoter" : "norVp"
+"config" : [{"start" : "2830323", "end" : "2830335", "name" : "NorR"},
+{"start" : "2830344", "end" : "2830356", "name" : "NorR"},
+{"start" : "2830368", "end" : "2830380", "name" : "NorR"},
+{"start" : "2830380", "end" : "2830386", "name" : "NarL"}]},
+{ "promoter" : "chpRp2"
+"config" : [{"start" : "2909384", "end" : "2909410", "name" : "MazE"},
+{"start" : "2909385", "end" : "2909409", "name" : "MazE"},
+{"start" : "2909398", "end" : "2909424", "name" : "MazE"},
+{"start" : "2909423", "end" : "2909437", "name" : "Fis"}]},
+{ "promoter" : "nupGp"
+"config" : [{"start" : "3103570", "end" : "3103591", "name" : "CRP"},
+{"start" : "3103590", "end" : "3103603", "name" : "CytR"},
+{"start" : "3103603", "end" : "3103620", "name" : "CytR"},
+{"start" : "3103611", "end" : "3103629", "name" : "CytR"}]},
+{ "promoter" : "nanAp"
+"config" : [{"start" : "3371634", "end" : "3371639", "name" : "NanR"},
+{"start" : "3371642", "end" : "3371647", "name" : "NanR"},
+{"start" : "3371651", "end" : "3371656", "name" : "NanR"},
+{"start" : "3371656", "end" : "3371674", "name" : "Fis"}]},
+{ "promoter" : "udpP"
+"config" : [{"start" : "4014310", "end" : "4014331", "name" : "CRP"},
+{"start" : "4014318", "end" : "4014336", "name" : "CytR"},
+{"start" : "4014336", "end" : "4014351", "name" : "CytR"},
+{"start" : "4014344", "end" : "4014362", "name" : "CytR"}]},
+{ "promoter" : "udpP"
+"config" : [{"start" : "4014318", "end" : "4014336", "name" : "CytR"},
+{"start" : "4014336", "end" : "4014351", "name" : "CytR"},
+{"start" : "4014344", "end" : "4014362", "name" : "CytR"},
+{"start" : "4014362", "end" : "4014383", "name" : "CRP"}]},
+{ "promoter" : "glnAp2"
+"config" : [{"start" : "4056178", "end" : "4056192", "name" : "Fis"},
+{"start" : "4056190", "end" : "4056206", "name" : "NtrC"},
+{"start" : "4056211", "end" : "4056227", "name" : "NtrC"},
+{"start" : "4056230", "end" : "4056246", "name" : "NtrC"}]},
+{ "promoter" : "rhaBp"
+"config" : [{"start" : "4095607", "end" : "4095628", "name" : "CRP"},
+{"start" : "4095612", "end" : "4095633", "name" : "CRP"},
+{"start" : "4095631", "end" : "4095652", "name" : "CRP"},
+{"start" : "4095652", "end" : "4095668", "name" : "RhaS"}]},
+{ "promoter" : "cytRp"
+"config" : [{"start" : "4122544", "end" : "4122564", "name" : "CytR"},
+{"start" : "4122567", "end" : "4122583", "name" : "CytR"},
+{"start" : "4122580", "end" : "4122602", "name" : "CytR"},
+{"start" : "4122586", "end" : "4122607", "name" : "CRP"}]},
+{ "promoter" : "metBp"
+"config" : [{"start" : "4126615", "end" : "4126622", "name" : "MetJ"},
+{"start" : "4126617", "end" : "4126624", "name" : "MetJ"},
+{"start" : "4126625", "end" : "4126632", "name" : "MetJ"},
+{"start" : "4126631", "end" : "4126647", "name" : "PhoP"}]},
+{ "promoter" : "fhuFp"
+"config" : [{"start" : "4603764", "end" : "4603782", "name" : "Fur"},
+{"start" : "4603770", "end" : "4603788", "name" : "Fur"},
+{"start" : "4603787", "end" : "4603805", "name" : "Fur"},
+{"start" : "4603792", "end" : "4603808", "name" : "OxyR"}]},
+{ "promoter" : "deoCp2"
+"config" : [{"start" : "4615197", "end" : "4615218", "name" : "CRP"},
+{"start" : "4615203", "end" : "4615223", "name" : "CytR"},
+{"start" : "4615223", "end" : "4615238", "name" : "CytR"},
+{"start" : "4615231", "end" : "4615249", "name" : "CytR"}]},
+{ "promoter" : "agaRp"
+"config" : [{"start" : "3276708", "end" : "3276727", "name" : "AgaR"},
+{"start" : "3276735", "end" : "3276754", "name" : "AgaR"},
+{"start" : "3276803", "end" : "3276822", "name" : "AgaR"},
+{"start" : "3276817", "end" : "3276838", "name" : "CRP"}]},
+{ "promoter" : "fepAp"
+"config" : [{"start" : "611886", "end" : "611904", "name" : "Fur"},
+{"start" : "611892", "end" : "611910", "name" : "Fur"},
+{"start" : "611899", "end" : "611917", "name" : "Fur"},
+{"start" : "611902", "end" : "611916", "name" : "H-NS"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986614", "end" : "1986632", "name" : "H-NS"},
+{"start" : "1986620", "end" : "1986638", "name" : "Fur"},
+{"start" : "1986626", "end" : "1986644", "name" : "Fur"},
+{"start" : "1986632", "end" : "1986650", "name" : "Fur"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986620", "end" : "1986638", "name" : "Fur"},
+{"start" : "1986626", "end" : "1986644", "name" : "Fur"},
+{"start" : "1986632", "end" : "1986650", "name" : "Fur"},
+{"start" : "1986633", "end" : "1986667", "name" : "H-NS"}]},
+{ "promoter" : "fecAp"
+"config" : [{"start" : "4514763", "end" : "4514779", "name" : "PdhR"},
+{"start" : "4514764", "end" : "4514782", "name" : "Fur"},
+{"start" : "4514767", "end" : "4514785", "name" : "Fur"},
+{"start" : "4514770", "end" : "4514788", "name" : "Fur"}]},
+{ "promoter" : "dadAp1"
+"config" : [{"start" : "1236605", "end" : "1236619", "name" : "Lrp"},
+{"start" : "1236635", "end" : "1236649", "name" : "Lrp"},
+{"start" : "1236673", "end" : "1236687", "name" : "Lrp"},
+{"start" : "1236678", "end" : "1236699", "name" : "CRP"}]},
+{ "promoter" : "dadAp2"
+"config" : [{"start" : "1236743", "end" : "1236764", "name" : "CRP"},
+{"start" : "1236750", "end" : "1236764", "name" : "Lrp"},
+{"start" : "1236797", "end" : "1236811", "name" : "Lrp"},
+{"start" : "1236819", "end" : "1236833", "name" : "Lrp"}]},
+{ "promoter" : "gdhAp1"
+"config" : [{"start" : "1840289", "end" : "1840310", "name" : "CRP"},
+{"start" : "1840300", "end" : "1840314", "name" : "Nac"},
+{"start" : "1840349", "end" : "1840363", "name" : "Nac"},
+{"start" : "1840369", "end" : "1840383", "name" : "Nac"}]},
+{ "promoter" : "ftnAp"
+"config" : [{"start" : "1986632", "end" : "1986650", "name" : "Fur"},
+{"start" : "1986633", "end" : "1986667", "name" : "H-NS"},
+{"start" : "1986670", "end" : "1986701", "name" : "H-NS"},
+{"start" : "1986711", "end" : "1986730", "name" : "H-NS"}]}
+]}
