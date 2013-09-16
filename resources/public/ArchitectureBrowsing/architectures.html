@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+</style>
+<body>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+
+var width = 1000,
+    height = 1000;
+
+var center_x=width/2.0;
+var canter_y=height/2.0;
+
+var bb_switch=[0, 1];
+var bb_cluster=[Math.sqrt(3)/2.0, -0.5];
+var bb_barrier=[-Math.sqrt(3)/2.0, -0.5];
+
+var data=$.getJSON("dataexample.json");
+/*
+[{ "id":"101", "parent": "1200", "count": 1},
+{ "id":"110", "parent": "1200", "count": 1},
+{ "id":"111", "parent": "300", "count": 85},
+{ "id":"120", "parent": "1110", "count": 1},
+{ "id":"121", "parent": "210", "count": 14},
+{ "id":"131", "parent": "201", "count": 14},
+{ "id":"201", "parent": "1110", "count": 1},
+{ "id":"211", "parent": "210", "count": 48},
+{ "id":"212", "parent": "120", "count": 18},
+{ "id":"220", "parent": "1020", "count": 2},
+{ "id":"221", "parent": "120", "count": 49},
+{ "id":"222", "parent": "30", "count": 78},
+{ "id":"231", "parent": "111", "count": 28},
+{ "id":"232", "parent": "21", "count": 46},
+{ "id":"311", "parent": "201", "count": 40},
+{ "id":"312", "parent": "111", "count": 21},
+{ "id":"313", "parent": "102", "count": 13},
+{ "id":"321", "parent": "111", "count": 27},
+{ "id":"322", "parent": "21", "count": 63},
+{ "id":"323", "parent": "12", "count": 34},
+{ "id":"331", "parent": "102", "count": 40},
+{ "id":"332", "parent": "12", "count": 44},
+{ "id":"333", "parent": "3", "count": 17}];
+*/
+
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+var str=90;
+
+
+
+var parents = {};
+data.forEach( function(d) { 
+
+  if(! (d.parent in parents) ){
+     parents[d.parent] = [];
+  }
+  parents[d.parent].push(d);
+});
+
+
+cols=["#fff999", "#ff9999", "#ff99ff", "#99ccff", "#66cc99", "#ccff66"];
+
+
+
+var color = d3.scale.ordinal().range(["#909090", "#c0c0c0", "#e8e8e8"]);
+  //    .range(["#fff999", "#ff9999", "#ff99ff", "#99ccff", "#66cc99", "#ccff66"]);
+//    .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+
+//["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]
+
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d_1) { return d_1.count; });
+
+
+Object.keys(parents).forEach(function(d){
+
+     //radius
+     sum=0;
+     parents[d].forEach( function(i){ sum=sum+i.count; })
+
+     if(sum>2){
+     radius= 6*Math.sqrt(sum); 
+
+    arc = d3.svg.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+ 
+     //cx
+     par=parseInt(d);
+     bar=par%10;
+     swi=(par%100-bar)/10;
+     clu=(par%1000-bar-swi*10)/100;                                               	 
+     cx=center_x+str*bb_barrier[0]*bar+str*bb_cluster[0]*clu;
+
+     //cy
+     par=parseInt(d);
+     cy=center_x+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
+
+     //draw pie chart
+
+     parents[d].forEach(function(d_1) {
+         d_1.count = +d_1.count;
+     });
+
+  var g = svg.selectAll(".arc"+d)
+      .data(pie(parents[d]))
+      .enter().append("g")
+      .attr("class", "arc")
+      .attr("transform", "translate(" + cx + "," + cy + ")");
+
+  g.append("path")
+      .attr("d", arc)
+      .style("fill", function(d_1, i) { return color(i); });
+
+  g.append("text")
+      .attr("transform", function(d_1, i) { 
+        if(parents[d][i].id=="111"){
+        	return "translate(-1, 2)";
+        }
+        if(parents[d][i].id=="333"){
+        	return "translate(-1, 2)";
+        }
+        if(parents[d][i].id=="222"){
+        	return "translate(-1, 2)";
+        }
+        if(parents[d][i].id=="3112"){
+        	return "translate(-8, 40)";
+        }
+        if(parents[d][i].id=="2332"){
+        	return "translate(15, -50)";
+       }
+        if(parents[d][i].id=="2121"){
+        	return "translate(20, 40)";
+        }
+      	return "translate(" + arc.centroid(d_1) + ")"; })
+      .attr("font-size", 12)
+      .style("text-anchor", "middle")
+      .on("click", function(d_1,i) {
+            d3.select(this).attr("transform", "translate(20, 40)" )})
+      .text(function(d_1, i) { 
+        
+      	return ""+parents[d][i].count; });
+
+   }
+
+  });/*
+n=40;
+n2=-630;
+n3=-(width/2-180);
+y=240
+y2=935;
+
+col_rects=[0, 1, 2, 3, 4, 1, 1, 1, 1, 1, 0, 1, 2, 3, 4];
+rectLocs=[
+{"x": 130-n, "y": y},
+{"x": 160-n, "y": y},
+{"x": 190-n, "y": y},
+{"x": 220-n, "y": y},
+{"x": 250-n, "y": y},
+
+{"x": 130-n2, "y": y},
+{"x": 160-n2, "y": y},
+{"x": 190-n2, "y": y},
+{"x": 220-n2, "y": y},
+{"x": 250-n2, "y": y},
+
+{"x": 130-n3, "y": y2},
+{"x": 150-n3, "y": y2+11},
+{"x": 170-n3, "y": y2},
+{"x": 190-n3, "y": y2+11},
+{"x": 210-n3, "y": y2}
+];
+/*
+{:x :y},
+{:x :y},
+{:x :y},
+
+{:x :y},
+{:x :y},
+{:x :y},
+{:x :y},
+{:x :y},
+
+{:x :y},
+{:x :y},
+{:x :y},
+{:x :y},
+{:x :y}
+]
+
+svg.selectAll("rect").data(rectLocs).enter().append("rect")
+.attr("x", function(d){ return d.x; })
+.attr("y", function(d){ return d.y; })
+.attr("width", 25)
+.attr("height", 10)
+.style("fill", function(d, i){ return cols[col_rects[i]];});
+/*
+svg.selectAll("circle").data(Object.keys(parents)).enter().append("circle")
+                                                     .attr("r", function(d){ 
+                                                     	sum=0;
+                                                     	parents[d].forEach( function(i){ sum=sum+i.count; })
+                                                     	return 4*Math.sqrt(sum); 
+                                                     })
+                                                     .attr("cx", function(d){ 
+                                                     	  par=parseInt(d);
+                                                     	  bar=par%10;
+                                                     	  swi=(par%100-bar)/10;
+                                                     	  clu=(par%1000-bar-swi*10)/100;
+                                                     	 
+                                                     	  return center_x+str*bb_barrier[0]*bar+str*bb_cluster[0]*clu;
+              
+                                                          })
+                                                     .attr("cy", function(d){
+                                                     	  par=parseInt(d);
+                                                     	  bar=par%10;
+                                                     	  swi=(par%100-bar)/10;
+                                                     	  clu=(par%1000-bar-swi*10)/100;
+                                                     	  return center_x+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
+              
+                                                     }
+                                                     	)
+                                                     .attr("fill", "grey");
+*/
+
+</script>
