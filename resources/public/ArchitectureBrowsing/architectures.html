@@ -61,7 +61,7 @@ function drawGenes(divName, config, leftBuffer, index){
            var h=70;
            var topBuffer=10;
            var bins=[0, 0];
-           var levels=4;
+           var levels=5;
            //d3.select(divName).selectAll("svg").remove();
 
            var svg = d3.select("#"+divName).append("svg")
@@ -128,7 +128,11 @@ function drawGenes(divName, config, leftBuffer, index){
               })
               .text(function(datum) {return datum.name;})
               .attr("fill", "white")
-              .attr("font-size", 8);
+              .attr("font-size", 9);
+
+
+              svg.append("text").attr("x", 2).attr("y", 2).text(divName).attr("fill", "black").attr("font-size", 12);
+
 
              }
 
