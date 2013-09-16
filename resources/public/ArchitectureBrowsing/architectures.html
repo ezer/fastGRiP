@@ -68,11 +68,9 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("width", w+leftBuffer)
               .attr("height", h);
 
-           var arr=[];
-           arr.push(divName);
-           svg.selectAll("text.label").data(arr).enter().append("text").attr("x", 0).attr("y", 0)
-              .text(divName).attr("font-size", 10), attr("fill", "black");
-
+           var arr=new Array;
+           arr[0]=1;
+           
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
                      .range([0, w]);
@@ -236,20 +234,12 @@ Object.keys(parents).forEach(function(d){
                // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
+               // d3.select("#labels").selectAll("div").remove();
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter; })
                 .attr("id", function(d){ return d.promoter; });
 
-              /*
-              windows.alert(promoters.length);                        
-              for(p in promoter_data[parents[d][i].id]){
-                if(!isNaN(p.config)){
-                drawGenes(p.promoter, p.config, 20);
-                 }else{
-                  window.alert(p.promoter+" has no configs?  ");
-                 }
-              } 
-             */
+           
 
               promoters.forEach(function(p){
                // window.alert(p);
