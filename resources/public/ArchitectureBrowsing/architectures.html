@@ -235,7 +235,11 @@ Object.keys(parents).forEach(function(d){
                 .attr("id", function(d){ return d.promoter; });
 
               for(p in promoters){
+                if(!isNaN(p.config)){
                 drawGenes(p.promoter, p.config, 10);
+                 }else{
+                  window.alert(p.promoter+" has no configs?");
+                 }
               } 
 
 
