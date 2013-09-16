@@ -67,6 +67,7 @@ function drawGenes(divName, config, leftBuffer){
            var svg = d3.select("#"+divName).append("svg")
               .attr("width", w+leftBuffer)
               .attr("height", h);
+              
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
                      .range([0, w]);
@@ -236,9 +237,9 @@ Object.keys(parents).forEach(function(d){
 
               for(p in promoters){
                 if(!isNaN(p.config)){
-                drawGenes(p.promoter, p.config, 10);
+                drawGenes(p.promoter, p.config, 20);
                  }else{
-                  window.alert(p.promoter+" has no configs?");
+                  window.alert(p.promoter+" has no configs?  ");
                  }
               } 
 
