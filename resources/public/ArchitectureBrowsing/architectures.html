@@ -61,7 +61,7 @@ function drawGenes(divName, config, leftBuffer, index){
            var h=70;
            var topBuffer=10;
            var bins=[0, 0];
-           var levels=10;
+           var levels=4;
            //d3.select(divName).selectAll("svg").remove();
 
            var svg = d3.select("#"+divName).append("svg")
@@ -69,7 +69,7 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("height", h);
 
            svg.selectAll("title").data([divName]).append("text").attr("x", 0).attr("y", 0)
-              .text(divName).attr("font-size", 10);
+              .text(divName).attr("font-size", 10), attr("fill", "black");
 
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
