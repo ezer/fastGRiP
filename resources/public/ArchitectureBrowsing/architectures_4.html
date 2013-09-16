@@ -224,7 +224,7 @@ Object.keys(parents).forEach(function(d){
       .attr("transform", "translate(" + cx + "," + cy + ")")  
       .on("click", function(d_1,i) {
            // window.alert("click found");
-            $.getJSON("ecoli_promoters_3", function(promoter_data){
+            $.getJSON("ecoli_promoters_4", function(promoter_data){
                // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
@@ -252,7 +252,7 @@ Object.keys(parents).forEach(function(d){
       .style("fill", function(d_1, i) { return color(i); })
       .on("click", function(d_1,i) {
            // window.alert("click found");
-            $.getJSON("ecoli_promoters_3", function(promoter_data){
+            $.getJSON("ecoli_promoters_4", function(promoter_data){
                // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
@@ -300,7 +300,7 @@ Object.keys(parents).forEach(function(d){
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
            // window.alert("click found");
-            $.getJSON("ecoli_promoters_3", function(promoter_data){
+            $.getJSON("ecoli_promoters_4", function(promoter_data){
                // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
