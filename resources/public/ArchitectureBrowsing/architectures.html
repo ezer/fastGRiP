@@ -67,7 +67,7 @@ function drawGenes(divName, config, leftBuffer){
            var svg = d3.select("#"+divName).append("svg")
               .attr("width", w+leftBuffer)
               .attr("height", h);
-              
+
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
                      .range([0, w]);
@@ -235,13 +235,23 @@ Object.keys(parents).forEach(function(d){
                 .attr("name", function(d){ return d.promoter; })
                 .attr("id", function(d){ return d.promoter; });
 
-              for(p in promoters){
+              for(p in promoter_data[parents[d][i].id]){
                 if(!isNaN(p.config)){
                 drawGenes(p.promoter, p.config, 20);
                  }else{
                   window.alert(p.promoter+" has no configs?  ");
                  }
               } 
+
+
+              promoter_data[parents[d][i].id].forEach(function(p){
+                if(!isNaN(p.config)){
+                drawGenes(p.promoter, p.config, 20);
+                 }else{
+                  window.alert(p.promoter+" has no configs?  ");
+                 }
+              }); 
+
 
 
             })
