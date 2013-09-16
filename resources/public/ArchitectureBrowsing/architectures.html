@@ -317,13 +317,20 @@ Object.keys(parents).forEach(function(d){
   });
 });  
 
-str2=str+20;
-var sw_x=bb_switch[0]*str2;
-var sw_y=bb_switch[1]*str2;
-var ba_x=bb_barrier[0]*str2;
-var ba_y=bb_barrier[1]*str2;
-var cl_x=bb_cluster[0]*str2;
-var cl_y=bb_cluster[1]*str2;
+width = 600,
+height = 600;
+str2=90+20;
+bb_switch=[0, 1];
+bb_cluster=[Math.sqrt(3)/2.0, -0.5];
+bb_barrier=[-Math.sqrt(3)/2.0, -0.5];
+center_x=width/2.0;
+canter_y=height/2.0;
+var sw_x=center_x+bb_switch[0]*str2;
+var sw_y=center_y+bb_switch[1]*str2;
+var ba_x=center_x+bb_barrier[0]*str2;
+var ba_y=center_y+bb_barrier[1]*str2;
+var cl_x=center_x+bb_cluster[0]*str2;
+var cl_y=center_y+bb_cluster[1]*str2;
 
 svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+" "+cl_y+" L "+sw_x+" "+sw_y+" ")
                   .attr("stroke", "grey")
