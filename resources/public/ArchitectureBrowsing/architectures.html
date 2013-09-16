@@ -54,6 +54,82 @@
 </div>
 <script>
 
+
+function drawGenes(divName, config){
+           var w=300;
+           var h=300;
+           var topBuffer=100;
+           var bins=[0, 0];
+           
+           d3.select(divName).selectAll("svg").remove();
+
+           var svg = d3.select(divName).append("svg")
+              .attr("width", w+leftBuffer)
+              .attr("height", h);
+            var xScale = d3.scale.linear()
+                     .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
+                     .range([0, w]);
+            var rects = svg.selectAll("rect")
+              .data(config)
+              .enter()
+              .append("rect")
+              .attr("x", function(d, i){
+                return leftBuffer+xScale(d.start);
+              })
+              .attr("y", function(d, i){
+                if(i==0){
+                  bins[0]=d.end;
+                  return 5+topBuffer;
+                }
+                for(var j = 0; j<bins.length; j++){
+                  if(bins[j]<d.start){
+                    bins[j]=d.end;
+                    return (h/50*j)+(5*(1+j))+topBuffer;
+                  }
+                }
+                bins[bins.length]=d.end;
+                return (h/50*(bins.length-1))+(5*(bins.length))+topBuffer;
+              })
+              .attr("width", function(d, i){
+                return xScale(d.end)-xScale(d.start);
+              })
+              .attr("height", function(d, i){
+                return h/50;
+              })
+              .attr("fill", function(d, i){
+                return "black";
+              });
+
+              var bins=[0, 0];
+              svg.selectAll("text").data(config)
+                                   .enter()
+                                   .append("svg:text")
+                                   .attr("x", function(d, i){
+                return xScale(d.start)+5+leftBuffer;
+              })
+              .attr("y", function(d, i){
+                if(i==0){
+                  bins[0]=d.end;
+                  return 3+h/50+topBuffer;
+                }
+                for(var j = 0; j<bins.length; j++){
+                  if(bins[j]<d.start){
+                    bins[j]=d.end;
+                    return (h/50*j)+(5*(1+j))+h/50-2+topBuffer;
+                  }
+                }
+                bins[bins.length]=d.end;
+                return (h/50*(bins.length-1))+(5*(bins.length))+h/50-2+topBuffer;
+              })
+              .text(function(datum) {return datum.name;})
+              .attr("fill", "white")
+              .attr("font-size", 8);
+
+             }
+
+
+
+
 var width = 600,
     height = 600;
 
@@ -148,7 +224,19 @@ Object.keys(parents).forEach(function(d){
       .attr("font-size", 12)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
-            d3.select(this).attr("transform", "translate(20, 40)" )})
+            $.getJSON("ecoli_promoters_3", function(promoter_data){
+                promoters=promoter_data[parents[d][i].id];
+                d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
+                .attr("name", function(d){ return d.promoter; })
+                .attr("id", function(d){ return d.promoter; });
+
+              for(p in promoters){
+                drawGenes(p.promoter, p.config);
+              } 
+
+
+            })
+      })
       .text(function(d_1, i) { 
         
         return ""+parents[d][i].count; });
