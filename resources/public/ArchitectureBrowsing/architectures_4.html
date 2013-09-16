@@ -42,10 +42,21 @@
     </div>
 </div>
 
+<div class="container">
+  <div class="row">
+
+    <div class="span8" name="triangle" id="triangle">
+    </div>
+    <div class="span4" name="labels" id="labels">
+    </div>
+
+  </div>
+</div>
+
 <script>
 
-var width = 600,
-    height = 600;
+var width = 700,
+    height = 700;
 
 var center_x=width/2.0;
 var canter_y=height/2.0;
@@ -58,11 +69,11 @@ $.getJSON("networkjson_middle2_4", function(data){
 
 
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#triangle").append("svg")
     .attr("width", width)
     .attr("height", height);
 
-var str=90;
+var str=60;
 
 
 

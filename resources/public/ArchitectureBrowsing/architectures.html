@@ -55,7 +55,7 @@
 <script>
 
 
-function drawGenes(divName, config){
+function drawGenes(divName, config, leftBuffer){
            var w=300;
            var h=300;
            var topBuffer=100;
@@ -224,17 +224,17 @@ Object.keys(parents).forEach(function(d){
       .attr("font-size", 12)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
-            window.alert("click found");
+           // window.alert("click found");
             $.getJSON("ecoli_promoters_3", function(promoter_data){
-                window.alert("promoters found");
+               // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
-                window.alert("id is"+parents[d][i].id+" which has "+promoters.length);
+                //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter; })
                 .attr("id", function(d){ return d.promoter; });
 
               for(p in promoters){
-                drawGenes(p.promoter, p.config);
+                drawGenes(p.promoter, p.config, 10);
               } 
 
 
