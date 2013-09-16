@@ -61,7 +61,7 @@ function drawGenes(divName, config, leftBuffer, index){
            var h=70;
            var topBuffer=10;
            var bins=[0, 0];
-           var levels=5;
+           var levels=6;
            //d3.select(divName).selectAll("svg").remove();
 
            var svg = d3.select("#"+divName).append("svg")
@@ -131,7 +131,7 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("font-size", 9);
 
 
-              svg.append("text").attr("x", 2).attr("y", 2).text(divName).attr("fill", "black").attr("font-size", 12);
+              svg.append("text").attr("x", 2).attr("y", 10).text(divName).attr("fill", "black").attr("font-size", 12);
 
 
              }
@@ -238,9 +238,9 @@ Object.keys(parents).forEach(function(d){
                // window.alert("promoters found");
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
-               // d3.select("#labels").selectAll("div").remove();
+                d3.select("#labels").selectAll("div").remove();
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
-                .attr("name", function(d){ return d.promoter; })
+                .attr("name", function(d){ return d.promoter+"_at:"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter; });
 
            
@@ -248,7 +248,7 @@ Object.keys(parents).forEach(function(d){
               promoters.forEach(function(p){
                // window.alert(p);
                 
-                drawGenes(p.promoter, p.config, 20);
+                drawGenes(p.promoter+"_at"+d.config[0].start, p.config, 20);
                 
               }); 
 
