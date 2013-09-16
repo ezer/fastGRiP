@@ -68,7 +68,9 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("width", w+leftBuffer)
               .attr("height", h);
 
-           svg.selectAll("title").data([divName]).append("text").attr("x", 0).attr("y", 0)
+           var arr=[];
+           arr.push(divName);
+           svg.selectAll("text.label").data(arr).enter().append("text").attr("x", 0).attr("y", 0)
               .text(divName).attr("font-size", 10), attr("fill", "black");
 
             var xScale = d3.scale.linear()
