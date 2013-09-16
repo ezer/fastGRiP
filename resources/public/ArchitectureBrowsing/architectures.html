@@ -58,15 +58,18 @@
 function drawGenes(divName, config, leftBuffer, index){
           // window.alert("drawing: "+divName+" with "+config.length);
            var w=300;
-           var h=200;
+           var h=70;
            var topBuffer=10;
            var bins=[0, 0];
-           
+           var levels=10;
            //d3.select(divName).selectAll("svg").remove();
 
            var svg = d3.select("#"+divName).append("svg")
               .attr("width", w+leftBuffer)
               .attr("height", h);
+
+           svg.selectAll("title").data([divName]).append("text").attr("x", 0).attr("y", 0)
+              .text(divName).attr("font-size", 10);
 
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
@@ -86,17 +89,17 @@ function drawGenes(divName, config, leftBuffer, index){
                 for(var j = 0; j<bins.length; j++){
                   if(bins[j]<d.start){
                     bins[j]=d.end;
-                    return (h/50*j)+(5*(1+j))+topBuffer;
+                    return (h/levels*j)+(5*(1+j))+topBuffer;
                   }
                 }
                 bins[bins.length]=d.end;
-                return (h/50*(bins.length-1))+(5*(bins.length))+topBuffer;
+                return (h/levels*(bins.length-1))+(5*(bins.length))+topBuffer;
               })
               .attr("width", function(d, i){
                 return xScale(d.end)-xScale(d.start);
               })
               .attr("height", function(d, i){
-                return h/50;
+                return h/levels;
               })
               .attr("fill", function(d, i){
                 return "black";
@@ -112,16 +115,16 @@ function drawGenes(divName, config, leftBuffer, index){
               .attr("y", function(d, i){
                 if(i==0){
                   bins[0]=d.end;
-                  return 3+h/50+topBuffer;
+                  return 3+h/levels+topBuffer;
                 }
                 for(var j = 0; j<bins.length; j++){
                   if(bins[j]<d.start){
                     bins[j]=d.end;
-                    return (h/50*j)+(5*(1+j))+h/50-2+topBuffer;
+                    return (h/levels*j)+(5*(1+j))+h/levels-2+topBuffer;
                   }
                 }
                 bins[bins.length]=d.end;
-                return (h/50*(bins.length-1))+(5*(bins.length))+h/50-2+topBuffer;
+                return (h/levels*(bins.length-1))+(5*(bins.length))+h/levels-2+topBuffer;
               })
               .text(function(datum) {return datum.name;})
               .attr("fill", "white")
