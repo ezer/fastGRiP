@@ -99,7 +99,7 @@ Object.keys(parents).forEach(function(d){
      parents[d].forEach( function(i){ sum=sum+i.count; })
 
      if(sum>2){
-     radius= 6*Math.sqrt(sum); 
+     radius= 8*Math.sqrt(sum); 
 
     arc = d3.svg.arc()
     .outerRadius(radius - 10)
