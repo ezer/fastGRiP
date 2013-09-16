@@ -134,25 +134,7 @@ Object.keys(parents).forEach(function(d){
 
   g.append("text")
       .attr("transform", function(d_1, i) { 
-        if(parents[d][i].id=="111"){
-          return "translate(-1, 2)";
-        }
-        if(parents[d][i].id=="333"){
-          return "translate(-1, 2)";
-        }
-        if(parents[d][i].id=="222"){
-          return "translate(-1, 2)";
-        }
-        if(parents[d][i].id=="3112"){
-          return "translate(-8, 40)";
-        }
-        if(parents[d][i].id=="2332"){
-          return "translate(15, -50)";
-       }
-        if(parents[d][i].id=="2121"){
-          return "translate(20, 40)";
-        }
-        return "translate(" + arc.centroid(d_1) + ")"; })
+        return "translate(0, 0)"; })
       .attr("font-size", 12)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
