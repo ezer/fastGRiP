@@ -41,7 +41,16 @@
       </ul> 
     </div>
 </div>
+<div class="container">
+  <div class="row">
 
+    <div class="span8" name="triangle" id="triangle">
+    </div>
+    <div class="span4" name="labels" id="labels">
+    </div>
+
+  </div>
+</div>
 <script>
 
 function drawGenes(divName, config, leftBuffer, promoter, position){
@@ -139,7 +148,7 @@ $.getJSON("networkjson_middle2_5", function(data){
 
 
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#triangle").append("svg")
     .attr("width", width)
     .attr("height", height);
 

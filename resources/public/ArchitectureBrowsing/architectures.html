@@ -155,7 +155,7 @@ $.getJSON("networkjson_middle2_3", function(data){
 
 var svg = d3.select("#triangle").append("svg")
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height+100);
 
 var str=70;
 
@@ -198,7 +198,7 @@ Object.keys(parents).forEach(function(d){
      parents[d].forEach( function(i){ sum=sum+i.count; })
 
      if(sum>2){
-     radius= 6*Math.sqrt(sum); 
+     radius= 3*Math.sqrt(sum); 
 
     arc = d3.svg.arc()
     .outerRadius(radius - 10)
