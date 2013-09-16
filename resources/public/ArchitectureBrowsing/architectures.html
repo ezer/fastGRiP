@@ -70,7 +70,7 @@ function drawGenes(divName, config, leftBuffer, index){
 
            var arr=new Array;
            arr[0]=1;
-           
+               
             var xScale = d3.scale.linear()
                      .domain([d3.min(config, function(d){ return d.start; }), d3.max(config, function(d){ return d.end; })])
                      .range([0, w]);
@@ -259,7 +259,7 @@ Object.keys(parents).forEach(function(d){
    }
 
   });
-});
+});  
 
 
 </script>
