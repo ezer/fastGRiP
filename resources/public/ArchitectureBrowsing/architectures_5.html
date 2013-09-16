@@ -326,10 +326,10 @@ svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+
       .text(function(d_1, i) { 
         
         return ""+parents[d][i].count; });
-
-     svg.append("text").attr("x", ba_x+20).attr("y", ba_y+20).attr("font-size", 14).text("Barrier Composition");
-
-
+svg.append("text").attr("x", ba_x+20).attr("y", ba_y+20).attr("font-size", 14).text("Barrier Composition");
+      svg.append("text").attr("x", cl_x-140).attr("y", cl_y+20).attr("font-size", 14).text("Cluster Composition");
+      svg.append("text").attr("x", sw_x-25).attr("y", sw_y-90).attr("font-size", 14).text("Switch");
+      svg.append("text").attr("x", sw_x-45).attr("y", sw_y-67).attr("font-size", 14).text("Composition");
    }
    
   });
