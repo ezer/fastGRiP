@@ -49,7 +49,11 @@
 
     <div class="span8" name="triangle" id="triangle">
     </div>
-    <div class="span4" name="labels" id="labels">
+    <div class="span4" >
+      <div name="title" id="title">
+      </div>
+      <div name="labels" id="labels">
+      </div>
     </div>
 
   </div>
@@ -67,7 +71,7 @@ function drawGenes(divName, config, leftBuffer, promoter, position){
 
            var svg = d3.select("#"+divName).append("svg")
               .attr("width", w+leftBuffer)
-              .attr("height", h);
+              .attr("height", h+50);
 
            var arr=new Array;
            arr[0]=1;
@@ -226,6 +230,13 @@ Object.keys(parents).forEach(function(d){
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+                //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+                var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
@@ -253,6 +264,17 @@ Object.keys(parents).forEach(function(d){
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+
+                 //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+               var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+
+
+
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
@@ -299,8 +321,56 @@ svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+
         if(parents[d][i].id=="2222"){
           return "translate(-1, 2)";
         }
+        if(parents[d][i].id=="3212"){
+          return "translate(-15, 10)"
+        }
+        if(parents[d][i].id=="3122"){
+          return "translate(-2, 20)"
+        }
+        if(parents[d][i].id=="2321"){
+          return "translate(17, 15)"
+        }
+        if(parents[d][i].id=="3312"){
+          return "translate(-13, 5)"
+        }
+        if(parents[d][i].id=="3231"){
+          return "translate(-2, 20)"
+        }
+        if(parents[d][i].id=="3213"){
+          return "translate(17, 10)"
+        }
+         if(parents[d][i].id=="3121"){
+          return "translate(-13, 5)"
+        }
+        if(parents[d][i].id=="3112"){
+          return "translate(-2, 20)"
+        }
+        if(parents[d][i].id=="2311"){
+          return "translate(17, 15)"
+        }
+         if(parents[d][i].id=="2312"){
+          return "translate(17, -2)"
+        }
+        if(parents[d][i].id=="3132"){
+          return "translate(17, -5)"
+        }
+        if(parents[d][i].id=="3131"){
+          return "translate(5, 15)"
+        }
+        if(parents[d][i].id=="2112"){
+          return "translate(14, 5)"
+        }
+         if(parents[d][i].id=="3313"){
+          return "translate(15, 5)"
+        }
+         if(parents[d][i].id=="3113"){
+          return "translate(15, 5)"
+        }
+         if(parents[d][i].id=="2331"){
+          return "translate(8, -20)"
+        }
         return "translate(" + arc.centroid(d_1) + ")"; })
-      .attr("font-size", 12)
+      .attr("font-size", 7)
       .style("text-anchor", "middle")
       .on("click", function(d_1,i) {
            // window.alert("click found");
@@ -309,6 +379,16 @@ svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+
+                 //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+                var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+
+
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
@@ -328,11 +408,11 @@ svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+
       })
       .text(function(d_1, i) { 
         
-        return ""+parents[d][i].count; });
-svg.append("text").attr("x", ba_x+20).attr("y", ba_y+20).attr("font-size", 14).text("Barrier Composition");
-      svg.append("text").attr("x", cl_x-155).attr("y", cl_y+20).attr("font-size", 14).text("Cluster Composition");
-      svg.append("text").attr("x", sw_x-22).attr("y", sw_y-90).attr("font-size", 14).text("Switch");
-      svg.append("text").attr("x", sw_x-40).attr("y", sw_y-75).attr("font-size", 14).text("Composition");
+        return ""+parents[d][i].id; });
+svg.append("text").attr("x", ba_x+20).attr("y", ba_y+20).attr("font-size", 14).text("exclusively barrier");
+      svg.append("text").attr("x", cl_x-135).attr("y", cl_y+20).attr("font-size", 14).text("exclusively cluster");
+      svg.append("text").attr("x", sw_x-32).attr("y", sw_y-90).attr("font-size", 14).text("exclusively");
+      svg.append("text").attr("x", sw_x-20).attr("y", sw_y-75).attr("font-size", 14).text("switch");
    }
    
   });
