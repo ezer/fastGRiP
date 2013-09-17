@@ -38,6 +38,9 @@
         <li>
           <a href="architectures_5.html">Size 5</a>
         </li>
+        <li >
+          <a href="Archive.zip">Download All </a>
+        </li>
       </ul> 
     </div>
 </div>
@@ -229,6 +232,15 @@ Object.keys(parents).forEach(function(d){
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+
+                //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+               var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+                
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
@@ -257,6 +269,14 @@ Object.keys(parents).forEach(function(d){
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+                //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+               var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });
@@ -322,6 +342,14 @@ svg.append("path").attr("d", " M "+sw_x+" "+sw_y+" L "+ba_x+" "+ba_y+" L "+cl_x+
                 promoters=promoter_data[parents[d][i].id];
                 //window.alert("id is "+parents[d][i].id+" which has "+promoters.length);
                 d3.select("#labels").selectAll("div").remove();
+
+                //ADD Title!!!************
+                d3.select("#title").selectAll("svg").remove();
+               var titleSVG=d3.select("#title").append("svg").attr("width", 200).attr("height", 75);
+                titleSVG.append("text").attr("x", 0).attr("y", 35).attr("font-size", 14).text("Architecture: "+parents[d][i].id);
+                //***********
+
+
                 geneSVGs=d3.select("#labels").selectAll("div").data(promoters).enter().append("div")
                 .attr("name", function(d){ return d.promoter+"_at_"+d.config[0].start; })
                 .attr("id", function(d){ return d.promoter+"_at_"+d.config[0].start; });

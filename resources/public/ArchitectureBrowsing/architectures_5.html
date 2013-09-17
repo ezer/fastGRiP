@@ -39,7 +39,7 @@
           <a href="architectures_5.html">Size 5</a>
         </li>
         <li >
-          <a >Download All </a>
+          <a href="Archive.zip">Download All </a>
         </li>
       </ul> 
     </div>
@@ -142,10 +142,10 @@ function drawGenes(divName, config, leftBuffer, promoter, position){
              }
 
 var width = 600,
-    height = 600;
+    height = 400;
 
 var center_x=width/2.0;
-var center_y=height/2.0-100;
+var center_y=height/2.0;
 
 var bb_switch=[0, 1];
 var bb_cluster=[Math.sqrt(3)/2.0, -0.5];
@@ -156,8 +156,8 @@ $.getJSON("networkjson_middle2_5", function(data){
 
 
 var svg = d3.select("#triangle").append("svg")
-    .attr("width", width)
-    .attr("height", height+200);
+    .attr("width", width+200)
+    .attr("height", height+400);
 
 var str=50;
 
@@ -211,7 +211,7 @@ Object.keys(parents).forEach(function(d){
 
      //cy
      par=parseInt(d);
-     cy=center_x+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
+     cy=center_y+str*bb_switch[1]*swi+str*bb_barrier[1]*bar+str*bb_cluster[1]*clu;
 
      //draw pie chart
 
@@ -292,8 +292,7 @@ Object.keys(parents).forEach(function(d){
    
             });
       });
-   width = 600,
-height = 600;
+  
 str2=3.1*(90+20);
 bb_switch=[0, 1];
 bb_cluster=[Math.sqrt(3)/2.0, -0.5];
