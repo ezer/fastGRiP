@@ -501,9 +501,12 @@
                 [:a {:href timecourseURL} "Time Course Data"]]
               [:li 
                 [:a {:href firstURL} "First Occupancy (TF)"]]
-              [:li
-                [:a {:href statefirstURL} "First Occupancy (Config)"]]
               ]]]
+
+
+              ;
+              ;              [:li
+               ; [:a {:href statefirstURL} "First Occupancy (Config)"]]
      ; <button id="myid">I am a button!</button>
       ;  [:button {:id "myid"} "Hihi"]
       
